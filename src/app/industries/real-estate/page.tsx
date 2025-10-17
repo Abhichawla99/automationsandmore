@@ -1,9 +1,9 @@
-import { Metadata } from "next";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Navigation } from "@/components/navigation";
+import { Metadata } from &quot;next&quot;;
+import Link from &quot;next/link&quot;;
+import { Button } from &quot;@/components/ui/button&quot;;
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from &quot;@/components/ui/card&quot;;
+import { Badge } from &quot;@/components/ui/badge&quot;;
+import { Navigation } from &quot;@/components/navigation&quot;;
 import { 
   Home, 
   Users, 
@@ -19,76 +19,76 @@ import {
   Target,
   Building2,
   BarChart3
-} from "lucide-react";
+} from &quot;lucide-react&quot;;
 
 export const metadata: Metadata = {
-  title: "AI Automation for Real Estate Agents & Property Management",
-  description: "Transform your real estate business with AI automation. Lead management, property listings, client communication, and transaction automation for real estate professionals.",
+  title: &quot;AI Automation for Real Estate Agents & Property Management&quot;,
+  description: &quot;Transform your real estate business with AI automation. Lead management, property listings, client communication, and transaction automation for real estate professionals.&quot;,
   keywords: [
-    "real estate AI automation",
-    "property management automation",
-    "real estate lead management",
-    "AI for real estate agents",
-    "property listing automation",
-    "real estate CRM automation",
-    "AI real estate marketing",
-    "property management AI",
-    "real estate transaction automation",
-    "AI for real estate brokers"
+    &quot;real estate AI automation&quot;,
+    &quot;property management automation&quot;,
+    &quot;real estate lead management&quot;,
+    &quot;AI for real estate agents&quot;,
+    &quot;property listing automation&quot;,
+    &quot;real estate CRM automation&quot;,
+    &quot;AI real estate marketing&quot;,
+    &quot;property management AI&quot;,
+    &quot;real estate transaction automation&quot;,
+    &quot;AI for real estate brokers&quot;
   ],
   openGraph: {
-    title: "AI Automation for Real Estate Agents & Property Management",
-    description: "Transform your real estate business with AI automation. Lead management, property listings, and client communication.",
-    url: "https://automationsandmore.com/industries/real-estate",
+    title: &quot;AI Automation for Real Estate Agents & Property Management&quot;,
+    description: &quot;Transform your real estate business with AI automation. Lead management, property listings, and client communication.&quot;,
+    url: &quot;https://automationsandmore.com/industries/real-estate&quot;,
   },
   alternates: {
-    canonical: "/industries/real-estate",
+    canonical: &quot;/industries/real-estate&quot;,
   },
 };
 
 const realEstateSolutions = [
   {
-    title: "Lead Management & Nurturing",
-    description: "AI-powered lead capture, qualification, and automated follow-up systems",
+    title: &quot;Lead Management & Nurturing&quot;,
+    description: &quot;AI-powered lead capture, qualification, and automated follow-up systems&quot;,
     icon: Users,
     features: [
-      "Automated lead capture from multiple sources",
-      "Intelligent lead scoring and qualification",
-      "Automated follow-up sequences",
-      "Lead nurturing campaigns"
+      &quot;Automated lead capture from multiple sources&quot;,
+      &quot;Intelligent lead scoring and qualification&quot;,
+      &quot;Automated follow-up sequences&quot;,
+      &quot;Lead nurturing campaigns&quot;
     ]
   },
   {
-    title: "Property Listing Automation",
-    description: "Streamlined property marketing and listing management",
+    title: &quot;Property Listing Automation&quot;,
+    description: &quot;Streamlined property marketing and listing management&quot;,
     icon: Home,
     features: [
-      "Automated listing creation and updates",
-      "Multi-platform listing distribution",
-      "Property photo optimization",
-      "Market analysis and pricing"
+      &quot;Automated listing creation and updates&quot;,
+      &quot;Multi-platform listing distribution&quot;,
+      &quot;Property photo optimization&quot;,
+      &quot;Market analysis and pricing&quot;
     ]
   },
   {
-    title: "Client Communication & CRM",
-    description: "Intelligent client relationship management and communication",
+    title: &quot;Client Communication & CRM&quot;,
+    description: &quot;Intelligent client relationship management and communication&quot;,
     icon: FileText,
     features: [
-      "Automated client communication",
-      "Transaction milestone tracking",
-      "Document management automation",
-      "Client portal and self-service"
+      &quot;Automated client communication&quot;,
+      &quot;Transaction milestone tracking&quot;,
+      &quot;Document management automation&quot;,
+      &quot;Client portal and self-service&quot;
     ]
   },
   {
-    title: "Market Analysis & Insights",
-    description: "AI-driven market research and property valuation",
+    title: &quot;Market Analysis & Insights&quot;,
+    description: &quot;AI-driven market research and property valuation&quot;,
     icon: BarChart3,
     features: [
-      "Automated market analysis",
-      "Property valuation insights",
-      "Investment opportunity identification",
-      "Competitive market intelligence"
+      &quot;Automated market analysis&quot;,
+      &quot;Property valuation insights&quot;,
+      &quot;Investment opportunity identification&quot;,
+      &quot;Competitive market intelligence&quot;
     ]
   }
 ];
@@ -96,101 +96,101 @@ const realEstateSolutions = [
 const benefits = [
   {
     icon: DollarSign,
-    title: "Increase Sales by 35%",
-    description: "AI-driven lead management and client nurturing boost conversion rates"
+    title: &quot;Increase Sales by 35%&quot;,
+    description: &quot;AI-driven lead management and client nurturing boost conversion rates&quot;
   },
   {
     icon: Clock,
-    title: "Save 25+ Hours Weekly",
-    description: "Automate repetitive tasks like lead follow-up and listing management"
+    title: &quot;Save 25+ Hours Weekly&quot;,
+    description: &quot;Automate repetitive tasks like lead follow-up and listing management&quot;
   },
   {
     icon: Target,
-    title: "Improve Client Satisfaction",
-    description: "Faster response times and personalized service increase client retention"
+    title: &quot;Improve Client Satisfaction&quot;,
+    description: &quot;Faster response times and personalized service increase client retention&quot;
   }
 ];
 
 const caseStudies = [
   {
-    business: "Real Estate Agency",
-    challenge: "Manual lead management and client communication",
-    solution: "AI lead management and automated CRM",
-    results: "50% increase in lead conversion, 40% improvement in client response time"
+    business: &quot;Real Estate Agency&quot;,
+    challenge: &quot;Manual lead management and client communication&quot;,
+    solution: &quot;AI lead management and automated CRM&quot;,
+    results: &quot;50% increase in lead conversion, 40% improvement in client response time&quot;
   },
   {
-    business: "Property Management Company",
-    challenge: "Time-consuming tenant screening and maintenance requests",
-    solution: "AI tenant screening and maintenance automation",
-    results: "60% faster tenant processing, 35% reduction in maintenance response time"
+    business: &quot;Property Management Company&quot;,
+    challenge: &quot;Time-consuming tenant screening and maintenance requests&quot;,
+    solution: &quot;AI tenant screening and maintenance automation&quot;,
+    results: &quot;60% faster tenant processing, 35% reduction in maintenance response time&quot;
   },
   {
-    business: "Real Estate Broker",
-    challenge: "Complex transaction coordination and document management",
-    solution: "AI transaction management and document automation",
-    results: "45% faster transaction processing, 30% reduction in errors"
+    business: &quot;Real Estate Broker&quot;,
+    challenge: &quot;Complex transaction coordination and document management&quot;,
+    solution: &quot;AI transaction management and document automation&quot;,
+    results: &quot;45% faster transaction processing, 30% reduction in errors&quot;
   }
 ];
 
 const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "AI Automation for Real Estate",
-  "description": "Transform your real estate business with AI automation including lead management, property listings, client communication, and transaction automation.",
-  "provider": {
-    "@type": "Organization",
-    "name": "Automations and More",
-    "url": "https://automationsandmore.com"
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;Service&quot;,
+  &quot;name&quot;: &quot;AI Automation for Real Estate&quot;,
+  &quot;description&quot;: &quot;Transform your real estate business with AI automation including lead management, property listings, client communication, and transaction automation.&quot;,
+  &quot;provider&quot;: {
+    &quot;@type&quot;: &quot;Organization&quot;,
+    &quot;name&quot;: &quot;Automations and More&quot;,
+    &quot;url&quot;: &quot;https://automationsandmore.com&quot;
   },
-  "serviceType": "Real Estate AI Automation",
-  "areaServed": "United States",
-  "audience": {
-    "@type": "BusinessAudience",
-    "audienceType": "Real Estate Professionals and Property Managers"
+  &quot;serviceType&quot;: &quot;Real Estate AI Automation&quot;,
+  &quot;areaServed&quot;: &quot;United States&quot;,
+  &quot;audience&quot;: {
+    &quot;@type&quot;: &quot;BusinessAudience&quot;,
+    &quot;audienceType&quot;: &quot;Real Estate Professionals and Property Managers&quot;
   },
-  "offers": {
-    "@type": "Offer",
-    "description": "AI automation solutions for real estate businesses",
-    "category": "Real Estate Automation Services"
+  &quot;offers&quot;: {
+    &quot;@type&quot;: &quot;Offer&quot;,
+    &quot;description&quot;: &quot;AI automation solutions for real estate businesses&quot;,
+    &quot;category&quot;: &quot;Real Estate Automation Services&quot;
   }
 };
 
 export default function RealEstatePage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className=&quot;min-h-screen bg-background&quot;>
       <script
-        type="application/ld+json"
+        type=&quot;application/ld+json&quot;
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="secondary" className="mb-6">
+      <section className=&quot;relative py-20 lg:py-32&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;max-w-4xl mx-auto text-center&quot;>
+            <Badge variant=&quot;secondary&quot; className=&quot;mb-6&quot;>
               Real Estate AI Solutions
             </Badge>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-              Transform Your{" "}
-              <span className="bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
+            <h1 className=&quot;text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6&quot;>
+              Transform Your{&quot; &quot;}
+              <span className=&quot;bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent&quot;>
                 Real Estate Business
-              </span>{" "}
+              </span>{&quot; &quot;}
               with AI
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+            <p className=&quot;text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto&quot;>
               From lead management to transaction automation, AI helps real estate professionals 
               close more deals, provide better service, and grow their business.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" asChild className="text-lg px-8 py-6">
-                <Link href="/contact">
+            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
+              <Button size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
+                <Link href=&quot;/contact&quot;>
                   Get Your Real Estate AI Solution
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className=&quot;ml-2 h-5 w-5&quot; />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" asChild className="text-lg px-8 py-6">
-                <Link href="#solutions">
+              <Button variant=&quot;outline&quot; size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
+                <Link href=&quot;#solutions&quot;>
                   View Solutions
                 </Link>
               </Button>
@@ -200,28 +200,28 @@ export default function RealEstatePage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section className=&quot;py-20 bg-muted/30&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;text-center mb-16&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
               Why Real Estate Professionals Choose AI Automation
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
               Real estate professionals are using AI to streamline operations, improve client experiences, 
               and close more deals in a competitive market.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className=&quot;grid md:grid-cols-3 gap-8&quot;>
             {benefits.map((benefit, index) => (
-              <Card key={index} className="text-center">
+              <Card key={index} className=&quot;text-center&quot;>
                 <CardHeader>
-                  <div className="mx-auto mb-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <benefit.icon className="h-6 w-6 text-primary" />
+                  <div className=&quot;mx-auto mb-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center&quot;>
+                    <benefit.icon className=&quot;h-6 w-6 text-primary&quot; />
                   </div>
                   <CardTitle>{benefit.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-base">
+                  <CardDescription className=&quot;text-base&quot;>
                     {benefit.description}
                   </CardDescription>
                 </CardContent>
@@ -232,34 +232,34 @@ export default function RealEstatePage() {
       </section>
 
       {/* Solutions Section */}
-      <section id="solutions" className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section id=&quot;solutions&quot; className=&quot;py-20&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;text-center mb-16&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
               AI Solutions for Real Estate Professionals
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
               Comprehensive AI automation solutions designed specifically for real estate agents, 
               brokers, and property management companies.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className=&quot;grid md:grid-cols-2 gap-8&quot;>
             {realEstateSolutions.map((solution, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-shadow">
+              <Card key={index} className=&quot;group hover:shadow-lg transition-shadow&quot;>
                 <CardHeader>
-                  <div className="mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <solution.icon className="h-6 w-6 text-primary" />
+                  <div className=&quot;mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors&quot;>
+                    <solution.icon className=&quot;h-6 w-6 text-primary&quot; />
                   </div>
-                  <CardTitle className="text-xl">{solution.title}</CardTitle>
-                  <CardDescription className="text-base">
+                  <CardTitle className=&quot;text-xl&quot;>{solution.title}</CardTitle>
+                  <CardDescription className=&quot;text-base&quot;>
                     {solution.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2">
+                  <ul className=&quot;space-y-2&quot;>
                     {solution.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-sm">
-                        <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
+                      <li key={featureIndex} className=&quot;flex items-center text-sm&quot;>
+                        <CheckCircle className=&quot;h-4 w-4 text-green-500 mr-2 flex-shrink-0&quot; />
                         {feature}
                       </li>
                     ))}
@@ -272,41 +272,41 @@ export default function RealEstatePage() {
       </section>
 
       {/* Real Estate Types Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section className=&quot;py-20 bg-muted/30&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;text-center mb-16&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
               AI Solutions for Every Real Estate Professional
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Whether you're a real estate agent, broker, property manager, or investor, 
+            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
+              Whether you&apos;re a real estate agent, broker, property manager, or investor, 
               we have AI solutions tailored to your specific needs.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className=&quot;grid md:grid-cols-3 gap-6&quot;>
             <Card>
-              <CardContent className="p-6 text-center">
-                <Home className="h-12 w-12 mx-auto text-primary mb-4" />
-                <h3 className="font-semibold text-lg mb-2">Real Estate Agents</h3>
-                <p className="text-sm text-muted-foreground">
+              <CardContent className=&quot;p-6 text-center&quot;>
+                <Home className=&quot;h-12 w-12 mx-auto text-primary mb-4&quot; />
+                <h3 className=&quot;font-semibold text-lg mb-2&quot;>Real Estate Agents</h3>
+                <p className=&quot;text-sm text-muted-foreground&quot;>
                   Lead management, client communication, and transaction automation
                 </p>
               </CardContent>
             </Card>
             <Card>
-              <CardContent className="p-6 text-center">
-                <Building2 className="h-12 w-12 mx-auto text-primary mb-4" />
-                <h3 className="font-semibold text-lg mb-2">Property Managers</h3>
-                <p className="text-sm text-muted-foreground">
+              <CardContent className=&quot;p-6 text-center&quot;>
+                <Building2 className=&quot;h-12 w-12 mx-auto text-primary mb-4&quot; />
+                <h3 className=&quot;font-semibold text-lg mb-2&quot;>Property Managers</h3>
+                <p className=&quot;text-sm text-muted-foreground&quot;>
                   Tenant management, maintenance coordination, and rent collection
                 </p>
               </CardContent>
             </Card>
             <Card>
-              <CardContent className="p-6 text-center">
-                <BarChart3 className="h-12 w-12 mx-auto text-primary mb-4" />
-                <h3 className="font-semibold text-lg mb-2">Real Estate Investors</h3>
-                <p className="text-sm text-muted-foreground">
+              <CardContent className=&quot;p-6 text-center&quot;>
+                <BarChart3 className=&quot;h-12 w-12 mx-auto text-primary mb-4&quot; />
+                <h3 className=&quot;font-semibold text-lg mb-2&quot;>Real Estate Investors</h3>
+                <p className=&quot;text-sm text-muted-foreground&quot;>
                   Market analysis, property evaluation, and investment tracking
                 </p>
               </CardContent>
@@ -316,39 +316,39 @@ export default function RealEstatePage() {
       </section>
 
       {/* Case Studies Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section className=&quot;py-20&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;text-center mb-16&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
               Real Results from Real Estate Professionals
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
               See how real estate professionals have transformed their businesses with AI automation.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className=&quot;grid md:grid-cols-3 gap-8&quot;>
             {caseStudies.map((study, index) => (
               <Card key={index}>
                 <CardHeader>
-                  <div className="flex items-center mb-2">
+                  <div className=&quot;flex items-center mb-2&quot;>
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star key={i} className=&quot;h-4 w-4 fill-yellow-400 text-yellow-400&quot; />
                     ))}
                   </div>
-                  <CardTitle className="text-lg">{study.business}</CardTitle>
+                  <CardTitle className=&quot;text-lg&quot;>{study.business}</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                <CardContent className=&quot;space-y-4&quot;>
                   <div>
-                    <h4 className="font-semibold text-sm text-muted-foreground mb-1">Challenge:</h4>
-                    <p className="text-sm">{study.challenge}</p>
+                    <h4 className=&quot;font-semibold text-sm text-muted-foreground mb-1&quot;>Challenge:</h4>
+                    <p className=&quot;text-sm&quot;>{study.challenge}</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm text-muted-foreground mb-1">Solution:</h4>
-                    <p className="text-sm">{study.solution}</p>
+                    <h4 className=&quot;font-semibold text-sm text-muted-foreground mb-1&quot;>Solution:</h4>
+                    <p className=&quot;text-sm&quot;>{study.solution}</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm text-muted-foreground mb-1">Results:</h4>
-                    <p className="text-sm font-medium text-green-600">{study.results}</p>
+                    <h4 className=&quot;font-semibold text-sm text-muted-foreground mb-1&quot;>Results:</h4>
+                    <p className=&quot;text-sm font-medium text-green-600&quot;>{study.results}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -358,25 +358,25 @@ export default function RealEstatePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      <section className=&quot;py-20 bg-muted/30&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;max-w-4xl mx-auto text-center&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-6&quot;>
               Ready to Transform Your Real Estate Business?
             </h2>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className=&quot;text-xl text-muted-foreground mb-8&quot;>
               Join real estate professionals who have already embraced AI automation to improve efficiency, 
-              client satisfaction, and sales performance. Let's discuss your specific needs.
+              client satisfaction, and sales performance. Let&apos;s discuss your specific needs.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" asChild className="text-lg px-8 py-6">
-                <Link href="/contact">
+            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
+              <Button size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
+                <Link href=&quot;/contact&quot;>
                   Start Your Real Estate AI Journey
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className=&quot;ml-2 h-5 w-5&quot; />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" asChild className="text-lg px-8 py-6">
-                <Link href="/services/ai-automation">
+              <Button variant=&quot;outline&quot; size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
+                <Link href=&quot;/services/ai-automation&quot;>
                   Learn About Our Services
                 </Link>
               </Button>
@@ -386,39 +386,39 @@ export default function RealEstatePage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t py-12 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="md:col-span-2">
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="h-8 w-8 rounded bg-primary flex items-center justify-center">
-                  <Zap className="h-5 w-5 text-primary-foreground" />
+      <footer className=&quot;border-t py-12 bg-background&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;grid md:grid-cols-4 gap-8&quot;>
+            <div className=&quot;md:col-span-2&quot;>
+              <div className=&quot;flex items-center space-x-2 mb-4&quot;>
+                <div className=&quot;h-8 w-8 rounded bg-primary flex items-center justify-center&quot;>
+                  <Zap className=&quot;h-5 w-5 text-primary-foreground&quot; />
                 </div>
-                <span className="font-bold text-xl">Automations & More</span>
+                <span className=&quot;font-bold text-xl&quot;>Automations & More</span>
               </div>
-              <p className="text-muted-foreground mb-4 max-w-md">
+              <p className=&quot;text-muted-foreground mb-4 max-w-md&quot;>
                 Helping real estate professionals leverage AI for lead management, 
                 client communication, and transaction automation.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Real Estate Solutions</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link href="/services/ai-automation" className="hover:text-foreground">AI Automation</Link></li>
-                <li><Link href="/services/websites" className="hover:text-foreground">Real Estate Websites</Link></li>
-                <li><Link href="/services/apps" className="hover:text-foreground">Real Estate Apps</Link></li>
+              <h3 className=&quot;font-semibold mb-4&quot;>Real Estate Solutions</h3>
+              <ul className=&quot;space-y-2 text-sm text-muted-foreground&quot;>
+                <li><Link href=&quot;/services/ai-automation&quot; className=&quot;hover:text-foreground&quot;>AI Automation</Link></li>
+                <li><Link href=&quot;/services/websites&quot; className=&quot;hover:text-foreground&quot;>Real Estate Websites</Link></li>
+                <li><Link href=&quot;/services/apps&quot; className=&quot;hover:text-foreground&quot;>Real Estate Apps</Link></li>
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Company</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link href="/about" className="hover:text-foreground">About</Link></li>
-                <li><Link href="/contact" className="hover:text-foreground">Contact</Link></li>
-                <li><Link href="/industries" className="hover:text-foreground">All Industries</Link></li>
+              <h3 className=&quot;font-semibold mb-4&quot;>Company</h3>
+              <ul className=&quot;space-y-2 text-sm text-muted-foreground&quot;>
+                <li><Link href=&quot;/about&quot; className=&quot;hover:text-foreground&quot;>About</Link></li>
+                <li><Link href=&quot;/contact&quot; className=&quot;hover:text-foreground&quot;>Contact</Link></li>
+                <li><Link href=&quot;/industries&quot; className=&quot;hover:text-foreground&quot;>All Industries</Link></li>
               </ul>
             </div>
           </div>
-          <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
+          <div className=&quot;border-t mt-8 pt-8 text-center text-sm text-muted-foreground&quot;>
             <p>&copy; 2024 Automations and More. All rights reserved.</p>
           </div>
         </div>

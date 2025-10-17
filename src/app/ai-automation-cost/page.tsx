@@ -1,11 +1,11 @@
-import { Metadata } from "next";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Navigation } from "@/components/navigation";
-import { TidyCalIframe } from "@/components/tidycal-iframe";
-import { TidyCalPopup } from "@/components/tidycal-popup";
+import { Metadata } from &quot;next&quot;;
+import Link from &quot;next/link&quot;;
+import { Button } from &quot;@/components/ui/button&quot;;
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from &quot;@/components/ui/card&quot;;
+import { Badge } from &quot;@/components/ui/badge&quot;;
+import { Navigation } from &quot;@/components/navigation&quot;;
+import { TidyCalIframe } from &quot;@/components/tidycal-iframe&quot;;
+import { TidyCalPopup } from &quot;@/components/tidycal-popup&quot;;
 import { 
   Zap, 
   DollarSign, 
@@ -20,80 +20,80 @@ import {
   Star,
   Phone,
   Mail
-} from "lucide-react";
+} from &quot;lucide-react&quot;;
 
 export const metadata: Metadata = {
-  title: "AI Automation Cost - How Much Does Business Automation Cost? (2024 Pricing)",
-  description: "Get transparent AI automation pricing for your business. Learn about AI automation costs, ROI, and pricing models. Free consultation and custom quotes available.",
+  title: &quot;AI Automation Cost - How Much Does Business Automation Cost? (2024 Pricing)&quot;,
+  description: &quot;Get transparent AI automation pricing for your business. Learn about AI automation costs, ROI, and pricing models. Free consultation and custom quotes available.&quot;,
   keywords: [
-    "AI automation cost",
-    "business automation pricing",
-    "AI automation pricing",
-    "automation cost calculator",
-    "AI automation ROI",
-    "business process automation cost",
-    "workflow automation pricing",
-    "AI automation investment",
-    "automation services cost",
-    "AI automation budget",
-    "small business automation cost",
-    "enterprise automation pricing"
+    &quot;AI automation cost&quot;,
+    &quot;business automation pricing&quot;,
+    &quot;AI automation pricing&quot;,
+    &quot;automation cost calculator&quot;,
+    &quot;AI automation ROI&quot;,
+    &quot;business process automation cost&quot;,
+    &quot;workflow automation pricing&quot;,
+    &quot;AI automation investment&quot;,
+    &quot;automation services cost&quot;,
+    &quot;AI automation budget&quot;,
+    &quot;small business automation cost&quot;,
+    &quot;enterprise automation pricing&quot;
   ],
   openGraph: {
-    title: "AI Automation Cost - How Much Does Business Automation Cost? (2024 Pricing)",
-    description: "Get transparent AI automation pricing for your business. Learn about AI automation costs, ROI, and pricing models.",
-    url: "https://automationsandmore.com/ai-automation-cost",
+    title: &quot;AI Automation Cost - How Much Does Business Automation Cost? (2024 Pricing)&quot;,
+    description: &quot;Get transparent AI automation pricing for your business. Learn about AI automation costs, ROI, and pricing models.&quot;,
+    url: &quot;https://automationsandmore.com/ai-automation-cost&quot;,
   },
   alternates: {
-    canonical: "/ai-automation-cost",
+    canonical: &quot;/ai-automation-cost&quot;,
   },
 };
 
 const pricingTiers = [
   {
-    name: "Starter Package",
-    price: "$2,500",
-    period: "one-time setup",
-    description: "Perfect for small businesses getting started with AI automation",
+    name: &quot;Starter Package&quot;,
+    price: &quot;$2,500&quot;,
+    period: &quot;one-time setup&quot;,
+    description: &quot;Perfect for small businesses getting started with AI automation&quot;,
     features: [
-      "Basic workflow automation",
-      "Email automation setup",
-      "Data integration (up to 3 systems)",
-      "Training and documentation",
-      "30 days support",
-      "ROI tracking dashboard"
+      &quot;Basic workflow automation&quot;,
+      &quot;Email automation setup&quot;,
+      &quot;Data integration (up to 3 systems)&quot;,
+      &quot;Training and documentation&quot;,
+      &quot;30 days support&quot;,
+      &quot;ROI tracking dashboard&quot;
     ],
     popular: false
   },
   {
-    name: "Professional Package",
-    price: "$5,000",
-    period: "one-time setup",
-    description: "Comprehensive automation for growing businesses",
+    name: &quot;Professional Package&quot;,
+    price: &quot;$5,000&quot;,
+    period: &quot;one-time setup&quot;,
+    description: &quot;Comprehensive automation for growing businesses&quot;,
     features: [
-      "Advanced workflow automation",
-      "Multi-channel communication automation",
-      "Data integration (up to 10 systems)",
-      "Custom AI chatbot",
-      "Analytics and reporting",
-      "90 days support",
-      "Monthly optimization sessions"
+      &quot;Advanced workflow automation&quot;,
+      &quot;Multi-channel communication automation&quot;,
+      &quot;Data integration (up to 10 systems)&quot;,
+      &quot;Custom AI chatbot&quot;,
+      &quot;Analytics and reporting&quot;,
+      &quot;90 days support&quot;,
+      &quot;Monthly optimization sessions&quot;
     ],
     popular: true
   },
   {
-    name: "Enterprise Package",
-    price: "$10,000+",
-    period: "one-time setup",
-    description: "Full-scale automation for large businesses",
+    name: &quot;Enterprise Package&quot;,
+    price: &quot;$10,000+&quot;,
+    period: &quot;one-time setup&quot;,
+    description: &quot;Full-scale automation for large businesses&quot;,
     features: [
-      "Complete business process automation",
-      "Custom AI solutions",
-      "Unlimited system integrations",
-      "Advanced AI analytics",
-      "Dedicated account manager",
-      "6 months support",
-      "Quarterly strategy reviews"
+      &quot;Complete business process automation&quot;,
+      &quot;Custom AI solutions&quot;,
+      &quot;Unlimited system integrations&quot;,
+      &quot;Advanced AI analytics&quot;,
+      &quot;Dedicated account manager&quot;,
+      &quot;6 months support&quot;,
+      &quot;Quarterly strategy reviews&quot;
     ],
     popular: false
   }
@@ -101,87 +101,87 @@ const pricingTiers = [
 
 const costFactors = [
   {
-    factor: "Complexity of Processes",
-    description: "More complex workflows require more development time and higher costs",
-    impact: "High"
+    factor: &quot;Complexity of Processes&quot;,
+    description: &quot;More complex workflows require more development time and higher costs&quot;,
+    impact: &quot;High&quot;
   },
   {
-    factor: "Number of Integrations",
-    description: "Each system integration adds to the overall cost",
-    impact: "Medium"
+    factor: &quot;Number of Integrations&quot;,
+    description: &quot;Each system integration adds to the overall cost&quot;,
+    impact: &quot;Medium&quot;
   },
   {
-    factor: "Custom AI Features",
-    description: "Advanced AI features like machine learning models cost more",
-    impact: "High"
+    factor: &quot;Custom AI Features&quot;,
+    description: &quot;Advanced AI features like machine learning models cost more&quot;,
+    impact: &quot;High&quot;
   },
   {
-    factor: "Data Volume",
-    description: "Larger data volumes may require more robust infrastructure",
-    impact: "Medium"
+    factor: &quot;Data Volume&quot;,
+    description: &quot;Larger data volumes may require more robust infrastructure&quot;,
+    impact: &quot;Medium&quot;
   },
   {
-    factor: "Timeline",
-    description: "Rush projects may incur additional costs",
-    impact: "Low"
+    factor: &quot;Timeline&quot;,
+    description: &quot;Rush projects may incur additional costs&quot;,
+    impact: &quot;Low&quot;
   }
 ];
 
 const roiExamples = [
   {
-    business: "Retail Store",
-    investment: "$3,500",
-    monthlySavings: "$2,800",
-    roi: "800%",
-    timeframe: "12 months"
+    business: &quot;Retail Store&quot;,
+    investment: &quot;$3,500&quot;,
+    monthlySavings: &quot;$2,800&quot;,
+    roi: &quot;800%&quot;,
+    timeframe: &quot;12 months&quot;
   },
   {
-    business: "Restaurant",
-    investment: "$4,200",
-    monthlySavings: "$3,500",
-    roi: "900%",
-    timeframe: "12 months"
+    business: &quot;Restaurant&quot;,
+    investment: &quot;$4,200&quot;,
+    monthlySavings: &quot;$3,500&quot;,
+    roi: &quot;900%&quot;,
+    timeframe: &quot;12 months&quot;
   },
   {
-    business: "Professional Services",
-    investment: "$5,000",
-    monthlySavings: "$4,200",
-    roi: "840%",
-    timeframe: "12 months"
+    business: &quot;Professional Services&quot;,
+    investment: &quot;$5,000&quot;,
+    monthlySavings: &quot;$4,200&quot;,
+    roi: &quot;840%&quot;,
+    timeframe: &quot;12 months&quot;
   }
 ];
 
 const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "AI Automation Cost - Business Automation Pricing",
-  "description": "Comprehensive guide to AI automation costs, pricing models, and ROI for businesses of all sizes.",
-  "url": "https://automationsandmore.com/ai-automation-cost",
-  "mainEntity": {
-    "@type": "Service",
-    "name": "AI Automation Services",
-    "provider": {
-      "@type": "Organization",
-      "name": "Automations and More"
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;WebPage&quot;,
+  &quot;name&quot;: &quot;AI Automation Cost - Business Automation Pricing&quot;,
+  &quot;description&quot;: &quot;Comprehensive guide to AI automation costs, pricing models, and ROI for businesses of all sizes.&quot;,
+  &quot;url&quot;: &quot;https://automationsandmore.com/ai-automation-cost&quot;,
+  &quot;mainEntity&quot;: {
+    &quot;@type&quot;: &quot;Service&quot;,
+    &quot;name&quot;: &quot;AI Automation Services&quot;,
+    &quot;provider&quot;: {
+      &quot;@type&quot;: &quot;Organization&quot;,
+      &quot;name&quot;: &quot;Automations and More&quot;
     },
-    "offers": [
+    &quot;offers&quot;: [
       {
-        "@type": "Offer",
-        "name": "Starter Package",
-        "price": "2500",
-        "priceCurrency": "USD"
+        &quot;@type&quot;: &quot;Offer&quot;,
+        &quot;name&quot;: &quot;Starter Package&quot;,
+        &quot;price&quot;: &quot;2500&quot;,
+        &quot;priceCurrency&quot;: &quot;USD&quot;
       },
       {
-        "@type": "Offer", 
-        "name": "Professional Package",
-        "price": "5000",
-        "priceCurrency": "USD"
+        &quot;@type&quot;: &quot;Offer&quot;, 
+        &quot;name&quot;: &quot;Professional Package&quot;,
+        &quot;price&quot;: &quot;5000&quot;,
+        &quot;priceCurrency&quot;: &quot;USD&quot;
       },
       {
-        "@type": "Offer",
-        "name": "Enterprise Package", 
-        "price": "10000",
-        "priceCurrency": "USD"
+        &quot;@type&quot;: &quot;Offer&quot;,
+        &quot;name&quot;: &quot;Enterprise Package&quot;, 
+        &quot;price&quot;: &quot;10000&quot;,
+        &quot;priceCurrency&quot;: &quot;USD&quot;
       }
     ]
   }
@@ -189,40 +189,40 @@ const jsonLd = {
 
 export default function AIAutomationCostPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className=&quot;min-h-screen bg-background&quot;>
       <script
-        type="application/ld+json"
+        type=&quot;application/ld+json&quot;
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="secondary" className="mb-6">
+      <section className=&quot;relative py-20 lg:py-32&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;max-w-4xl mx-auto text-center&quot;>
+            <Badge variant=&quot;secondary&quot; className=&quot;mb-6&quot;>
               Transparent AI Automation Pricing
             </Badge>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-              AI Automation{" "}
-              <span className="bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
+            <h1 className=&quot;text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6&quot;>
+              AI Automation{&quot; &quot;}
+              <span className=&quot;bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent&quot;>
                 Cost & Pricing
-              </span>{" "}
+              </span>{&quot; &quot;}
               Guide 2024
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+            <p className=&quot;text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto&quot;>
               Get transparent pricing for AI automation services. Learn about costs, ROI, and find the perfect 
               automation package for your business size and needs.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
               <TidyCalPopup 
-                path="abhixchawla/automations-and-more-consultation"
-                triggerText="Get Free Cost Estimate"
-                triggerSize="lg"
-                className="text-lg px-8 py-6"
+                path=&quot;abhixchawla/automations-and-more-consultation&quot;
+                triggerText=&quot;Get Free Cost Estimate&quot;
+                triggerSize=&quot;lg&quot;
+                className=&quot;text-lg px-8 py-6&quot;
               />
-              <Button variant="outline" size="lg" asChild className="text-lg px-8 py-6">
-                <Link href="tel:+15878049266">
+              <Button variant=&quot;outline&quot; size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
+                <Link href=&quot;tel:+15878049266&quot;>
                   Call (587) 804-9266
                 </Link>
               </Button>
@@ -232,33 +232,33 @@ export default function AIAutomationCostPage() {
       </section>
 
       {/* Quick Answer Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <Card className="border-2 border-primary/20">
-              <CardHeader className="text-center">
-                <div className="mx-auto mb-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <DollarSign className="h-6 w-6 text-primary" />
+      <section className=&quot;py-20 bg-muted/30&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;max-w-4xl mx-auto&quot;>
+            <Card className=&quot;border-2 border-primary/20&quot;>
+              <CardHeader className=&quot;text-center&quot;>
+                <div className=&quot;mx-auto mb-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center&quot;>
+                  <DollarSign className=&quot;h-6 w-6 text-primary&quot; />
                 </div>
-                <CardTitle className="text-2xl">Quick Answer: How Much Does AI Automation Cost?</CardTitle>
+                <CardTitle className=&quot;text-2xl&quot;>Quick Answer: How Much Does AI Automation Cost?</CardTitle>
               </CardHeader>
-              <CardContent className="text-center">
-                <p className="text-lg text-muted-foreground mb-6">
+              <CardContent className=&quot;text-center&quot;>
+                <p className=&quot;text-lg text-muted-foreground mb-6&quot;>
                   AI automation typically costs between <strong>$2,500 - $10,000+</strong> for initial setup, 
                   with most businesses seeing <strong>300-900% ROI</strong> within the first year.
                 </p>
-                <div className="grid md:grid-cols-3 gap-4 text-center">
+                <div className=&quot;grid md:grid-cols-3 gap-4 text-center&quot;>
                   <div>
-                    <div className="text-2xl font-bold text-primary">$2,500</div>
-                    <div className="text-sm text-muted-foreground">Small Business</div>
+                    <div className=&quot;text-2xl font-bold text-primary&quot;>$2,500</div>
+                    <div className=&quot;text-sm text-muted-foreground&quot;>Small Business</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-primary">$5,000</div>
-                    <div className="text-sm text-muted-foreground">Medium Business</div>
+                    <div className=&quot;text-2xl font-bold text-primary&quot;>$5,000</div>
+                    <div className=&quot;text-sm text-muted-foreground&quot;>Medium Business</div>
                   </div>
                   <div>
-                    <div className="text-2xl font-bold text-primary">$10,000+</div>
-                    <div className="text-sm text-muted-foreground">Enterprise</div>
+                    <div className=&quot;text-2xl font-bold text-primary&quot;>$10,000+</div>
+                    <div className=&quot;text-sm text-muted-foreground&quot;>Enterprise</div>
                   </div>
                 </div>
               </CardContent>
@@ -268,43 +268,43 @@ export default function AIAutomationCostPage() {
       </section>
 
       {/* Pricing Packages */}
-      <section id="pricing" className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section id=&quot;pricing&quot; className=&quot;py-20&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;text-center mb-16&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
               AI Automation Pricing Packages
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
               Choose the perfect automation package for your business needs and budget.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className=&quot;grid md:grid-cols-3 gap-8&quot;>
             {pricingTiers.map((tier, index) => (
-              <Card key={index} className={`relative ${tier.popular ? 'border-2 border-primary shadow-lg' : ''}`}>
+              <Card key={index} className={`relative ${tier.popular ? &apos;border-2 border-primary shadow-lg&apos; : &apos;&apos;}`}>
                 {tier.popular && (
-                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <Badge className="bg-primary text-primary-foreground">Most Popular</Badge>
+                  <div className=&quot;absolute -top-3 left-1/2 transform -translate-x-1/2&quot;>
+                    <Badge className=&quot;bg-primary text-primary-foreground&quot;>Most Popular</Badge>
                   </div>
                 )}
-                <CardHeader className="text-center">
-                  <CardTitle className="text-xl">{tier.name}</CardTitle>
-                  <div className="text-3xl font-bold text-primary">{tier.price}</div>
-                  <div className="text-sm text-muted-foreground">{tier.period}</div>
-                  <CardDescription className="text-base mt-2">
+                <CardHeader className=&quot;text-center&quot;>
+                  <CardTitle className=&quot;text-xl&quot;>{tier.name}</CardTitle>
+                  <div className=&quot;text-3xl font-bold text-primary&quot;>{tier.price}</div>
+                  <div className=&quot;text-sm text-muted-foreground&quot;>{tier.period}</div>
+                  <CardDescription className=&quot;text-base mt-2&quot;>
                     {tier.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-3 mb-6">
+                  <ul className=&quot;space-y-3 mb-6&quot;>
                     {tier.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-sm">
-                        <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
+                      <li key={featureIndex} className=&quot;flex items-center text-sm&quot;>
+                        <CheckCircle className=&quot;h-4 w-4 text-green-500 mr-2 flex-shrink-0&quot; />
                         {feature}
                       </li>
                     ))}
                   </ul>
-                  <Button asChild className="w-full" variant={tier.popular ? "default" : "outline"}>
-                    <Link href="/contact">
+                  <Button asChild className=&quot;w-full&quot; variant={tier.popular ? &quot;default&quot; : &quot;outline&quot;}>
+                    <Link href=&quot;/contact&quot;>
                       Get Started
                     </Link>
                   </Button>
@@ -316,23 +316,23 @@ export default function AIAutomationCostPage() {
       </section>
 
       {/* Cost Factors */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section className=&quot;py-20 bg-muted/30&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;text-center mb-16&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
               What Affects AI Automation Cost?
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
               Understanding the factors that influence automation pricing helps you budget effectively.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className=&quot;grid md:grid-cols-2 lg:grid-cols-3 gap-6&quot;>
             {costFactors.map((factor, index) => (
               <Card key={index}>
                 <CardHeader>
-                  <div className="flex items-center justify-between">
-                    <CardTitle className="text-lg">{factor.factor}</CardTitle>
-                    <Badge variant={factor.impact === 'High' ? 'destructive' : factor.impact === 'Medium' ? 'default' : 'secondary'}>
+                  <div className=&quot;flex items-center justify-between&quot;>
+                    <CardTitle className=&quot;text-lg&quot;>{factor.factor}</CardTitle>
+                    <Badge variant={factor.impact === &apos;High&apos; ? &apos;destructive&apos; : factor.impact === &apos;Medium&apos; ? &apos;default&apos; : &apos;secondary&apos;}>
                       {factor.impact} Impact
                     </Badge>
                   </div>
@@ -347,42 +347,42 @@ export default function AIAutomationCostPage() {
       </section>
 
       {/* ROI Examples */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section className=&quot;py-20&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;text-center mb-16&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
               Real ROI Examples from Our Clients
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
               See how businesses like yours are saving money and time with AI automation.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className=&quot;grid md:grid-cols-3 gap-8&quot;>
             {roiExamples.map((example, index) => (
-              <Card key={index} className="text-center">
+              <Card key={index} className=&quot;text-center&quot;>
                 <CardHeader>
-                  <div className="mx-auto mb-4 h-12 w-12 rounded-full bg-green-100 flex items-center justify-center">
-                    <TrendingUp className="h-6 w-6 text-green-600" />
+                  <div className=&quot;mx-auto mb-4 h-12 w-12 rounded-full bg-green-100 flex items-center justify-center&quot;>
+                    <TrendingUp className=&quot;h-6 w-6 text-green-600&quot; />
                   </div>
-                  <CardTitle className="text-lg">{example.business}</CardTitle>
+                  <CardTitle className=&quot;text-lg&quot;>{example.business}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-3">
+                  <div className=&quot;space-y-3&quot;>
                     <div>
-                      <div className="text-sm text-muted-foreground">Investment</div>
-                      <div className="text-xl font-bold">{example.investment}</div>
+                      <div className=&quot;text-sm text-muted-foreground&quot;>Investment</div>
+                      <div className=&quot;text-xl font-bold&quot;>{example.investment}</div>
                     </div>
                     <div>
-                      <div className="text-sm text-muted-foreground">Monthly Savings</div>
-                      <div className="text-xl font-bold text-green-600">{example.monthlySavings}</div>
+                      <div className=&quot;text-sm text-muted-foreground&quot;>Monthly Savings</div>
+                      <div className=&quot;text-xl font-bold text-green-600&quot;>{example.monthlySavings}</div>
                     </div>
                     <div>
-                      <div className="text-sm text-muted-foreground">ROI</div>
-                      <div className="text-2xl font-bold text-primary">{example.roi}</div>
+                      <div className=&quot;text-sm text-muted-foreground&quot;>ROI</div>
+                      <div className=&quot;text-2xl font-bold text-primary&quot;>{example.roi}</div>
                     </div>
                     <div>
-                      <div className="text-sm text-muted-foreground">Timeframe</div>
-                      <div className="text-lg font-semibold">{example.timeframe}</div>
+                      <div className=&quot;text-sm text-muted-foreground&quot;>Timeframe</div>
+                      <div className=&quot;text-lg font-semibold&quot;>{example.timeframe}</div>
                     </div>
                   </div>
                 </CardContent>
@@ -393,24 +393,24 @@ export default function AIAutomationCostPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section className=&quot;py-20 bg-muted/30&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;max-w-3xl mx-auto&quot;>
+            <div className=&quot;text-center mb-16&quot;>
+              <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
                 AI Automation Cost FAQ
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className=&quot;text-xl text-muted-foreground&quot;>
                 Common questions about AI automation pricing and costs.
               </p>
             </div>
-            <div className="space-y-6">
+            <div className=&quot;space-y-6&quot;>
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">Is there a monthly fee for AI automation?</CardTitle>
+                  <CardTitle className=&quot;text-lg&quot;>Is there a monthly fee for AI automation?</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">
+                  <p className=&quot;text-muted-foreground&quot;>
                     Our pricing is primarily one-time setup costs. We offer optional monthly maintenance and optimization 
                     services starting at $500/month for ongoing support and improvements.
                   </p>
@@ -418,10 +418,10 @@ export default function AIAutomationCostPage() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">How quickly will I see ROI from AI automation?</CardTitle>
+                  <CardTitle className=&quot;text-lg&quot;>How quickly will I see ROI from AI automation?</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">
+                  <p className=&quot;text-muted-foreground&quot;>
                     Most businesses start seeing ROI within 2-3 months, with full payback typically achieved within 
                     6-12 months. The exact timeline depends on your specific use cases and implementation.
                   </p>
@@ -429,10 +429,10 @@ export default function AIAutomationCostPage() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">Do you offer payment plans for AI automation?</CardTitle>
+                  <CardTitle className=&quot;text-lg&quot;>Do you offer payment plans for AI automation?</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">
+                  <p className=&quot;text-muted-foreground&quot;>
                     Yes, we offer flexible payment plans including 50% upfront and 50% upon completion, or monthly 
                     installments over 3-6 months for qualifying businesses.
                   </p>
@@ -440,10 +440,10 @@ export default function AIAutomationCostPage() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">What's included in the initial cost?</CardTitle>
+                  <CardTitle className=&quot;text-lg&quot;>What&apos;s included in the initial cost?</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">
+                  <p className=&quot;text-muted-foreground&quot;>
                     Initial costs include consultation, system analysis, automation development, testing, training, 
                     documentation, and initial support. All software licenses and integrations are included.
                   </p>
@@ -455,31 +455,31 @@ export default function AIAutomationCostPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      <section className=&quot;py-20&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;max-w-4xl mx-auto text-center&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-6&quot;>
               Ready to Get Your Custom AI Automation Quote?
             </h2>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className=&quot;text-xl text-muted-foreground mb-8&quot;>
               Get a personalized cost estimate for your business. No obligation, just transparent pricing 
               to help you make the right decision.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
               <TidyCalPopup 
-                path="abhixchawla/automations-and-more-consultation"
-                triggerText="Get Free Quote"
-                triggerSize="lg"
-                className="text-lg px-8 py-6"
+                path=&quot;abhixchawla/automations-and-more-consultation&quot;
+                triggerText=&quot;Get Free Quote&quot;
+                triggerSize=&quot;lg&quot;
+                className=&quot;text-lg px-8 py-6&quot;
               />
-              <Button variant="outline" size="lg" asChild className="text-lg px-8 py-6">
-                <Link href="tel:+15878049266">
-                  <Phone className="mr-2 h-5 w-5" />
+              <Button variant=&quot;outline&quot; size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
+                <Link href=&quot;tel:+15878049266&quot;>
+                  <Phone className=&quot;mr-2 h-5 w-5&quot; />
                   Call (587) 804-9266
                 </Link>
               </Button>
             </div>
-            <p className="text-sm text-muted-foreground mt-4">
+            <p className=&quot;text-sm text-muted-foreground mt-4&quot;>
               Free consultation • Custom pricing • No hidden fees
             </p>
           </div>
@@ -487,60 +487,60 @@ export default function AIAutomationCostPage() {
       </section>
 
       {/* Book Consultation Section */}
-      <section id="book-consultation" className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      <section id=&quot;book-consultation&quot; className=&quot;py-20 bg-muted/30&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;max-w-4xl mx-auto text-center&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-6&quot;>
               Get Your Custom AI Automation Quote
             </h2>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className=&quot;text-xl text-muted-foreground mb-8&quot;>
               Schedule a free consultation to get a personalized cost estimate for your business. 
               No obligation, just transparent pricing to help you make the right decision.
             </p>
-            <div className="bg-white rounded-lg p-8 shadow-lg">
-              <TidyCalIframe path="abhixchawla/automations-and-more-consultation" />
+            <div className=&quot;bg-white rounded-lg p-8 shadow-lg&quot;>
+              <TidyCalIframe path=&quot;abhixchawla/automations-and-more-consultation&quot; />
             </div>
-            <p className="text-sm text-muted-foreground mt-4">
-              Can't find a time that works? Call us at <Link href="tel:+15878049266" className="text-primary hover:underline">(587) 804-9266</Link>
+            <p className=&quot;text-sm text-muted-foreground mt-4&quot;>
+              Can&apos;t find a time that works? Call us at <Link href=&quot;tel:+15878049266&quot; className=&quot;text-primary hover:underline&quot;>(587) 804-9266</Link>
             </p>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="border-t py-12 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="md:col-span-2">
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="h-8 w-8 rounded bg-primary flex items-center justify-center">
-                  <Zap className="h-5 w-5 text-primary-foreground" />
+      <footer className=&quot;border-t py-12 bg-muted/30&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;grid md:grid-cols-4 gap-8&quot;>
+            <div className=&quot;md:col-span-2&quot;>
+              <div className=&quot;flex items-center space-x-2 mb-4&quot;>
+                <div className=&quot;h-8 w-8 rounded bg-primary flex items-center justify-center&quot;>
+                  <Zap className=&quot;h-5 w-5 text-primary-foreground&quot; />
                 </div>
-                <span className="font-bold text-xl">Automations & More</span>
+                <span className=&quot;font-bold text-xl&quot;>Automations & More</span>
               </div>
-              <p className="text-muted-foreground mb-4 max-w-md">
+              <p className=&quot;text-muted-foreground mb-4 max-w-md&quot;>
                 Transparent AI automation pricing for businesses of all sizes. Get the automation you need 
                 at a price you can afford.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Services</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link href="/services/ai-automation" className="hover:text-foreground">AI Automation</Link></li>
-                <li><Link href="/services/websites" className="hover:text-foreground">Custom Websites</Link></li>
-                <li><Link href="/services/apps" className="hover:text-foreground">Business Apps</Link></li>
+              <h3 className=&quot;font-semibold mb-4&quot;>Services</h3>
+              <ul className=&quot;space-y-2 text-sm text-muted-foreground&quot;>
+                <li><Link href=&quot;/services/ai-automation&quot; className=&quot;hover:text-foreground&quot;>AI Automation</Link></li>
+                <li><Link href=&quot;/services/websites&quot; className=&quot;hover:text-foreground&quot;>Custom Websites</Link></li>
+                <li><Link href=&quot;/services/apps&quot; className=&quot;hover:text-foreground&quot;>Business Apps</Link></li>
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Company</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link href="/about" className="hover:text-foreground">About</Link></li>
-                <li><Link href="/contact" className="hover:text-foreground">Contact</Link></li>
-                <li><Link href="/ai-automation-cost" className="hover:text-foreground">Pricing</Link></li>
+              <h3 className=&quot;font-semibold mb-4&quot;>Company</h3>
+              <ul className=&quot;space-y-2 text-sm text-muted-foreground&quot;>
+                <li><Link href=&quot;/about&quot; className=&quot;hover:text-foreground&quot;>About</Link></li>
+                <li><Link href=&quot;/contact&quot; className=&quot;hover:text-foreground&quot;>Contact</Link></li>
+                <li><Link href=&quot;/ai-automation-cost&quot; className=&quot;hover:text-foreground&quot;>Pricing</Link></li>
               </ul>
             </div>
           </div>
-          <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
+          <div className=&quot;border-t mt-8 pt-8 text-center text-sm text-muted-foreground&quot;>
             <p>&copy; 2024 Automations and More. All rights reserved.</p>
           </div>
         </div>

@@ -1,11 +1,11 @@
-import { Metadata } from "next";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Navigation } from "@/components/navigation";
-import { TidyCalIframe } from "@/components/tidycal-iframe";
-import { TidyCalPopup } from "@/components/tidycal-popup";
+import { Metadata } from &quot;next&quot;;
+import Link from &quot;next/link&quot;;
+import { Button } from &quot;@/components/ui/button&quot;;
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from &quot;@/components/ui/card&quot;;
+import { Badge } from &quot;@/components/ui/badge&quot;;
+import { Navigation } from &quot;@/components/navigation&quot;;
+import { TidyCalIframe } from &quot;@/components/tidycal-iframe&quot;;
+import { TidyCalPopup } from &quot;@/components/tidycal-popup&quot;;
 import { 
   Zap, 
   Building2, 
@@ -26,277 +26,277 @@ import {
   Briefcase,
   Home as HomeIcon,
   Factory
-} from "lucide-react";
+} from &quot;lucide-react&quot;;
 
 export const metadata: Metadata = {
-  title: "Small Business Automation - Affordable AI Automation for Small Businesses",
-  description: "Transform your small business with affordable AI automation solutions. Save time, reduce costs, and grow your business with automation designed for small businesses.",
+  title: &quot;Small Business Automation - Affordable AI Automation for Small Businesses&quot;,
+  description: &quot;Transform your small business with affordable AI automation solutions. Save time, reduce costs, and grow your business with automation designed for small businesses.&quot;,
   keywords: [
-    "small business automation",
-    "automation for small business",
-    "small business AI automation",
-    "affordable business automation",
-    "small business process automation",
-    "automation tools for small business",
-    "small business workflow automation",
-    "AI for small business",
-    "small business automation software",
-    "automation solutions for small business",
-    "small business digital transformation",
-    "automation services for small business"
+    &quot;small business automation&quot;,
+    &quot;automation for small business&quot;,
+    &quot;small business AI automation&quot;,
+    &quot;affordable business automation&quot;,
+    &quot;small business process automation&quot;,
+    &quot;automation tools for small business&quot;,
+    &quot;small business workflow automation&quot;,
+    &quot;AI for small business&quot;,
+    &quot;small business automation software&quot;,
+    &quot;automation solutions for small business&quot;,
+    &quot;small business digital transformation&quot;,
+    &quot;automation services for small business&quot;
   ],
   openGraph: {
-    title: "Small Business Automation - Affordable AI Automation for Small Businesses",
-    description: "Transform your small business with affordable AI automation solutions. Save time, reduce costs, and grow your business.",
-    url: "https://automationsandmore.com/small-business-automation",
+    title: &quot;Small Business Automation - Affordable AI Automation for Small Businesses&quot;,
+    description: &quot;Transform your small business with affordable AI automation solutions. Save time, reduce costs, and grow your business.&quot;,
+    url: &quot;https://automationsandmore.com/small-business-automation&quot;,
   },
   alternates: {
-    canonical: "/small-business-automation",
+    canonical: &quot;/small-business-automation&quot;,
   },
 };
 
 const automationSolutions = [
   {
-    title: "Customer Service Automation",
-    description: "Automate customer inquiries, support tickets, and follow-ups",
+    title: &quot;Customer Service Automation&quot;,
+    description: &quot;Automate customer inquiries, support tickets, and follow-ups&quot;,
     icon: Users,
     features: [
-      "AI-powered chatbots",
-      "Automated email responses",
-      "Customer inquiry routing",
-      "Follow-up automation",
-      "Support ticket management"
+      &quot;AI-powered chatbots&quot;,
+      &quot;Automated email responses&quot;,
+      &quot;Customer inquiry routing&quot;,
+      &quot;Follow-up automation&quot;,
+      &quot;Support ticket management&quot;
     ],
-    savings: "15-20 hours/week"
+    savings: &quot;15-20 hours/week&quot;
   },
   {
-    title: "Sales & Marketing Automation",
-    description: "Streamline lead generation, nurturing, and sales processes",
+    title: &quot;Sales & Marketing Automation&quot;,
+    description: &quot;Streamline lead generation, nurturing, and sales processes&quot;,
     icon: TrendingUp,
     features: [
-      "Lead capture automation",
-      "Email marketing campaigns",
-      "Social media scheduling",
-      "Sales pipeline management",
-      "Customer relationship tracking"
+      &quot;Lead capture automation&quot;,
+      &quot;Email marketing campaigns&quot;,
+      &quot;Social media scheduling&quot;,
+      &quot;Sales pipeline management&quot;,
+      &quot;Customer relationship tracking&quot;
     ],
-    savings: "10-15 hours/week"
+    savings: &quot;10-15 hours/week&quot;
   },
   {
-    title: "Administrative Automation",
-    description: "Automate repetitive administrative tasks and data entry",
+    title: &quot;Administrative Automation&quot;,
+    description: &quot;Automate repetitive administrative tasks and data entry&quot;,
     icon: Building2,
     features: [
-      "Document processing",
-      "Data entry automation",
-      "Invoice generation",
-      "Appointment scheduling",
-      "Report generation"
+      &quot;Document processing&quot;,
+      &quot;Data entry automation&quot;,
+      &quot;Invoice generation&quot;,
+      &quot;Appointment scheduling&quot;,
+      &quot;Report generation&quot;
     ],
-    savings: "20-25 hours/week"
+    savings: &quot;20-25 hours/week&quot;
   },
   {
-    title: "Inventory & Order Management",
-    description: "Automate inventory tracking and order processing",
+    title: &quot;Inventory & Order Management&quot;,
+    description: &quot;Automate inventory tracking and order processing&quot;,
     icon: Target,
     features: [
-      "Inventory level monitoring",
-      "Automated reordering",
-      "Order processing",
-      "Shipping notifications",
-      "Stock level alerts"
+      &quot;Inventory level monitoring&quot;,
+      &quot;Automated reordering&quot;,
+      &quot;Order processing&quot;,
+      &quot;Shipping notifications&quot;,
+      &quot;Stock level alerts&quot;
     ],
-    savings: "12-18 hours/week"
+    savings: &quot;12-18 hours/week&quot;
   }
 ];
 
 const smallBusinessTypes = [
   { 
-    type: "Retail Stores", 
+    type: &quot;Retail Stores&quot;, 
     icon: Building2, 
-    automation: "Inventory management, customer service, sales tracking",
-    savings: "$3,000/month"
+    automation: &quot;Inventory management, customer service, sales tracking&quot;,
+    savings: &quot;$3,000/month&quot;
   },
   { 
-    type: "Restaurants", 
+    type: &quot;Restaurants&quot;, 
     icon: Utensils, 
-    automation: "Order management, inventory, customer communication",
-    savings: "$2,500/month"
+    automation: &quot;Order management, inventory, customer communication&quot;,
+    savings: &quot;$2,500/month&quot;
   },
   { 
-    type: "Professional Services", 
+    type: &quot;Professional Services&quot;, 
     icon: Briefcase, 
-    automation: "Client management, document processing, scheduling",
-    savings: "$4,000/month"
+    automation: &quot;Client management, document processing, scheduling&quot;,
+    savings: &quot;$4,000/month&quot;
   },
   { 
-    type: "Healthcare Practices", 
+    type: &quot;Healthcare Practices&quot;, 
     icon: Heart, 
-    automation: "Patient scheduling, record management, billing",
-    savings: "$3,500/month"
+    automation: &quot;Patient scheduling, record management, billing&quot;,
+    savings: &quot;$3,500/month&quot;
   },
   { 
-    type: "Real Estate", 
+    type: &quot;Real Estate&quot;, 
     icon: HomeIcon, 
-    automation: "Lead management, property listings, client communication",
-    savings: "$2,800/month"
+    automation: &quot;Lead management, property listings, client communication&quot;,
+    savings: &quot;$2,800/month&quot;
   },
   { 
-    type: "Manufacturing", 
+    type: &quot;Manufacturing&quot;, 
     icon: Factory, 
-    automation: "Production tracking, quality control, supply chain",
-    savings: "$5,000/month"
+    automation: &quot;Production tracking, quality control, supply chain&quot;,
+    savings: &quot;$5,000/month&quot;
   }
 ];
 
 const benefits = [
   {
     icon: Clock,
-    title: "Save 20-40 Hours Per Week",
-    description: "Automate repetitive tasks and focus on growing your business"
+    title: &quot;Save 20-40 Hours Per Week&quot;,
+    description: &quot;Automate repetitive tasks and focus on growing your business&quot;
   },
   {
     icon: DollarSign,
-    title: "Reduce Costs by 30-50%",
-    description: "Eliminate manual processes and reduce operational expenses"
+    title: &quot;Reduce Costs by 30-50%&quot;,
+    description: &quot;Eliminate manual processes and reduce operational expenses&quot;
   },
   {
     icon: TrendingUp,
-    title: "Increase Revenue by 25-40%",
-    description: "Better customer service and efficiency lead to more sales"
+    title: &quot;Increase Revenue by 25-40%&quot;,
+    description: &quot;Better customer service and efficiency lead to more sales&quot;
   },
   {
     icon: Users,
-    title: "Improve Customer Satisfaction",
-    description: "Faster response times and consistent service quality"
+    title: &quot;Improve Customer Satisfaction&quot;,
+    description: &quot;Faster response times and consistent service quality&quot;
   }
 ];
 
 const caseStudies = [
   {
-    business: "Local Coffee Shop",
-    size: "5 employees",
-    challenge: "Manual order tracking and customer communication",
-    solution: "Order management and customer service automation",
-    results: "60% reduction in order errors, 40% increase in customer satisfaction"
+    business: &quot;Local Coffee Shop&quot;,
+    size: &quot;5 employees&quot;,
+    challenge: &quot;Manual order tracking and customer communication&quot;,
+    solution: &quot;Order management and customer service automation&quot;,
+    results: &quot;60% reduction in order errors, 40% increase in customer satisfaction&quot;
   },
   {
-    business: "Family Law Firm",
-    size: "3 attorneys",
-    challenge: "Time-consuming document processing and client communication",
-    solution: "Document automation and client portal",
-    results: "50% faster case processing, 35% increase in billable hours"
+    business: &quot;Family Law Firm&quot;,
+    size: &quot;3 attorneys&quot;,
+    challenge: &quot;Time-consuming document processing and client communication&quot;,
+    solution: &quot;Document automation and client portal&quot;,
+    results: &quot;50% faster case processing, 35% increase in billable hours&quot;
   },
   {
-    business: "Boutique Clothing Store",
-    size: "4 employees",
-    challenge: "Inventory management and customer follow-up",
-    solution: "Inventory automation and email marketing",
-    results: "45% reduction in stockouts, 30% increase in repeat customers"
+    business: &quot;Boutique Clothing Store&quot;,
+    size: &quot;4 employees&quot;,
+    challenge: &quot;Inventory management and customer follow-up&quot;,
+    solution: &quot;Inventory automation and email marketing&quot;,
+    results: &quot;45% reduction in stockouts, 30% increase in repeat customers&quot;
   }
 ];
 
 const pricing = [
   {
-    plan: "Starter",
-    price: "$2,500",
-    description: "Perfect for small businesses just getting started",
+    plan: &quot;Starter&quot;,
+    price: &quot;$2,500&quot;,
+    description: &quot;Perfect for small businesses just getting started&quot;,
     features: [
-      "Basic workflow automation",
-      "Email automation",
-      "Simple chatbot",
-      "Data integration (3 systems)",
-      "30 days support"
+      &quot;Basic workflow automation&quot;,
+      &quot;Email automation&quot;,
+      &quot;Simple chatbot&quot;,
+      &quot;Data integration (3 systems)&quot;,
+      &quot;30 days support&quot;
     ]
   },
   {
-    plan: "Growth",
-    price: "$4,000",
-    description: "Comprehensive automation for growing businesses",
+    plan: &quot;Growth&quot;,
+    price: &quot;$4,000&quot;,
+    description: &quot;Comprehensive automation for growing businesses&quot;,
     features: [
-      "Advanced workflow automation",
-      "Multi-channel automation",
-      "AI-powered chatbot",
-      "Data integration (10 systems)",
-      "Analytics dashboard",
-      "90 days support"
+      &quot;Advanced workflow automation&quot;,
+      &quot;Multi-channel automation&quot;,
+      &quot;AI-powered chatbot&quot;,
+      &quot;Data integration (10 systems)&quot;,
+      &quot;Analytics dashboard&quot;,
+      &quot;90 days support&quot;
     ],
     popular: true
   },
   {
-    plan: "Scale",
-    price: "$6,500",
-    description: "Full automation suite for established businesses",
+    plan: &quot;Scale&quot;,
+    price: &quot;$6,500&quot;,
+    description: &quot;Full automation suite for established businesses&quot;,
     features: [
-      "Complete business automation",
-      "Custom AI solutions",
-      "Advanced analytics",
-      "Unlimited integrations",
-      "Dedicated support",
-      "6 months support"
+      &quot;Complete business automation&quot;,
+      &quot;Custom AI solutions&quot;,
+      &quot;Advanced analytics&quot;,
+      &quot;Unlimited integrations&quot;,
+      &quot;Dedicated support&quot;,
+      &quot;6 months support&quot;
     ]
   }
 ];
 
 const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Small Business Automation Services",
-  "description": "Affordable AI automation solutions designed specifically for small businesses to save time, reduce costs, and increase efficiency.",
-  "provider": {
-    "@type": "Organization",
-    "name": "Automations and More",
-    "url": "https://automationsandmore.com"
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;Service&quot;,
+  &quot;name&quot;: &quot;Small Business Automation Services&quot;,
+  &quot;description&quot;: &quot;Affordable AI automation solutions designed specifically for small businesses to save time, reduce costs, and increase efficiency.&quot;,
+  &quot;provider&quot;: {
+    &quot;@type&quot;: &quot;Organization&quot;,
+    &quot;name&quot;: &quot;Automations and More&quot;,
+    &quot;url&quot;: &quot;https://automationsandmore.com&quot;
   },
-  "serviceType": "Small Business Automation",
-  "areaServed": "United States",
-  "audience": {
-    "@type": "BusinessAudience",
-    "audienceType": "Small Businesses"
+  &quot;serviceType&quot;: &quot;Small Business Automation&quot;,
+  &quot;areaServed&quot;: &quot;United States&quot;,
+  &quot;audience&quot;: {
+    &quot;@type&quot;: &quot;BusinessAudience&quot;,
+    &quot;audienceType&quot;: &quot;Small Businesses&quot;
   },
-  "offers": {
-    "@type": "Offer",
-    "description": "Affordable automation solutions for small businesses",
-    "category": "Small Business Automation Services"
+  &quot;offers&quot;: {
+    &quot;@type&quot;: &quot;Offer&quot;,
+    &quot;description&quot;: &quot;Affordable automation solutions for small businesses&quot;,
+    &quot;category&quot;: &quot;Small Business Automation Services&quot;
   }
 };
 
 export default function SmallBusinessAutomationPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className=&quot;min-h-screen bg-background&quot;>
       <script
-        type="application/ld+json"
+        type=&quot;application/ld+json&quot;
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="secondary" className="mb-6">
+      <section className=&quot;relative py-20 lg:py-32&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;max-w-4xl mx-auto text-center&quot;>
+            <Badge variant=&quot;secondary&quot; className=&quot;mb-6&quot;>
               Affordable Small Business Automation
             </Badge>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-              AI Automation for{" "}
-              <span className="bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
+            <h1 className=&quot;text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6&quot;>
+              AI Automation for{&quot; &quot;}
+              <span className=&quot;bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent&quot;>
                 Small Businesses
-              </span>{" "}
+              </span>{&quot; &quot;}
               That Actually Works
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+            <p className=&quot;text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto&quot;>
               Stop wasting time on repetitive tasks. Get affordable AI automation solutions designed 
               specifically for small businesses. Save 20-40 hours per week and grow your business.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
               <TidyCalPopup 
-                path="abhixchawla/automations-and-more-consultation"
-                triggerText="Get Free Automation Assessment"
-                triggerSize="lg"
-                className="text-lg px-8 py-6"
+                path=&quot;abhixchawla/automations-and-more-consultation&quot;
+                triggerText=&quot;Get Free Automation Assessment&quot;
+                triggerSize=&quot;lg&quot;
+                className=&quot;text-lg px-8 py-6&quot;
               />
-              <Button variant="outline" size="lg" asChild className="text-lg px-8 py-6">
-                <Link href="tel:+15878049266">
+              <Button variant=&quot;outline&quot; size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
+                <Link href=&quot;tel:+15878049266&quot;>
                   Call (587) 804-9266
                 </Link>
               </Button>
@@ -306,51 +306,51 @@ export default function SmallBusinessAutomationPage() {
       </section>
 
       {/* Quick Stats */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
+      <section className=&quot;py-20 bg-muted/30&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;grid md:grid-cols-4 gap-8 text-center&quot;>
             <div>
-              <div className="text-3xl font-bold text-primary mb-2">20-40</div>
-              <div className="text-sm text-muted-foreground">Hours Saved Per Week</div>
+              <div className=&quot;text-3xl font-bold text-primary mb-2&quot;>20-40</div>
+              <div className=&quot;text-sm text-muted-foreground&quot;>Hours Saved Per Week</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary mb-2">30-50%</div>
-              <div className="text-sm text-muted-foreground">Cost Reduction</div>
+              <div className=&quot;text-3xl font-bold text-primary mb-2&quot;>30-50%</div>
+              <div className=&quot;text-sm text-muted-foreground&quot;>Cost Reduction</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary mb-2">25-40%</div>
-              <div className="text-sm text-muted-foreground">Revenue Increase</div>
+              <div className=&quot;text-3xl font-bold text-primary mb-2&quot;>25-40%</div>
+              <div className=&quot;text-sm text-muted-foreground&quot;>Revenue Increase</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-primary mb-2">$2,500</div>
-              <div className="text-sm text-muted-foreground">Starting Price</div>
+              <div className=&quot;text-3xl font-bold text-primary mb-2&quot;>$2,500</div>
+              <div className=&quot;text-sm text-muted-foreground&quot;>Starting Price</div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Benefits */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section className=&quot;py-20&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;text-center mb-16&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
               Why Small Businesses Choose AI Automation
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Automation isn't just for big corporations. Small businesses see the biggest impact from AI automation.
+            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
+              Automation isn&apos;t just for big corporations. Small businesses see the biggest impact from AI automation.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className=&quot;grid md:grid-cols-2 lg:grid-cols-4 gap-8&quot;>
             {benefits.map((benefit, index) => (
-              <Card key={index} className="text-center">
+              <Card key={index} className=&quot;text-center&quot;>
                 <CardHeader>
-                  <div className="mx-auto mb-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <benefit.icon className="h-6 w-6 text-primary" />
+                  <div className=&quot;mx-auto mb-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center&quot;>
+                    <benefit.icon className=&quot;h-6 w-6 text-primary&quot; />
                   </div>
                   <CardTitle>{benefit.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-base">
+                  <CardDescription className=&quot;text-base&quot;>
                     {benefit.description}
                   </CardDescription>
                 </CardContent>
@@ -361,38 +361,38 @@ export default function SmallBusinessAutomationPage() {
       </section>
 
       {/* Automation Solutions */}
-      <section id="solutions" className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section id=&quot;solutions&quot; className=&quot;py-20 bg-muted/30&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;text-center mb-16&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
               Small Business Automation Solutions
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
               Affordable automation solutions designed specifically for small business needs and budgets.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className=&quot;grid md:grid-cols-2 gap-8&quot;>
             {automationSolutions.map((solution, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-shadow">
+              <Card key={index} className=&quot;group hover:shadow-lg transition-shadow&quot;>
                 <CardHeader>
-                  <div className="mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <solution.icon className="h-6 w-6 text-primary" />
+                  <div className=&quot;mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors&quot;>
+                    <solution.icon className=&quot;h-6 w-6 text-primary&quot; />
                   </div>
-                  <CardTitle className="text-xl">{solution.title}</CardTitle>
-                  <CardDescription className="text-base">
+                  <CardTitle className=&quot;text-xl&quot;>{solution.title}</CardTitle>
+                  <CardDescription className=&quot;text-base&quot;>
                     {solution.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2 mb-4">
+                  <ul className=&quot;space-y-2 mb-4&quot;>
                     {solution.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-sm">
-                        <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
+                      <li key={featureIndex} className=&quot;flex items-center text-sm&quot;>
+                        <CheckCircle className=&quot;h-4 w-4 text-green-500 mr-2 flex-shrink-0&quot; />
                         {feature}
                       </li>
                     ))}
                   </ul>
-                  <div className="text-sm font-semibold text-green-600">
+                  <div className=&quot;text-sm font-semibold text-green-600&quot;>
                     Saves: {solution.savings}
                   </div>
                 </CardContent>
@@ -403,26 +403,26 @@ export default function SmallBusinessAutomationPage() {
       </section>
 
       {/* Business Types */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section className=&quot;py-20&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;text-center mb-16&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
               Automation Solutions by Business Type
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
               Tailored automation solutions for different types of small businesses.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className=&quot;grid md:grid-cols-2 lg:grid-cols-3 gap-6&quot;>
             {smallBusinessTypes.map((business, index) => (
-              <Card key={index} className="text-center">
-                <CardContent className="p-6">
-                  <div className="mx-auto mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <business.icon className="h-6 w-6 text-primary" />
+              <Card key={index} className=&quot;text-center&quot;>
+                <CardContent className=&quot;p-6&quot;>
+                  <div className=&quot;mx-auto mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center&quot;>
+                    <business.icon className=&quot;h-6 w-6 text-primary&quot; />
                   </div>
-                  <h3 className="font-semibold text-lg mb-2">{business.type}</h3>
-                  <p className="text-sm text-muted-foreground mb-3">{business.automation}</p>
-                  <div className="text-sm font-semibold text-green-600">
+                  <h3 className=&quot;font-semibold text-lg mb-2&quot;>{business.type}</h3>
+                  <p className=&quot;text-sm text-muted-foreground mb-3&quot;>{business.automation}</p>
+                  <div className=&quot;text-sm font-semibold text-green-600&quot;>
                     Avg. Savings: {business.savings}
                   </div>
                 </CardContent>
@@ -433,40 +433,40 @@ export default function SmallBusinessAutomationPage() {
       </section>
 
       {/* Case Studies */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section className=&quot;py-20 bg-muted/30&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;text-center mb-16&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
               Real Small Business Success Stories
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
               See how other small businesses have transformed their operations with automation.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className=&quot;grid md:grid-cols-3 gap-8&quot;>
             {caseStudies.map((study, index) => (
               <Card key={index}>
                 <CardHeader>
-                  <div className="flex items-center mb-2">
+                  <div className=&quot;flex items-center mb-2&quot;>
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star key={i} className=&quot;h-4 w-4 fill-yellow-400 text-yellow-400&quot; />
                     ))}
                   </div>
-                  <CardTitle className="text-lg">{study.business}</CardTitle>
-                  <CardDescription className="text-sm">{study.size}</CardDescription>
+                  <CardTitle className=&quot;text-lg&quot;>{study.business}</CardTitle>
+                  <CardDescription className=&quot;text-sm&quot;>{study.size}</CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                <CardContent className=&quot;space-y-4&quot;>
                   <div>
-                    <h4 className="font-semibold text-sm text-muted-foreground mb-1">Challenge:</h4>
-                    <p className="text-sm">{study.challenge}</p>
+                    <h4 className=&quot;font-semibold text-sm text-muted-foreground mb-1&quot;>Challenge:</h4>
+                    <p className=&quot;text-sm&quot;>{study.challenge}</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm text-muted-foreground mb-1">Solution:</h4>
-                    <p className="text-sm">{study.solution}</p>
+                    <h4 className=&quot;font-semibold text-sm text-muted-foreground mb-1&quot;>Solution:</h4>
+                    <p className=&quot;text-sm&quot;>{study.solution}</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm text-muted-foreground mb-1">Results:</h4>
-                    <p className="text-sm font-medium text-green-600">{study.results}</p>
+                    <h4 className=&quot;font-semibold text-sm text-muted-foreground mb-1&quot;>Results:</h4>
+                    <p className=&quot;text-sm font-medium text-green-600&quot;>{study.results}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -476,42 +476,42 @@ export default function SmallBusinessAutomationPage() {
       </section>
 
       {/* Pricing */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section className=&quot;py-20&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;text-center mb-16&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
               Affordable Small Business Automation Pricing
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
               Transparent pricing designed for small business budgets. No hidden fees, no surprises.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className=&quot;grid md:grid-cols-3 gap-8&quot;>
             {pricing.map((plan, index) => (
-              <Card key={index} className={`relative ${plan.popular ? 'border-2 border-primary shadow-lg' : ''}`}>
+              <Card key={index} className={`relative ${plan.popular ? &apos;border-2 border-primary shadow-lg&apos; : &apos;&apos;}`}>
                 {plan.popular && (
-                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <Badge className="bg-primary text-primary-foreground">Most Popular</Badge>
+                  <div className=&quot;absolute -top-3 left-1/2 transform -translate-x-1/2&quot;>
+                    <Badge className=&quot;bg-primary text-primary-foreground&quot;>Most Popular</Badge>
                   </div>
                 )}
-                <CardHeader className="text-center">
-                  <CardTitle className="text-xl">{plan.plan}</CardTitle>
-                  <div className="text-3xl font-bold text-primary">{plan.price}</div>
-                  <CardDescription className="text-base mt-2">
+                <CardHeader className=&quot;text-center&quot;>
+                  <CardTitle className=&quot;text-xl&quot;>{plan.plan}</CardTitle>
+                  <div className=&quot;text-3xl font-bold text-primary&quot;>{plan.price}</div>
+                  <CardDescription className=&quot;text-base mt-2&quot;>
                     {plan.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-3 mb-6">
+                  <ul className=&quot;space-y-3 mb-6&quot;>
                     {plan.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-sm">
-                        <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
+                      <li key={featureIndex} className=&quot;flex items-center text-sm&quot;>
+                        <CheckCircle className=&quot;h-4 w-4 text-green-500 mr-2 flex-shrink-0&quot; />
                         {feature}
                       </li>
                     ))}
                   </ul>
-                  <Button asChild className="w-full" variant={plan.popular ? "default" : "outline"}>
-                    <Link href="/contact">
+                  <Button asChild className=&quot;w-full&quot; variant={plan.popular ? &quot;default&quot; : &quot;outline&quot;}>
+                    <Link href=&quot;/contact&quot;>
                       Get Started
                     </Link>
                   </Button>
@@ -523,31 +523,31 @@ export default function SmallBusinessAutomationPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      <section className=&quot;py-20 bg-muted/30&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;max-w-4xl mx-auto text-center&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-6&quot;>
               Ready to Automate Your Small Business?
             </h2>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className=&quot;text-xl text-muted-foreground mb-8&quot;>
               Join hundreds of small businesses that have already transformed their operations with AI automation. 
               Get your free assessment and see how much time and money you can save.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
               <TidyCalPopup 
-                path="abhixchawla/automations-and-more-consultation"
-                triggerText="Get Free Assessment"
-                triggerSize="lg"
-                className="text-lg px-8 py-6"
+                path=&quot;abhixchawla/automations-and-more-consultation&quot;
+                triggerText=&quot;Get Free Assessment&quot;
+                triggerSize=&quot;lg&quot;
+                className=&quot;text-lg px-8 py-6&quot;
               />
-              <Button variant="outline" size="lg" asChild className="text-lg px-8 py-6">
-                <Link href="tel:+15878049266">
-                  <Phone className="mr-2 h-5 w-5" />
+              <Button variant=&quot;outline&quot; size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
+                <Link href=&quot;tel:+15878049266&quot;>
+                  <Phone className=&quot;mr-2 h-5 w-5&quot; />
                   Call (587) 804-9266
                 </Link>
               </Button>
             </div>
-            <p className="text-sm text-muted-foreground mt-4">
+            <p className=&quot;text-sm text-muted-foreground mt-4&quot;>
               Free assessment • No obligation • Custom automation plan
             </p>
           </div>
@@ -555,60 +555,60 @@ export default function SmallBusinessAutomationPage() {
       </section>
 
       {/* Book Consultation Section */}
-      <section id="book-consultation" className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      <section id=&quot;book-consultation&quot; className=&quot;py-20 bg-muted/30&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;max-w-4xl mx-auto text-center&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-6&quot;>
               Get Your Free Small Business Automation Assessment
             </h2>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className=&quot;text-xl text-muted-foreground mb-8&quot;>
               Schedule a free consultation to see how much time and money you can save with AI automation. 
               Get a custom automation plan designed specifically for your small business.
             </p>
-            <div className="bg-white rounded-lg p-8 shadow-lg">
-              <TidyCalIframe path="abhixchawla/automations-and-more-consultation" />
+            <div className=&quot;bg-white rounded-lg p-8 shadow-lg&quot;>
+              <TidyCalIframe path=&quot;abhixchawla/automations-and-more-consultation&quot; />
             </div>
-            <p className="text-sm text-muted-foreground mt-4">
-              Can't find a time that works? Call us at <Link href="tel:+15878049266" className="text-primary hover:underline">(587) 804-9266</Link>
+            <p className=&quot;text-sm text-muted-foreground mt-4&quot;>
+              Can&apos;t find a time that works? Call us at <Link href=&quot;tel:+15878049266&quot; className=&quot;text-primary hover:underline&quot;>(587) 804-9266</Link>
             </p>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="border-t py-12 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="md:col-span-2">
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="h-8 w-8 rounded bg-primary flex items-center justify-center">
-                  <Zap className="h-5 w-5 text-primary-foreground" />
+      <footer className=&quot;border-t py-12 bg-background&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;grid md:grid-cols-4 gap-8&quot;>
+            <div className=&quot;md:col-span-2&quot;>
+              <div className=&quot;flex items-center space-x-2 mb-4&quot;>
+                <div className=&quot;h-8 w-8 rounded bg-primary flex items-center justify-center&quot;>
+                  <Zap className=&quot;h-5 w-5 text-primary-foreground&quot; />
                 </div>
-                <span className="font-bold text-xl">Automations & More</span>
+                <span className=&quot;font-bold text-xl&quot;>Automations & More</span>
               </div>
-              <p className="text-muted-foreground mb-4 max-w-md">
+              <p className=&quot;text-muted-foreground mb-4 max-w-md&quot;>
                 Affordable AI automation solutions designed specifically for small businesses. 
                 Save time, reduce costs, and grow your business with automation that works.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Small Business Solutions</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link href="/small-business-automation" className="hover:text-foreground">Small Business Automation</Link></li>
-                <li><Link href="/ai-automation-cost" className="hover:text-foreground">Pricing</Link></li>
-                <li><Link href="/services/ai-automation" className="hover:text-foreground">Services</Link></li>
+              <h3 className=&quot;font-semibold mb-4&quot;>Small Business Solutions</h3>
+              <ul className=&quot;space-y-2 text-sm text-muted-foreground&quot;>
+                <li><Link href=&quot;/small-business-automation&quot; className=&quot;hover:text-foreground&quot;>Small Business Automation</Link></li>
+                <li><Link href=&quot;/ai-automation-cost&quot; className=&quot;hover:text-foreground&quot;>Pricing</Link></li>
+                <li><Link href=&quot;/services/ai-automation&quot; className=&quot;hover:text-foreground&quot;>Services</Link></li>
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Company</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link href="/about" className="hover:text-foreground">About</Link></li>
-                <li><Link href="/contact" className="hover:text-foreground">Contact</Link></li>
-                <li><Link href="/industries" className="hover:text-foreground">Industries</Link></li>
+              <h3 className=&quot;font-semibold mb-4&quot;>Company</h3>
+              <ul className=&quot;space-y-2 text-sm text-muted-foreground&quot;>
+                <li><Link href=&quot;/about&quot; className=&quot;hover:text-foreground&quot;>About</Link></li>
+                <li><Link href=&quot;/contact&quot; className=&quot;hover:text-foreground&quot;>Contact</Link></li>
+                <li><Link href=&quot;/industries&quot; className=&quot;hover:text-foreground&quot;>Industries</Link></li>
               </ul>
             </div>
           </div>
-          <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
+          <div className=&quot;border-t mt-8 pt-8 text-center text-sm text-muted-foreground&quot;>
             <p>&copy; 2024 Automations and More. All rights reserved.</p>
           </div>
         </div>

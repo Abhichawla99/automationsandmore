@@ -1,9 +1,9 @@
-import { Metadata } from "next";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Navigation } from "@/components/navigation";
+import { Metadata } from &quot;next&quot;;
+import Link from &quot;next/link&quot;;
+import { Button } from &quot;@/components/ui/button&quot;;
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from &quot;@/components/ui/card&quot;;
+import { Badge } from &quot;@/components/ui/badge&quot;;
+import { Navigation } from &quot;@/components/navigation&quot;;
 import { 
   Factory, 
   Package, 
@@ -19,76 +19,76 @@ import {
   Target,
   Building2,
   Activity
-} from "lucide-react";
+} from &quot;lucide-react&quot;;
 
 export const metadata: Metadata = {
-  title: "AI Automation for Manufacturing & Production Businesses",
-  description: "Transform your manufacturing business with AI automation. Production optimization, quality control, supply chain management, and predictive maintenance for manufacturing companies.",
+  title: &quot;AI Automation for Manufacturing & Production Businesses&quot;,
+  description: &quot;Transform your manufacturing business with AI automation. Production optimization, quality control, supply chain management, and predictive maintenance for manufacturing companies.&quot;,
   keywords: [
-    "manufacturing AI automation",
-    "production automation AI",
-    "manufacturing process optimization",
-    "AI quality control manufacturing",
-    "supply chain automation",
-    "predictive maintenance AI",
-    "manufacturing analytics AI",
-    "AI for manufacturing companies",
-    "production line automation",
-    "manufacturing efficiency AI"
+    &quot;manufacturing AI automation&quot;,
+    &quot;production automation AI&quot;,
+    &quot;manufacturing process optimization&quot;,
+    &quot;AI quality control manufacturing&quot;,
+    &quot;supply chain automation&quot;,
+    &quot;predictive maintenance AI&quot;,
+    &quot;manufacturing analytics AI&quot;,
+    &quot;AI for manufacturing companies&quot;,
+    &quot;production line automation&quot;,
+    &quot;manufacturing efficiency AI&quot;
   ],
   openGraph: {
-    title: "AI Automation for Manufacturing & Production Businesses",
-    description: "Transform your manufacturing business with AI automation. Production optimization, quality control, and supply chain management.",
-    url: "https://automationsandmore.com/industries/manufacturing",
+    title: &quot;AI Automation for Manufacturing & Production Businesses&quot;,
+    description: &quot;Transform your manufacturing business with AI automation. Production optimization, quality control, and supply chain management.&quot;,
+    url: &quot;https://automationsandmore.com/industries/manufacturing&quot;,
   },
   alternates: {
-    canonical: "/industries/manufacturing",
+    canonical: &quot;/industries/manufacturing&quot;,
   },
 };
 
 const manufacturingSolutions = [
   {
-    title: "Production Optimization",
-    description: "AI-driven production planning, scheduling, and resource allocation",
+    title: &quot;Production Optimization&quot;,
+    description: &quot;AI-driven production planning, scheduling, and resource allocation&quot;,
     icon: Settings,
     features: [
-      "Intelligent production scheduling",
-      "Resource optimization algorithms",
-      "Demand forecasting and planning",
-      "Real-time production monitoring"
+      &quot;Intelligent production scheduling&quot;,
+      &quot;Resource optimization algorithms&quot;,
+      &quot;Demand forecasting and planning&quot;,
+      &quot;Real-time production monitoring&quot;
     ]
   },
   {
-    title: "Quality Control & Inspection",
-    description: "Automated quality assurance and defect detection systems",
+    title: &quot;Quality Control & Inspection&quot;,
+    description: &quot;Automated quality assurance and defect detection systems&quot;,
     icon: Package,
     features: [
-      "Automated visual inspection",
-      "Predictive quality analytics",
-      "Defect detection and classification",
-      "Quality trend analysis"
+      &quot;Automated visual inspection&quot;,
+      &quot;Predictive quality analytics&quot;,
+      &quot;Defect detection and classification&quot;,
+      &quot;Quality trend analysis&quot;
     ]
   },
   {
-    title: "Supply Chain Management",
-    description: "Intelligent supply chain optimization and inventory management",
+    title: &quot;Supply Chain Management&quot;,
+    description: &quot;Intelligent supply chain optimization and inventory management&quot;,
     icon: Building2,
     features: [
-      "Automated inventory management",
-      "Supplier performance monitoring",
-      "Demand-driven procurement",
-      "Supply chain risk assessment"
+      &quot;Automated inventory management&quot;,
+      &quot;Supplier performance monitoring&quot;,
+      &quot;Demand-driven procurement&quot;,
+      &quot;Supply chain risk assessment&quot;
     ]
   },
   {
-    title: "Predictive Maintenance",
-    description: "AI-powered equipment monitoring and maintenance scheduling",
+    title: &quot;Predictive Maintenance&quot;,
+    description: &quot;AI-powered equipment monitoring and maintenance scheduling&quot;,
     icon: Activity,
     features: [
-      "Equipment health monitoring",
-      "Predictive failure analysis",
-      "Automated maintenance scheduling",
-      "Performance optimization"
+      &quot;Equipment health monitoring&quot;,
+      &quot;Predictive failure analysis&quot;,
+      &quot;Automated maintenance scheduling&quot;,
+      &quot;Performance optimization&quot;
     ]
   }
 ];
@@ -96,101 +96,101 @@ const manufacturingSolutions = [
 const benefits = [
   {
     icon: DollarSign,
-    title: "Increase Efficiency by 30%",
-    description: "AI-driven optimization reduces waste and improves production throughput"
+    title: &quot;Increase Efficiency by 30%&quot;,
+    description: &quot;AI-driven optimization reduces waste and improves production throughput&quot;
   },
   {
     icon: Clock,
-    title: "Reduce Downtime by 50%",
-    description: "Predictive maintenance prevents unexpected equipment failures"
+    title: &quot;Reduce Downtime by 50%&quot;,
+    description: &quot;Predictive maintenance prevents unexpected equipment failures&quot;
   },
   {
     icon: Target,
-    title: "Improve Quality by 40%",
-    description: "Automated quality control and real-time monitoring ensure consistent output"
+    title: &quot;Improve Quality by 40%&quot;,
+    description: &quot;Automated quality control and real-time monitoring ensure consistent output&quot;
   }
 ];
 
 const caseStudies = [
   {
-    business: "Automotive Parts Manufacturer",
-    challenge: "Manual quality control and production scheduling inefficiencies",
-    solution: "AI quality control and production optimization",
-    results: "45% reduction in defects, 35% improvement in production efficiency"
+    business: &quot;Automotive Parts Manufacturer&quot;,
+    challenge: &quot;Manual quality control and production scheduling inefficiencies&quot;,
+    solution: &quot;AI quality control and production optimization&quot;,
+    results: &quot;45% reduction in defects, 35% improvement in production efficiency&quot;
   },
   {
-    business: "Food Processing Plant",
-    challenge: "Equipment downtime and supply chain disruptions",
-    solution: "Predictive maintenance and supply chain automation",
-    results: "60% reduction in unplanned downtime, 25% improvement in supply chain reliability"
+    business: &quot;Food Processing Plant&quot;,
+    challenge: &quot;Equipment downtime and supply chain disruptions&quot;,
+    solution: &quot;Predictive maintenance and supply chain automation&quot;,
+    results: &quot;60% reduction in unplanned downtime, 25% improvement in supply chain reliability&quot;
   },
   {
-    business: "Electronics Manufacturer",
-    challenge: "Complex production planning and inventory management",
-    solution: "AI production planning and inventory optimization",
-    results: "40% reduction in inventory costs, 30% improvement in on-time delivery"
+    business: &quot;Electronics Manufacturer&quot;,
+    challenge: &quot;Complex production planning and inventory management&quot;,
+    solution: &quot;AI production planning and inventory optimization&quot;,
+    results: &quot;40% reduction in inventory costs, 30% improvement in on-time delivery&quot;
   }
 ];
 
 const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "AI Automation for Manufacturing",
-  "description": "Transform your manufacturing business with AI automation including production optimization, quality control, supply chain management, and predictive maintenance.",
-  "provider": {
-    "@type": "Organization",
-    "name": "Automations and More",
-    "url": "https://automationsandmore.com"
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;Service&quot;,
+  &quot;name&quot;: &quot;AI Automation for Manufacturing&quot;,
+  &quot;description&quot;: &quot;Transform your manufacturing business with AI automation including production optimization, quality control, supply chain management, and predictive maintenance.&quot;,
+  &quot;provider&quot;: {
+    &quot;@type&quot;: &quot;Organization&quot;,
+    &quot;name&quot;: &quot;Automations and More&quot;,
+    &quot;url&quot;: &quot;https://automationsandmore.com&quot;
   },
-  "serviceType": "Manufacturing AI Automation",
-  "areaServed": "United States",
-  "audience": {
-    "@type": "BusinessAudience",
-    "audienceType": "Manufacturing and Production Companies"
+  &quot;serviceType&quot;: &quot;Manufacturing AI Automation&quot;,
+  &quot;areaServed&quot;: &quot;United States&quot;,
+  &quot;audience&quot;: {
+    &quot;@type&quot;: &quot;BusinessAudience&quot;,
+    &quot;audienceType&quot;: &quot;Manufacturing and Production Companies&quot;
   },
-  "offers": {
-    "@type": "Offer",
-    "description": "AI automation solutions for manufacturing businesses",
-    "category": "Manufacturing Automation Services"
+  &quot;offers&quot;: {
+    &quot;@type&quot;: &quot;Offer&quot;,
+    &quot;description&quot;: &quot;AI automation solutions for manufacturing businesses&quot;,
+    &quot;category&quot;: &quot;Manufacturing Automation Services&quot;
   }
 };
 
 export default function ManufacturingPage() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className=&quot;min-h-screen bg-background&quot;>
       <script
-        type="application/ld+json"
+        type=&quot;application/ld+json&quot;
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <Badge variant="secondary" className="mb-6">
+      <section className=&quot;relative py-20 lg:py-32&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;max-w-4xl mx-auto text-center&quot;>
+            <Badge variant=&quot;secondary&quot; className=&quot;mb-6&quot;>
               Manufacturing AI Solutions
             </Badge>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-              Transform Your{" "}
-              <span className="bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
+            <h1 className=&quot;text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6&quot;>
+              Transform Your{&quot; &quot;}
+              <span className=&quot;bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent&quot;>
                 Manufacturing Business
-              </span>{" "}
+              </span>{&quot; &quot;}
               with AI
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
+            <p className=&quot;text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto&quot;>
               From production optimization to predictive maintenance, AI automation helps manufacturing 
               companies increase efficiency, reduce costs, and improve product quality.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" asChild className="text-lg px-8 py-6">
-                <Link href="/contact">
+            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
+              <Button size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
+                <Link href=&quot;/contact&quot;>
                   Get Your Manufacturing AI Solution
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className=&quot;ml-2 h-5 w-5&quot; />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" asChild className="text-lg px-8 py-6">
-                <Link href="#solutions">
+              <Button variant=&quot;outline&quot; size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
+                <Link href=&quot;#solutions&quot;>
                   View Solutions
                 </Link>
               </Button>
@@ -200,28 +200,28 @@ export default function ManufacturingPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section className=&quot;py-20 bg-muted/30&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;text-center mb-16&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
               Why Manufacturing Companies Choose AI Automation
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
               Manufacturing companies are using AI to optimize production, improve quality, 
               and reduce operational costs in an increasingly competitive market.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className=&quot;grid md:grid-cols-3 gap-8&quot;>
             {benefits.map((benefit, index) => (
-              <Card key={index} className="text-center">
+              <Card key={index} className=&quot;text-center&quot;>
                 <CardHeader>
-                  <div className="mx-auto mb-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <benefit.icon className="h-6 w-6 text-primary" />
+                  <div className=&quot;mx-auto mb-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center&quot;>
+                    <benefit.icon className=&quot;h-6 w-6 text-primary&quot; />
                   </div>
                   <CardTitle>{benefit.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-base">
+                  <CardDescription className=&quot;text-base&quot;>
                     {benefit.description}
                   </CardDescription>
                 </CardContent>
@@ -232,34 +232,34 @@ export default function ManufacturingPage() {
       </section>
 
       {/* Solutions Section */}
-      <section id="solutions" className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section id=&quot;solutions&quot; className=&quot;py-20&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;text-center mb-16&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
               AI Solutions for Manufacturing Companies
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
               Comprehensive AI automation solutions designed specifically for manufacturing 
               and production companies of all sizes.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className=&quot;grid md:grid-cols-2 gap-8&quot;>
             {manufacturingSolutions.map((solution, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-shadow">
+              <Card key={index} className=&quot;group hover:shadow-lg transition-shadow&quot;>
                 <CardHeader>
-                  <div className="mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <solution.icon className="h-6 w-6 text-primary" />
+                  <div className=&quot;mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors&quot;>
+                    <solution.icon className=&quot;h-6 w-6 text-primary&quot; />
                   </div>
-                  <CardTitle className="text-xl">{solution.title}</CardTitle>
-                  <CardDescription className="text-base">
+                  <CardTitle className=&quot;text-xl&quot;>{solution.title}</CardTitle>
+                  <CardDescription className=&quot;text-base&quot;>
                     {solution.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2">
+                  <ul className=&quot;space-y-2&quot;>
                     {solution.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-sm">
-                        <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
+                      <li key={featureIndex} className=&quot;flex items-center text-sm&quot;>
+                        <CheckCircle className=&quot;h-4 w-4 text-green-500 mr-2 flex-shrink-0&quot; />
                         {feature}
                       </li>
                     ))}
@@ -272,41 +272,41 @@ export default function ManufacturingPage() {
       </section>
 
       {/* Manufacturing Types Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section className=&quot;py-20 bg-muted/30&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;text-center mb-16&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
               AI Solutions for Every Manufacturing Sector
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Whether you're in automotive, food processing, electronics, or other manufacturing sectors, 
+            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
+              Whether you&apos;re in automotive, food processing, electronics, or other manufacturing sectors, 
               we have AI solutions tailored to your specific needs.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className=&quot;grid md:grid-cols-3 gap-6&quot;>
             <Card>
-              <CardContent className="p-6 text-center">
-                <Factory className="h-12 w-12 mx-auto text-primary mb-4" />
-                <h3 className="font-semibold text-lg mb-2">Automotive Manufacturing</h3>
-                <p className="text-sm text-muted-foreground">
+              <CardContent className=&quot;p-6 text-center&quot;>
+                <Factory className=&quot;h-12 w-12 mx-auto text-primary mb-4&quot; />
+                <h3 className=&quot;font-semibold text-lg mb-2&quot;>Automotive Manufacturing</h3>
+                <p className=&quot;text-sm text-muted-foreground&quot;>
                   Production line optimization, quality control, and supply chain management
                 </p>
               </CardContent>
             </Card>
             <Card>
-              <CardContent className="p-6 text-center">
-                <Package className="h-12 w-12 mx-auto text-primary mb-4" />
-                <h3 className="font-semibold text-lg mb-2">Food Processing</h3>
-                <p className="text-sm text-muted-foreground">
+              <CardContent className=&quot;p-6 text-center&quot;>
+                <Package className=&quot;h-12 w-12 mx-auto text-primary mb-4&quot; />
+                <h3 className=&quot;font-semibold text-lg mb-2&quot;>Food Processing</h3>
+                <p className=&quot;text-sm text-muted-foreground&quot;>
                   Quality assurance, batch tracking, and compliance monitoring
                 </p>
               </CardContent>
             </Card>
             <Card>
-              <CardContent className="p-6 text-center">
-                <BarChart3 className="h-12 w-12 mx-auto text-primary mb-4" />
-                <h3 className="font-semibold text-lg mb-2">Electronics Manufacturing</h3>
-                <p className="text-sm text-muted-foreground">
+              <CardContent className=&quot;p-6 text-center&quot;>
+                <BarChart3 className=&quot;h-12 w-12 mx-auto text-primary mb-4&quot; />
+                <h3 className=&quot;font-semibold text-lg mb-2&quot;>Electronics Manufacturing</h3>
+                <p className=&quot;text-sm text-muted-foreground&quot;>
                   Precision quality control, component tracking, and testing automation
                 </p>
               </CardContent>
@@ -316,39 +316,39 @@ export default function ManufacturingPage() {
       </section>
 
       {/* Case Studies Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section className=&quot;py-20&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;text-center mb-16&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
               Real Results from Manufacturing Companies
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
               See how manufacturing companies have transformed their operations with AI automation.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className=&quot;grid md:grid-cols-3 gap-8&quot;>
             {caseStudies.map((study, index) => (
               <Card key={index}>
                 <CardHeader>
-                  <div className="flex items-center mb-2">
+                  <div className=&quot;flex items-center mb-2&quot;>
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
+                      <Star key={i} className=&quot;h-4 w-4 fill-yellow-400 text-yellow-400&quot; />
                     ))}
                   </div>
-                  <CardTitle className="text-lg">{study.business}</CardTitle>
+                  <CardTitle className=&quot;text-lg&quot;>{study.business}</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                <CardContent className=&quot;space-y-4&quot;>
                   <div>
-                    <h4 className="font-semibold text-sm text-muted-foreground mb-1">Challenge:</h4>
-                    <p className="text-sm">{study.challenge}</p>
+                    <h4 className=&quot;font-semibold text-sm text-muted-foreground mb-1&quot;>Challenge:</h4>
+                    <p className=&quot;text-sm&quot;>{study.challenge}</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm text-muted-foreground mb-1">Solution:</h4>
-                    <p className="text-sm">{study.solution}</p>
+                    <h4 className=&quot;font-semibold text-sm text-muted-foreground mb-1&quot;>Solution:</h4>
+                    <p className=&quot;text-sm&quot;>{study.solution}</p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-sm text-muted-foreground mb-1">Results:</h4>
-                    <p className="text-sm font-medium text-green-600">{study.results}</p>
+                    <h4 className=&quot;font-semibold text-sm text-muted-foreground mb-1&quot;>Results:</h4>
+                    <p className=&quot;text-sm font-medium text-green-600&quot;>{study.results}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -358,25 +358,25 @@ export default function ManufacturingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+      <section className=&quot;py-20 bg-muted/30&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;max-w-4xl mx-auto text-center&quot;>
+            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-6&quot;>
               Ready to Transform Your Manufacturing Business?
             </h2>
-            <p className="text-xl text-muted-foreground mb-8">
+            <p className=&quot;text-xl text-muted-foreground mb-8&quot;>
               Join manufacturing companies that have already embraced AI automation to improve efficiency, 
-              quality, and profitability. Let's discuss your specific needs.
+              quality, and profitability. Let&apos;s discuss your specific needs.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" asChild className="text-lg px-8 py-6">
-                <Link href="/contact">
+            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
+              <Button size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
+                <Link href=&quot;/contact&quot;>
                   Start Your Manufacturing AI Journey
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight className=&quot;ml-2 h-5 w-5&quot; />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" asChild className="text-lg px-8 py-6">
-                <Link href="/services/ai-automation">
+              <Button variant=&quot;outline&quot; size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
+                <Link href=&quot;/services/ai-automation&quot;>
                   Learn About Our Services
                 </Link>
               </Button>
@@ -386,39 +386,39 @@ export default function ManufacturingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t py-12 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="md:col-span-2">
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="h-8 w-8 rounded bg-primary flex items-center justify-center">
-                  <Zap className="h-5 w-5 text-primary-foreground" />
+      <footer className=&quot;border-t py-12 bg-background&quot;>
+        <div className=&quot;container mx-auto px-4&quot;>
+          <div className=&quot;grid md:grid-cols-4 gap-8&quot;>
+            <div className=&quot;md:col-span-2&quot;>
+              <div className=&quot;flex items-center space-x-2 mb-4&quot;>
+                <div className=&quot;h-8 w-8 rounded bg-primary flex items-center justify-center&quot;>
+                  <Zap className=&quot;h-5 w-5 text-primary-foreground&quot; />
                 </div>
-                <span className="font-bold text-xl">Automations & More</span>
+                <span className=&quot;font-bold text-xl&quot;>Automations & More</span>
               </div>
-              <p className="text-muted-foreground mb-4 max-w-md">
+              <p className=&quot;text-muted-foreground mb-4 max-w-md&quot;>
                 Helping manufacturing companies leverage AI for production optimization, 
                 quality control, and supply chain management.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Manufacturing Solutions</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link href="/services/ai-automation" className="hover:text-foreground">AI Automation</Link></li>
-                <li><Link href="/services/websites" className="hover:text-foreground">Manufacturing Websites</Link></li>
-                <li><Link href="/services/apps" className="hover:text-foreground">Production Apps</Link></li>
+              <h3 className=&quot;font-semibold mb-4&quot;>Manufacturing Solutions</h3>
+              <ul className=&quot;space-y-2 text-sm text-muted-foreground&quot;>
+                <li><Link href=&quot;/services/ai-automation&quot; className=&quot;hover:text-foreground&quot;>AI Automation</Link></li>
+                <li><Link href=&quot;/services/websites&quot; className=&quot;hover:text-foreground&quot;>Manufacturing Websites</Link></li>
+                <li><Link href=&quot;/services/apps&quot; className=&quot;hover:text-foreground&quot;>Production Apps</Link></li>
               </ul>
             </div>
             <div>
-              <h3 className="font-semibold mb-4">Company</h3>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link href="/about" className="hover:text-foreground">About</Link></li>
-                <li><Link href="/contact" className="hover:text-foreground">Contact</Link></li>
-                <li><Link href="/industries" className="hover:text-foreground">All Industries</Link></li>
+              <h3 className=&quot;font-semibold mb-4&quot;>Company</h3>
+              <ul className=&quot;space-y-2 text-sm text-muted-foreground&quot;>
+                <li><Link href=&quot;/about&quot; className=&quot;hover:text-foreground&quot;>About</Link></li>
+                <li><Link href=&quot;/contact&quot; className=&quot;hover:text-foreground&quot;>Contact</Link></li>
+                <li><Link href=&quot;/industries&quot; className=&quot;hover:text-foreground&quot;>All Industries</Link></li>
               </ul>
             </div>
           </div>
-          <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
+          <div className=&quot;border-t mt-8 pt-8 text-center text-sm text-muted-foreground&quot;>
             <p>&copy; 2024 Automations and More. All rights reserved.</p>
           </div>
         </div>
