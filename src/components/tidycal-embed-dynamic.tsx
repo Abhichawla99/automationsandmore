@@ -1,7 +1,7 @@
-&quot;use client&quot;;
+"use client";
 
-import dynamic from &quot;next/dynamic&quot;;
-import { useState, useEffect } from &quot;react&quot;;
+import dynamic from "next/dynamic";
+import { useState, useEffect } from "react";
 
 interface TidyCalEmbedProps {
   path: string;
@@ -10,21 +10,21 @@ interface TidyCalEmbedProps {
 
 // Dynamic component that only renders on client
 const TidyCalEmbedClient = dynamic(
-  () => Promise.resolve(function TidyCalEmbedClient({ path, className = &quot;&quot; }: TidyCalEmbedProps) {
+  () => Promise.resolve(function TidyCalEmbedClient({ path, className = "" }: TidyCalEmbedProps) {
     const [isLoaded, setIsLoaded] = useState(false);
 
     useEffect(() => {
       // Load TidyCal script if not already loaded
-      const existingScript = document.querySelector(&apos;script[src=&quot;https://asset-tidycal.b-cdn.net/js/embed.js&quot;]&apos;);
+      const existingScript = document.querySelector('script[src="https://asset-tidycal.b-cdn.net/js/embed.js"]');
       
       if (!existingScript) {
-        const script = document.createElement(&apos;script&apos;);
-        script.src = &apos;https://asset-tidycal.b-cdn.net/js/embed.js&apos;;
+        const script = document.createElement('script');
+        script.src = 'https://asset-tidycal.b-cdn.net/js/embed.js';
         script.async = true;
         script.onload = () => {
           // Wait for DOM to be ready and element to exist
           setTimeout(() => {
-            const element = document.querySelector(`[data-path=&quot;${path}&quot;]`);
+            const element = document.querySelector(`[data-path="${path}"]`);
             if (element && window.TidyCal) {
               window.TidyCal.init();
               setIsLoaded(true);
@@ -35,7 +35,7 @@ const TidyCalEmbedClient = dynamic(
       } else {
         // Script already exists, wait for it to be ready
         setTimeout(() => {
-          const element = document.querySelector(`[data-path=&quot;${path}&quot;]`);
+          const element = document.querySelector(`[data-path="${path}"]`);
           if (element && window.TidyCal) {
             window.TidyCal.init();
             setIsLoaded(true);
@@ -45,7 +45,7 @@ const TidyCalEmbedClient = dynamic(
 
       // Fallback: check periodically for TidyCal and element
       const checkTidyCal = setInterval(() => {
-        const element = document.querySelector(`[data-path=&quot;${path}&quot;]`);
+        const element = document.querySelector(`[data-path="${path}"]`);
         if (element && window.TidyCal && !isLoaded) {
           window.TidyCal.init();
           setIsLoaded(true);
@@ -62,10 +62,10 @@ const TidyCalEmbedClient = dynamic(
     return (
       <div className={`tidycal-embed ${className}`} data-path={path}>
         {!isLoaded && (
-          <div className=&quot;flex items-center justify-center p-8&quot;>
-            <div className=&quot;text-center&quot;>
-              <div className=&quot;animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto mb-4&quot;></div>
-              <p className=&quot;text-muted-foreground&quot;>Loading booking calendar...</p>
+          <div className="flex items-center justify-center p-8">
+            <div className="text-center">
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto mb-4"></div>
+              <p className="text-muted-foreground">Loading booking calendar...</p>
             </div>
           </div>
         )}
@@ -75,17 +75,17 @@ const TidyCalEmbedClient = dynamic(
   {
     ssr: false,
     loading: () => (
-      <div className=&quot;flex items-center justify-center p-8&quot;>
-        <div className=&quot;text-center&quot;>
-          <div className=&quot;animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto mb-4&quot;></div>
-          <p className=&quot;text-muted-foreground&quot;>Loading booking calendar...</p>
+      <div className="flex items-center justify-center p-8">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-muted-foreground">Loading booking calendar...</p>
         </div>
       </div>
     )
   }
 );
 
-export function TidyCalEmbedDynamic({ path, className = &quot;&quot; }: TidyCalEmbedProps) {
+export function TidyCalEmbedDynamic({ path, className = "" }: TidyCalEmbedProps) {
   return <TidyCalEmbedClient path={path} className={className} />;
 }
 

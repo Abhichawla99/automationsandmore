@@ -1,9 +1,9 @@
-import { Metadata } from &quot;next&quot;;
-import Link from &quot;next/link&quot;;
-import { Button } from &quot;@/components/ui/button&quot;;
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from &quot;@/components/ui/card&quot;;
-import { Badge } from &quot;@/components/ui/badge&quot;;
-import { Navigation } from &quot;@/components/navigation&quot;;
+import { Metadata } from "next";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Navigation } from "@/components/navigation";
 import { 
   Utensils, 
   Clock, 
@@ -19,76 +19,76 @@ import {
   Target,
   ChefHat,
   Receipt
-} from &quot;lucide-react&quot;;
+} from "lucide-react";
 
 export const metadata: Metadata = {
-  title: &quot;AI Automation for Restaurants & Food Service Businesses&quot;,
-  description: &quot;Transform your restaurant with AI automation. Order management, inventory tracking, customer engagement, kitchen optimization, and delivery automation for food service businesses.&quot;,
+  title: "AI Automation for Restaurants & Food Service Businesses",
+  description: "Transform your restaurant with AI automation. Order management, inventory tracking, customer engagement, kitchen optimization, and delivery automation for food service businesses.",
   keywords: [
-    &quot;restaurant AI automation&quot;,
-    &quot;food service automation&quot;,
-    &quot;restaurant order management&quot;,
-    &quot;kitchen automation AI&quot;,
-    &quot;restaurant inventory management&quot;,
-    &quot;AI for restaurants&quot;,
-    &quot;food service AI solutions&quot;,
-    &quot;restaurant process automation&quot;,
-    &quot;AI customer service restaurant&quot;,
-    &quot;restaurant delivery automation&quot;
+    "restaurant AI automation",
+    "food service automation",
+    "restaurant order management",
+    "kitchen automation AI",
+    "restaurant inventory management",
+    "AI for restaurants",
+    "food service AI solutions",
+    "restaurant process automation",
+    "AI customer service restaurant",
+    "restaurant delivery automation"
   ],
   openGraph: {
-    title: &quot;AI Automation for Restaurants & Food Service Businesses&quot;,
-    description: &quot;Transform your restaurant with AI automation. Order management, inventory tracking, customer engagement, and kitchen optimization.&quot;,
-    url: &quot;https://automationsandmore.com/industries/restaurants&quot;,
+    title: "AI Automation for Restaurants & Food Service Businesses",
+    description: "Transform your restaurant with AI automation. Order management, inventory tracking, customer engagement, and kitchen optimization.",
+    url: "https://automationsandmore.com/industries/restaurants",
   },
   alternates: {
-    canonical: &quot;/industries/restaurants&quot;,
+    canonical: "/industries/restaurants",
   },
 };
 
 const restaurantSolutions = [
   {
-    title: &quot;Smart Order Management&quot;,
-    description: &quot;AI-powered order processing, kitchen coordination, and delivery optimization&quot;,
+    title: "Smart Order Management",
+    description: "AI-powered order processing, kitchen coordination, and delivery optimization",
     icon: Receipt,
     features: [
-      &quot;Automated order processing and routing&quot;,
-      &quot;Kitchen display system integration&quot;,
-      &quot;Delivery route optimization&quot;,
-      &quot;Real-time order tracking&quot;
+      "Automated order processing and routing",
+      "Kitchen display system integration",
+      "Delivery route optimization",
+      "Real-time order tracking"
     ]
   },
   {
-    title: &quot;Inventory & Supply Management&quot;,
-    description: &quot;Intelligent inventory tracking and automated supplier ordering&quot;,
+    title: "Inventory & Supply Management",
+    description: "Intelligent inventory tracking and automated supplier ordering",
     icon: Package,
     features: [
-      &quot;Real-time inventory monitoring&quot;,
-      &quot;Automated supplier ordering&quot;,
-      &quot;Waste reduction analytics&quot;,
-      &quot;Cost optimization insights&quot;
+      "Real-time inventory monitoring",
+      "Automated supplier ordering",
+      "Waste reduction analytics",
+      "Cost optimization insights"
     ]
   },
   {
-    title: &quot;Customer Engagement AI&quot;,
-    description: &quot;Personalized customer experiences and automated marketing campaigns&quot;,
+    title: "Customer Engagement AI",
+    description: "Personalized customer experiences and automated marketing campaigns",
     icon: Users,
     features: [
-      &quot;Personalized menu recommendations&quot;,
-      &quot;Automated loyalty programs&quot;,
-      &quot;Customer feedback analysis&quot;,
-      &quot;Targeted marketing campaigns&quot;
+      "Personalized menu recommendations",
+      "Automated loyalty programs",
+      "Customer feedback analysis",
+      "Targeted marketing campaigns"
     ]
   },
   {
-    title: &quot;Kitchen Operations Optimization&quot;,
-    description: &quot;AI-driven kitchen efficiency and staff scheduling optimization&quot;,
+    title: "Kitchen Operations Optimization",
+    description: "AI-driven kitchen efficiency and staff scheduling optimization",
     icon: ChefHat,
     features: [
-      &quot;Staff scheduling optimization&quot;,
-      &quot;Kitchen workflow analysis&quot;,
-      &quot;Equipment maintenance alerts&quot;,
-      &quot;Performance analytics&quot;
+      "Staff scheduling optimization",
+      "Kitchen workflow analysis",
+      "Equipment maintenance alerts",
+      "Performance analytics"
     ]
   }
 ];
@@ -96,101 +96,101 @@ const restaurantSolutions = [
 const benefits = [
   {
     icon: DollarSign,
-    title: &quot;Increase Revenue by 30-50%&quot;,
-    description: &quot;AI-driven menu optimization and customer engagement boost sales and average order value&quot;
+    title: "Increase Revenue by 30-50%",
+    description: "AI-driven menu optimization and customer engagement boost sales and average order value"
   },
   {
     icon: Clock,
-    title: &quot;Reduce Wait Times by 40%&quot;,
-    description: &quot;Optimized kitchen operations and order management significantly improve service speed&quot;
+    title: "Reduce Wait Times by 40%",
+    description: "Optimized kitchen operations and order management significantly improve service speed"
   },
   {
     icon: Target,
-    title: &quot;Improve Customer Satisfaction&quot;,
-    description: &quot;Faster service, personalized experiences, and better order accuracy increase customer loyalty&quot;
+    title: "Improve Customer Satisfaction",
+    description: "Faster service, personalized experiences, and better order accuracy increase customer loyalty"
   }
 ];
 
 const caseStudies = [
   {
-    business: &quot;Local Pizza Restaurant&quot;,
-    challenge: &quot;Manual order taking and delivery coordination&quot;,
-    solution: &quot;AI order management and delivery optimization&quot;,
-    results: &quot;45% faster order processing, 30% increase in delivery efficiency&quot;
+    business: "Local Pizza Restaurant",
+    challenge: "Manual order taking and delivery coordination",
+    solution: "AI order management and delivery optimization",
+    results: "45% faster order processing, 30% increase in delivery efficiency"
   },
   {
-    business: &quot;Family Diner&quot;,
-    challenge: &quot;Inventory waste and inconsistent ordering&quot;,
-    solution: &quot;AI inventory management and demand forecasting&quot;,
-    results: &quot;35% reduction in food waste, 25% improvement in profit margins&quot;
+    business: "Family Diner",
+    challenge: "Inventory waste and inconsistent ordering",
+    solution: "AI inventory management and demand forecasting",
+    results: "35% reduction in food waste, 25% improvement in profit margins"
   },
   {
-    business: &quot;Fast Casual Chain&quot;,
-    challenge: &quot;High customer service volume and staff scheduling&quot;,
-    solution: &quot;AI customer service and staff optimization&quot;,
-    results: &quot;50% reduction in customer wait times, 20% improvement in staff efficiency&quot;
+    business: "Fast Casual Chain",
+    challenge: "High customer service volume and staff scheduling",
+    solution: "AI customer service and staff optimization",
+    results: "50% reduction in customer wait times, 20% improvement in staff efficiency"
   }
 ];
 
 const jsonLd = {
-  &quot;@context&quot;: &quot;https://schema.org&quot;,
-  &quot;@type&quot;: &quot;Service&quot;,
-  &quot;name&quot;: &quot;AI Automation for Restaurants & Food Service&quot;,
-  &quot;description&quot;: &quot;Transform your restaurant with AI automation including order management, inventory tracking, customer engagement, kitchen optimization, and delivery automation.&quot;,
-  &quot;provider&quot;: {
-    &quot;@type&quot;: &quot;Organization&quot;,
-    &quot;name&quot;: &quot;Automations and More&quot;,
-    &quot;url&quot;: &quot;https://automationsandmore.com&quot;
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "AI Automation for Restaurants & Food Service",
+  "description": "Transform your restaurant with AI automation including order management, inventory tracking, customer engagement, kitchen optimization, and delivery automation.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Automations and More",
+    "url": "https://automationsandmore.com"
   },
-  &quot;serviceType&quot;: &quot;Restaurant AI Automation&quot;,
-  &quot;areaServed&quot;: &quot;United States&quot;,
-  &quot;audience&quot;: {
-    &quot;@type&quot;: &quot;BusinessAudience&quot;,
-    &quot;audienceType&quot;: &quot;Restaurants and Food Service Businesses&quot;
+  "serviceType": "Restaurant AI Automation",
+  "areaServed": "United States",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Restaurants and Food Service Businesses"
   },
-  &quot;offers&quot;: {
-    &quot;@type&quot;: &quot;Offer&quot;,
-    &quot;description&quot;: &quot;AI automation solutions for restaurants and food service businesses&quot;,
-    &quot;category&quot;: &quot;Restaurant Automation Services&quot;
+  "offers": {
+    "@type": "Offer",
+    "description": "AI automation solutions for restaurants and food service businesses",
+    "category": "Restaurant Automation Services"
   }
 };
 
 export default function RestaurantsPage() {
   return (
-    <div className=&quot;min-h-screen bg-background&quot;>
+    <div className="min-h-screen bg-background">
       <script
-        type=&quot;application/ld+json&quot;
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Navigation />
       
       {/* Hero Section */}
-      <section className=&quot;relative py-20 lg:py-32&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;max-w-4xl mx-auto text-center&quot;>
-            <Badge variant=&quot;secondary&quot; className=&quot;mb-6&quot;>
+      <section className="relative py-20 lg:py-32">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <Badge variant="secondary" className="mb-6">
               Restaurant & Food Service AI Solutions
             </Badge>
-            <h1 className=&quot;text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6&quot;>
-              Transform Your{&quot; &quot;}
-              <span className=&quot;bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent&quot;>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
+              Transform Your{" "}
+              <span className="bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
                 Restaurant Business
-              </span>{&quot; &quot;}
+              </span>{" "}
               with AI
             </h1>
-            <p className=&quot;text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto&quot;>
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               From order management to kitchen optimization, AI automation helps restaurants 
               increase efficiency, reduce costs, and provide exceptional dining experiences.
             </p>
-            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
-              <Button size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
-                <Link href=&quot;/contact&quot;>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" asChild className="text-lg px-8 py-6">
+                <Link href="/contact">
                   Get Your Restaurant AI Solution
-                  <ArrowRight className=&quot;ml-2 h-5 w-5&quot; />
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button variant=&quot;outline&quot; size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
-                <Link href=&quot;#solutions&quot;>
+              <Button variant="outline" size="lg" asChild className="text-lg px-8 py-6">
+                <Link href="#solutions">
                   View Solutions
                 </Link>
               </Button>
@@ -200,28 +200,28 @@ export default function RestaurantsPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className=&quot;py-20 bg-muted/30&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;text-center mb-16&quot;>
-            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Why Restaurants Choose AI Automation
             </h2>
-            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Restaurants are using AI to streamline operations, improve customer experiences, 
               and increase profitability in an increasingly competitive market.
             </p>
           </div>
-          <div className=&quot;grid md:grid-cols-3 gap-8&quot;>
+          <div className="grid md:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
-              <Card key={index} className=&quot;text-center&quot;>
+              <Card key={index} className="text-center">
                 <CardHeader>
-                  <div className=&quot;mx-auto mb-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center&quot;>
-                    <benefit.icon className=&quot;h-6 w-6 text-primary&quot; />
+                  <div className="mx-auto mb-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <benefit.icon className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle>{benefit.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className=&quot;text-base&quot;>
+                  <CardDescription className="text-base">
                     {benefit.description}
                   </CardDescription>
                 </CardContent>
@@ -232,34 +232,34 @@ export default function RestaurantsPage() {
       </section>
 
       {/* Solutions Section */}
-      <section id=&quot;solutions&quot; className=&quot;py-20&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;text-center mb-16&quot;>
-            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
+      <section id="solutions" className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               AI Solutions for Restaurants & Food Service
             </h2>
-            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Comprehensive AI automation solutions designed specifically for restaurants, 
               cafes, and food service businesses of all sizes.
             </p>
           </div>
-          <div className=&quot;grid md:grid-cols-2 gap-8&quot;>
+          <div className="grid md:grid-cols-2 gap-8">
             {restaurantSolutions.map((solution, index) => (
-              <Card key={index} className=&quot;group hover:shadow-lg transition-shadow&quot;>
+              <Card key={index} className="group hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <div className=&quot;mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors&quot;>
-                    <solution.icon className=&quot;h-6 w-6 text-primary&quot; />
+                  <div className="mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <solution.icon className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle className=&quot;text-xl&quot;>{solution.title}</CardTitle>
-                  <CardDescription className=&quot;text-base&quot;>
+                  <CardTitle className="text-xl">{solution.title}</CardTitle>
+                  <CardDescription className="text-base">
                     {solution.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ul className=&quot;space-y-2&quot;>
+                  <ul className="space-y-2">
                     {solution.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className=&quot;flex items-center text-sm&quot;>
-                        <CheckCircle className=&quot;h-4 w-4 text-green-500 mr-2 flex-shrink-0&quot; />
+                      <li key={featureIndex} className="flex items-center text-sm">
+                        <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
                         {feature}
                       </li>
                     ))}
@@ -272,41 +272,41 @@ export default function RestaurantsPage() {
       </section>
 
       {/* Restaurant Types Section */}
-      <section className=&quot;py-20 bg-muted/30&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;text-center mb-16&quot;>
-            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               AI Solutions for Every Type of Restaurant
             </h2>
-            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Whether you run a quick-service restaurant, fine dining establishment, or food truck, 
               we have AI solutions tailored to your specific needs.
             </p>
           </div>
-          <div className=&quot;grid md:grid-cols-3 gap-6&quot;>
+          <div className="grid md:grid-cols-3 gap-6">
             <Card>
-              <CardContent className=&quot;p-6 text-center&quot;>
-                <Utensils className=&quot;h-12 w-12 mx-auto text-primary mb-4&quot; />
-                <h3 className=&quot;font-semibold text-lg mb-2&quot;>Quick Service & Fast Casual</h3>
-                <p className=&quot;text-sm text-muted-foreground&quot;>
+              <CardContent className="p-6 text-center">
+                <Utensils className="h-12 w-12 mx-auto text-primary mb-4" />
+                <h3 className="font-semibold text-lg mb-2">Quick Service & Fast Casual</h3>
+                <p className="text-sm text-muted-foreground">
                   Order automation, kitchen display systems, and customer flow optimization
                 </p>
               </CardContent>
             </Card>
             <Card>
-              <CardContent className=&quot;p-6 text-center&quot;>
-                <ChefHat className=&quot;h-12 w-12 mx-auto text-primary mb-4&quot; />
-                <h3 className=&quot;font-semibold text-lg mb-2&quot;>Fine Dining & Casual</h3>
-                <p className=&quot;text-sm text-muted-foreground&quot;>
+              <CardContent className="p-6 text-center">
+                <ChefHat className="h-12 w-12 mx-auto text-primary mb-4" />
+                <h3 className="font-semibold text-lg mb-2">Fine Dining & Casual</h3>
+                <p className="text-sm text-muted-foreground">
                   Reservation management, table optimization, and personalized service automation
                 </p>
               </CardContent>
             </Card>
             <Card>
-              <CardContent className=&quot;p-6 text-center&quot;>
-                <Package className=&quot;h-12 w-12 mx-auto text-primary mb-4&quot; />
-                <h3 className=&quot;font-semibold text-lg mb-2&quot;>Delivery & Takeout</h3>
-                <p className=&quot;text-sm text-muted-foreground&quot;>
+              <CardContent className="p-6 text-center">
+                <Package className="h-12 w-12 mx-auto text-primary mb-4" />
+                <h3 className="font-semibold text-lg mb-2">Delivery & Takeout</h3>
+                <p className="text-sm text-muted-foreground">
                   Delivery route optimization, order tracking, and customer communication automation
                 </p>
               </CardContent>
@@ -316,39 +316,39 @@ export default function RestaurantsPage() {
       </section>
 
       {/* Case Studies Section */}
-      <section className=&quot;py-20&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;text-center mb-16&quot;>
-            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Real Results from Restaurant Businesses
             </h2>
-            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               See how restaurants have transformed their operations with AI automation.
             </p>
           </div>
-          <div className=&quot;grid md:grid-cols-3 gap-8&quot;>
+          <div className="grid md:grid-cols-3 gap-8">
             {caseStudies.map((study, index) => (
               <Card key={index}>
                 <CardHeader>
-                  <div className=&quot;flex items-center mb-2&quot;>
+                  <div className="flex items-center mb-2">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className=&quot;h-4 w-4 fill-yellow-400 text-yellow-400&quot; />
+                      <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                     ))}
                   </div>
-                  <CardTitle className=&quot;text-lg&quot;>{study.business}</CardTitle>
+                  <CardTitle className="text-lg">{study.business}</CardTitle>
                 </CardHeader>
-                <CardContent className=&quot;space-y-4&quot;>
+                <CardContent className="space-y-4">
                   <div>
-                    <h4 className=&quot;font-semibold text-sm text-muted-foreground mb-1&quot;>Challenge:</h4>
-                    <p className=&quot;text-sm&quot;>{study.challenge}</p>
+                    <h4 className="font-semibold text-sm text-muted-foreground mb-1">Challenge:</h4>
+                    <p className="text-sm">{study.challenge}</p>
                   </div>
                   <div>
-                    <h4 className=&quot;font-semibold text-sm text-muted-foreground mb-1&quot;>Solution:</h4>
-                    <p className=&quot;text-sm&quot;>{study.solution}</p>
+                    <h4 className="font-semibold text-sm text-muted-foreground mb-1">Solution:</h4>
+                    <p className="text-sm">{study.solution}</p>
                   </div>
                   <div>
-                    <h4 className=&quot;font-semibold text-sm text-muted-foreground mb-1&quot;>Results:</h4>
-                    <p className=&quot;text-sm font-medium text-green-600&quot;>{study.results}</p>
+                    <h4 className="font-semibold text-sm text-muted-foreground mb-1">Results:</h4>
+                    <p className="text-sm font-medium text-green-600">{study.results}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -358,24 +358,24 @@ export default function RestaurantsPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className=&quot;py-20 bg-muted/30&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;max-w-3xl mx-auto&quot;>
-            <div className=&quot;text-center mb-16&quot;>
-              <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Restaurant AI FAQ
               </h2>
-              <p className=&quot;text-xl text-muted-foreground&quot;>
+              <p className="text-xl text-muted-foreground">
                 Common questions about AI automation for restaurants and food service businesses.
               </p>
             </div>
-            <div className=&quot;space-y-6&quot;>
+            <div className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle className=&quot;text-lg&quot;>How does AI help with restaurant inventory management?</CardTitle>
+                  <CardTitle className="text-lg">How does AI help with restaurant inventory management?</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className=&quot;text-muted-foreground&quot;>
+                  <p className="text-muted-foreground">
                     Our AI analyzes sales patterns, seasonal trends, and historical data to predict demand, 
                     automatically generate purchase orders, and optimize inventory levels to reduce waste and costs.
                   </p>
@@ -383,10 +383,10 @@ export default function RestaurantsPage() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle className=&quot;text-lg&quot;>Can AI improve kitchen efficiency?</CardTitle>
+                  <CardTitle className="text-lg">Can AI improve kitchen efficiency?</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className=&quot;text-muted-foreground&quot;>
+                  <p className="text-muted-foreground">
                     Yes, AI can optimize kitchen workflows, predict peak times for better staff scheduling, 
                     monitor equipment performance, and provide real-time insights to improve cooking times and food quality.
                   </p>
@@ -394,10 +394,10 @@ export default function RestaurantsPage() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle className=&quot;text-lg&quot;>How does AI enhance customer experience in restaurants?</CardTitle>
+                  <CardTitle className="text-lg">How does AI enhance customer experience in restaurants?</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className=&quot;text-muted-foreground&quot;>
+                  <p className="text-muted-foreground">
                     AI provides personalized menu recommendations, automated loyalty programs, 
                     faster order processing, and intelligent customer service to create memorable dining experiences.
                   </p>
@@ -409,25 +409,25 @@ export default function RestaurantsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className=&quot;py-20&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;max-w-4xl mx-auto text-center&quot;>
-            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-6&quot;>
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Ready to Transform Your Restaurant?
             </h2>
-            <p className=&quot;text-xl text-muted-foreground mb-8&quot;>
+            <p className="text-xl text-muted-foreground mb-8">
               Join restaurants that have already embraced AI automation to improve efficiency, 
-              customer satisfaction, and profitability. Let&apos;s discuss your specific needs.
+              customer satisfaction, and profitability. Let's discuss your specific needs.
             </p>
-            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
-              <Button size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
-                <Link href=&quot;/contact&quot;>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" asChild className="text-lg px-8 py-6">
+                <Link href="/contact">
                   Start Your Restaurant AI Journey
-                  <ArrowRight className=&quot;ml-2 h-5 w-5&quot; />
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button variant=&quot;outline&quot; size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
-                <Link href=&quot;/services/ai-automation&quot;>
+              <Button variant="outline" size="lg" asChild className="text-lg px-8 py-6">
+                <Link href="/services/ai-automation">
                   Learn About Our Services
                 </Link>
               </Button>
@@ -437,39 +437,39 @@ export default function RestaurantsPage() {
       </section>
 
       {/* Footer */}
-      <footer className=&quot;border-t py-12 bg-muted/30&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;grid md:grid-cols-4 gap-8&quot;>
-            <div className=&quot;md:col-span-2&quot;>
-              <div className=&quot;flex items-center space-x-2 mb-4&quot;>
-                <div className=&quot;h-8 w-8 rounded bg-primary flex items-center justify-center&quot;>
-                  <Zap className=&quot;h-5 w-5 text-primary-foreground&quot; />
+      <footer className="border-t py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="md:col-span-2">
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="h-8 w-8 rounded bg-primary flex items-center justify-center">
+                  <Zap className="h-5 w-5 text-primary-foreground" />
                 </div>
-                <span className=&quot;font-bold text-xl&quot;>Automations & More</span>
+                <span className="font-bold text-xl">Automations & More</span>
               </div>
-              <p className=&quot;text-muted-foreground mb-4 max-w-md&quot;>
+              <p className="text-muted-foreground mb-4 max-w-md">
                 Helping restaurants leverage AI for order management, inventory tracking, 
                 customer engagement, and kitchen optimization.
               </p>
             </div>
             <div>
-              <h3 className=&quot;font-semibold mb-4&quot;>Restaurant Solutions</h3>
-              <ul className=&quot;space-y-2 text-sm text-muted-foreground&quot;>
-                <li><Link href=&quot;/services/ai-automation&quot; className=&quot;hover:text-foreground&quot;>AI Automation</Link></li>
-                <li><Link href=&quot;/services/websites&quot; className=&quot;hover:text-foreground&quot;>Restaurant Websites</Link></li>
-                <li><Link href=&quot;/services/apps&quot; className=&quot;hover:text-foreground&quot;>Restaurant Apps</Link></li>
+              <h3 className="font-semibold mb-4">Restaurant Solutions</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link href="/services/ai-automation" className="hover:text-foreground">AI Automation</Link></li>
+                <li><Link href="/services/websites" className="hover:text-foreground">Restaurant Websites</Link></li>
+                <li><Link href="/services/apps" className="hover:text-foreground">Restaurant Apps</Link></li>
               </ul>
             </div>
             <div>
-              <h3 className=&quot;font-semibold mb-4&quot;>Company</h3>
-              <ul className=&quot;space-y-2 text-sm text-muted-foreground&quot;>
-                <li><Link href=&quot;/about&quot; className=&quot;hover:text-foreground&quot;>About</Link></li>
-                <li><Link href=&quot;/contact&quot; className=&quot;hover:text-foreground&quot;>Contact</Link></li>
-                <li><Link href=&quot;/industries&quot; className=&quot;hover:text-foreground&quot;>All Industries</Link></li>
+              <h3 className="font-semibold mb-4">Company</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link href="/about" className="hover:text-foreground">About</Link></li>
+                <li><Link href="/contact" className="hover:text-foreground">Contact</Link></li>
+                <li><Link href="/industries" className="hover:text-foreground">All Industries</Link></li>
               </ul>
             </div>
           </div>
-          <div className=&quot;border-t mt-8 pt-8 text-center text-sm text-muted-foreground&quot;>
+          <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
             <p>&copy; 2024 Automations and More. All rights reserved.</p>
           </div>
         </div>

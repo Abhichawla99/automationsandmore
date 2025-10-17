@@ -1,9 +1,9 @@
-&quot;use client&quot;;
+"use client";
 
-import Link from &quot;next/link&quot;;
-import { useState } from &quot;react&quot;;
-import { Button } from &quot;@/components/ui/button&quot;;
-import { Badge } from &quot;@/components/ui/badge&quot;;
+import Link from "next/link";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -11,66 +11,66 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-} from &quot;@/components/ui/navigation-menu&quot;;
-import { Menu, X, Zap, Globe, Smartphone, Building2 } from &quot;lucide-react&quot;;
-import { TidyCalPopup } from &quot;./tidycal-popup&quot;;
+} from "@/components/ui/navigation-menu";
+import { Menu, X, Zap, Globe, Smartphone, Building2 } from "lucide-react";
+import { TidyCalPopup } from "./tidycal-popup";
 
 const industries = [
   {
-    title: &quot;Retail & E-commerce&quot;,
-    href: &quot;/industries/retail&quot;,
-    description: &quot;AI-powered inventory management, customer service, and sales optimization&quot;,
+    title: "Retail & E-commerce",
+    href: "/industries/retail",
+    description: "AI-powered inventory management, customer service, and sales optimization",
     icon: Building2,
   },
   {
-    title: &quot;Healthcare&quot;,
-    href: &quot;/industries/healthcare&quot;, 
-    description: &quot;Patient management, appointment scheduling, and medical record automation&quot;,
+    title: "Healthcare",
+    href: "/industries/healthcare", 
+    description: "Patient management, appointment scheduling, and medical record automation",
     icon: Building2,
   },
   {
-    title: &quot;Restaurants & Food Service&quot;,
-    href: &quot;/industries/restaurants&quot;,
-    description: &quot;Order management, inventory tracking, and customer engagement automation&quot;,
+    title: "Restaurants & Food Service",
+    href: "/industries/restaurants",
+    description: "Order management, inventory tracking, and customer engagement automation",
     icon: Building2,
   },
   {
-    title: &quot;Professional Services&quot;,
-    href: &quot;/industries/professional-services&quot;,
-    description: &quot;Client management, document automation, and workflow optimization&quot;,
+    title: "Professional Services",
+    href: "/industries/professional-services",
+    description: "Client management, document automation, and workflow optimization",
     icon: Building2,
   },
   {
-    title: &quot;Real Estate&quot;,
-    href: &quot;/industries/real-estate&quot;,
-    description: &quot;Lead management, property listings, and client communication automation&quot;,
+    title: "Real Estate",
+    href: "/industries/real-estate",
+    description: "Lead management, property listings, and client communication automation",
     icon: Building2,
   },
   {
-    title: &quot;Manufacturing&quot;,
-    href: &quot;/industries/manufacturing&quot;,
-    description: &quot;Production optimization, quality control, and supply chain automation&quot;,
+    title: "Manufacturing",
+    href: "/industries/manufacturing",
+    description: "Production optimization, quality control, and supply chain automation",
     icon: Building2,
   },
 ];
 
 const services = [
   {
-    title: &quot;AI Automation&quot;,
-    href: &quot;/services/ai-automation&quot;,
-    description: &quot;Streamline your business processes with intelligent automation&quot;,
+    title: "AI Automation",
+    href: "/services/ai-automation",
+    description: "Streamline your business processes with intelligent automation",
     icon: Zap,
   },
   {
-    title: &quot;Custom Websites&quot;,
-    href: &quot;/services/websites&quot;,
-    description: &quot;Modern, AI-powered websites that convert visitors into customers&quot;,
+    title: "Custom Websites",
+    href: "/services/websites",
+    description: "Modern, AI-powered websites that convert visitors into customers",
     icon: Globe,
   },
   {
-    title: &quot;Business Apps&quot;,
-    href: &quot;/services/apps&quot;,
-    description: &quot;Custom mobile and web applications tailored to your business needs&quot;,
+    title: "Business Apps",
+    href: "/services/apps",
+    description: "Custom mobile and web applications tailored to your business needs",
     icon: Smartphone,
   },
 ];
@@ -79,38 +79,38 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className=&quot;sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60&quot;>
-      <div className=&quot;container mx-auto px-4&quot;>
-        <div className=&quot;flex h-16 items-center justify-between&quot;>
+    <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <div className="container mx-auto px-4">
+        <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href=&quot;/&quot; className=&quot;flex items-center space-x-2&quot;>
-            <div className=&quot;h-8 w-8 rounded bg-primary flex items-center justify-center&quot;>
-              <Zap className=&quot;h-5 w-5 text-primary-foreground&quot; />
+          <Link href="/" className="flex items-center space-x-2">
+            <div className="h-8 w-8 rounded bg-primary flex items-center justify-center">
+              <Zap className="h-5 w-5 text-primary-foreground" />
             </div>
-            <span className=&quot;font-bold text-xl&quot;>Automations & More</span>
+            <span className="font-bold text-xl">Automations & More</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className=&quot;hidden md:flex items-center space-x-6&quot;>
+          <div className="hidden md:flex items-center space-x-6">
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>Industries</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <div className=&quot;grid w-[600px] gap-3 p-4 md:grid-cols-2&quot;>
+                    <div className="grid w-[600px] gap-3 p-4 md:grid-cols-2">
                       {industries.map((industry) => (
                         <NavigationMenuLink key={industry.href} asChild>
                           <Link
                             href={industry.href}
-                            className=&quot;block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground&quot;
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           >
-                            <div className=&quot;flex items-center space-x-2&quot;>
-                              <industry.icon className=&quot;h-4 w-4&quot; />
-                              <div className=&quot;text-sm font-medium leading-none&quot;>
+                            <div className="flex items-center space-x-2">
+                              <industry.icon className="h-4 w-4" />
+                              <div className="text-sm font-medium leading-none">
                                 {industry.title}
                               </div>
                             </div>
-                            <p className=&quot;line-clamp-2 text-sm leading-snug text-muted-foreground&quot;>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                               {industry.description}
                             </p>
                           </Link>
@@ -123,20 +123,20 @@ export function Navigation() {
                 <NavigationMenuItem>
                   <NavigationMenuTrigger>Services</NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <div className=&quot;grid w-[400px] gap-3 p-4&quot;>
+                    <div className="grid w-[400px] gap-3 p-4">
                       {services.map((service) => (
                         <NavigationMenuLink key={service.href} asChild>
                           <Link
                             href={service.href}
-                            className=&quot;block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground&quot;
+                            className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                           >
-                            <div className=&quot;flex items-center space-x-2&quot;>
-                              <service.icon className=&quot;h-4 w-4&quot; />
-                              <div className=&quot;text-sm font-medium leading-none&quot;>
+                            <div className="flex items-center space-x-2">
+                              <service.icon className="h-4 w-4" />
+                              <div className="text-sm font-medium leading-none">
                                 {service.title}
                               </div>
                             </div>
-                            <p className=&quot;line-clamp-2 text-sm leading-snug text-muted-foreground&quot;>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                               {service.description}
                             </p>
                           </Link>
@@ -148,7 +148,7 @@ export function Navigation() {
 
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <Link href=&quot;/about&quot; className=&quot;group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50&quot;>
+                    <Link href="/about" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
                       About
                     </Link>
                   </NavigationMenuLink>
@@ -156,7 +156,7 @@ export function Navigation() {
 
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <Link href=&quot;/contact&quot; className=&quot;group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50&quot;>
+                    <Link href="/contact" className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
                       Contact
                     </Link>
                   </NavigationMenuLink>
@@ -166,40 +166,40 @@ export function Navigation() {
           </div>
 
           {/* CTA Button */}
-          <div className=&quot;hidden md:flex items-center space-x-4&quot;>
-            <Badge variant=&quot;secondary&quot; className=&quot;hidden lg:inline-flex&quot;>
+          <div className="hidden md:flex items-center space-x-4">
+            <Badge variant="secondary" className="hidden lg:inline-flex">
               AI-Powered Solutions
             </Badge>
             <TidyCalPopup 
-              path=&quot;abhixchawla/automations-and-more-consultation&quot;
-              triggerText=&quot;Get Free Consultation&quot;
-              triggerSize=&quot;default&quot;
+              path="abhixchawla/automations-and-more-consultation"
+              triggerText="Get Free Consultation"
+              triggerSize="default"
             />
           </div>
 
           {/* Mobile menu button */}
           <Button
-            variant=&quot;ghost&quot;
-            size=&quot;sm&quot;
-            className=&quot;md:hidden&quot;
+            variant="ghost"
+            size="sm"
+            className="md:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <X className=&quot;h-5 w-5&quot; /> : <Menu className=&quot;h-5 w-5&quot; />}
+            {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </Button>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className=&quot;md:hidden border-t py-4&quot;>
-            <div className=&quot;space-y-4&quot;>
+          <div className="md:hidden border-t py-4">
+            <div className="space-y-4">
               <div>
-                <h3 className=&quot;text-sm font-medium text-muted-foreground mb-2&quot;>Industries</h3>
-                <div className=&quot;space-y-2&quot;>
+                <h3 className="text-sm font-medium text-muted-foreground mb-2">Industries</h3>
+                <div className="space-y-2">
                   {industries.map((industry) => (
                     <Link
                       key={industry.href}
                       href={industry.href}
-                      className=&quot;block px-3 py-2 text-sm hover:bg-accent rounded-md&quot;
+                      className="block px-3 py-2 text-sm hover:bg-accent rounded-md"
                       onClick={() => setIsOpen(false)}
                     >
                       {industry.title}
@@ -209,13 +209,13 @@ export function Navigation() {
               </div>
               
               <div>
-                <h3 className=&quot;text-sm font-medium text-muted-foreground mb-2&quot;>Services</h3>
-                <div className=&quot;space-y-2&quot;>
+                <h3 className="text-sm font-medium text-muted-foreground mb-2">Services</h3>
+                <div className="space-y-2">
                   {services.map((service) => (
                     <Link
                       key={service.href}
                       href={service.href}
-                      className=&quot;block px-3 py-2 text-sm hover:bg-accent rounded-md&quot;
+                      className="block px-3 py-2 text-sm hover:bg-accent rounded-md"
                       onClick={() => setIsOpen(false)}
                     >
                       {service.title}
@@ -224,27 +224,27 @@ export function Navigation() {
                 </div>
               </div>
 
-              <div className=&quot;space-y-2 pt-4 border-t&quot;>
+              <div className="space-y-2 pt-4 border-t">
                 <Link
-                  href=&quot;/about&quot;
-                  className=&quot;block px-3 py-2 text-sm hover:bg-accent rounded-md&quot;
+                  href="/about"
+                  className="block px-3 py-2 text-sm hover:bg-accent rounded-md"
                   onClick={() => setIsOpen(false)}
                 >
                   About
                 </Link>
                 <Link
-                  href=&quot;/contact&quot;
-                  className=&quot;block px-3 py-2 text-sm hover:bg-accent rounded-md&quot;
+                  href="/contact"
+                  className="block px-3 py-2 text-sm hover:bg-accent rounded-md"
                   onClick={() => setIsOpen(false)}
                 >
                   Contact
                 </Link>
-                <div className=&quot;w-full mt-4&quot;>
+                <div className="w-full mt-4">
                   <TidyCalPopup 
-                    path=&quot;abhixchawla/automations-and-more-consultation&quot;
-                    triggerText=&quot;Get Free Consultation&quot;
-                    triggerSize=&quot;default&quot;
-                    className=&quot;w-full&quot;
+                    path="abhixchawla/automations-and-more-consultation"
+                    triggerText="Get Free Consultation"
+                    triggerSize="default"
+                    className="w-full"
                   />
                 </div>
               </div>

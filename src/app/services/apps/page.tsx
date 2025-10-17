@@ -1,9 +1,9 @@
-import { Metadata } from &quot;next&quot;;
-import Link from &quot;next/link&quot;;
-import { Button } from &quot;@/components/ui/button&quot;;
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from &quot;@/components/ui/card&quot;;
-import { Badge } from &quot;@/components/ui/badge&quot;;
-import { Navigation } from &quot;@/components/navigation&quot;;
+import { Metadata } from "next";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Navigation } from "@/components/navigation";
 import { 
   Smartphone, 
   Globe, 
@@ -27,76 +27,76 @@ import {
   Home,
   Briefcase,
   Settings
-} from &quot;lucide-react&quot;;
+} from "lucide-react";
 
 export const metadata: Metadata = {
-  title: &quot;Custom Business App Development Services - Mobile & Web Applications&quot;,
-  description: &quot;Get custom business applications for your company. Mobile apps, web applications, API integration, and AI-powered features for small and medium businesses.&quot;,
+  title: "Custom Business App Development Services - Mobile & Web Applications",
+  description: "Get custom business applications for your company. Mobile apps, web applications, API integration, and AI-powered features for small and medium businesses.",
   keywords: [
-    &quot;custom business app development&quot;,
-    &quot;mobile app development&quot;,
-    &quot;web application development&quot;,
-    &quot;business app design&quot;,
-    &quot;API integration services&quot;,
-    &quot;custom software development&quot;,
-    &quot;business application solutions&quot;,
-    &quot;mobile app for business&quot;,
-    &quot;web app development&quot;,
-    &quot;business software solutions&quot;
+    "custom business app development",
+    "mobile app development",
+    "web application development",
+    "business app design",
+    "API integration services",
+    "custom software development",
+    "business application solutions",
+    "mobile app for business",
+    "web app development",
+    "business software solutions"
   ],
   openGraph: {
-    title: &quot;Custom Business App Development Services - Mobile & Web Applications&quot;,
-    description: &quot;Get custom business applications for your company. Mobile apps, web applications, and AI-powered features.&quot;,
-    url: &quot;https://automationsandmore.com/services/apps&quot;,
+    title: "Custom Business App Development Services - Mobile & Web Applications",
+    description: "Get custom business applications for your company. Mobile apps, web applications, and AI-powered features.",
+    url: "https://automationsandmore.com/services/apps",
   },
   alternates: {
-    canonical: &quot;/services/apps&quot;,
+    canonical: "/services/apps",
   },
 };
 
 const appServices = [
   {
-    title: &quot;Mobile App Development&quot;,
-    description: &quot;Native and cross-platform mobile applications for iOS and Android&quot;,
+    title: "Mobile App Development",
+    description: "Native and cross-platform mobile applications for iOS and Android",
     icon: Smartphone,
     features: [
-      &quot;iOS and Android app development&quot;,
-      &quot;Cross-platform solutions&quot;,
-      &quot;App store optimization&quot;,
-      &quot;Push notifications and analytics&quot;
+      "iOS and Android app development",
+      "Cross-platform solutions",
+      "App store optimization",
+      "Push notifications and analytics"
     ]
   },
   {
-    title: &quot;Web Application Development&quot;,
-    description: &quot;Custom web applications and progressive web apps (PWAs)&quot;,
+    title: "Web Application Development",
+    description: "Custom web applications and progressive web apps (PWAs)",
     icon: Globe,
     features: [
-      &quot;Custom web applications&quot;,
-      &quot;Progressive Web Apps (PWA)&quot;,
-      &quot;Real-time data synchronization&quot;,
-      &quot;Cloud-based solutions&quot;
+      "Custom web applications",
+      "Progressive Web Apps (PWA)",
+      "Real-time data synchronization",
+      "Cloud-based solutions"
     ]
   },
   {
-    title: &quot;API Integration & Development&quot;,
-    description: &quot;Connect your apps with existing systems and third-party services&quot;,
+    title: "API Integration & Development",
+    description: "Connect your apps with existing systems and third-party services",
     icon: Database,
     features: [
-      &quot;Custom API development&quot;,
-      &quot;Third-party integrations&quot;,
-      &quot;Data synchronization&quot;,
-      &quot;System connectivity solutions&quot;
+      "Custom API development",
+      "Third-party integrations",
+      "Data synchronization",
+      "System connectivity solutions"
     ]
   },
   {
-    title: &quot;AI-Powered Features&quot;,
-    description: &quot;Intelligent features that enhance user experience and business operations&quot;,
+    title: "AI-Powered Features",
+    description: "Intelligent features that enhance user experience and business operations",
     icon: Zap,
     features: [
-      &quot;AI chatbots and virtual assistants&quot;,
-      &quot;Machine learning integration&quot;,
-      &quot;Predictive analytics&quot;,
-      &quot;Intelligent automation&quot;
+      "AI chatbots and virtual assistants",
+      "Machine learning integration",
+      "Predictive analytics",
+      "Intelligent automation"
     ]
   }
 ];
@@ -104,136 +104,136 @@ const appServices = [
 const benefits = [
   {
     icon: TrendingUp,
-    title: &quot;Increase Business Efficiency&quot;,
-    description: &quot;Custom apps streamline your business processes and improve productivity&quot;
+    title: "Increase Business Efficiency",
+    description: "Custom apps streamline your business processes and improve productivity"
   },
   {
     icon: Clock,
-    title: &quot;24/7 Access to Your Business&quot;,
-    description: &quot;Mobile and web apps provide constant access to your business data and tools&quot;
+    title: "24/7 Access to Your Business",
+    description: "Mobile and web apps provide constant access to your business data and tools"
   },
   {
     icon: DollarSign,
-    title: &quot;Boost Revenue & Customer Engagement&quot;,
-    description: &quot;Engaging apps increase customer loyalty and create new revenue opportunities&quot;
+    title: "Boost Revenue & Customer Engagement",
+    description: "Engaging apps increase customer loyalty and create new revenue opportunities"
   }
 ];
 
 const appTypes = [
   {
-    name: &quot;Business Management Apps&quot;,
+    name: "Business Management Apps",
     icon: Building2,
-    description: &quot;CRM, project management, and business process automation apps&quot;
+    description: "CRM, project management, and business process automation apps"
   },
   {
-    name: &quot;E-commerce Apps&quot;,
+    name: "E-commerce Apps",
     icon: ShoppingCart,
-    description: &quot;Online stores, inventory management, and customer engagement apps&quot;
+    description: "Online stores, inventory management, and customer engagement apps"
   },
   {
-    name: &quot;Restaurant Apps&quot;,
+    name: "Restaurant Apps",
     icon: Utensils,
-    description: &quot;Order management, menu apps, and customer loyalty programs&quot;
+    description: "Order management, menu apps, and customer loyalty programs"
   },
   {
-    name: &quot;Healthcare Apps&quot;,
+    name: "Healthcare Apps",
     icon: Heart,
-    description: &quot;Patient portals, appointment booking, and medical record apps&quot;
+    description: "Patient portals, appointment booking, and medical record apps"
   },
   {
-    name: &quot;Real Estate Apps&quot;,
+    name: "Real Estate Apps",
     icon: Home,
-    description: &quot;Property management, listing apps, and client communication tools&quot;
+    description: "Property management, listing apps, and client communication tools"
   },
   {
-    name: &quot;Professional Services&quot;,
+    name: "Professional Services",
     icon: Briefcase,
-    description: &quot;Client management, document apps, and service booking systems&quot;
+    description: "Client management, document apps, and service booking systems"
   }
 ];
 
 const processSteps = [
   {
-    step: &quot;01&quot;,
-    title: &quot;Discovery & Strategy&quot;,
-    description: &quot;We analyze your business needs and create a comprehensive app development strategy&quot;
+    step: "01",
+    title: "Discovery & Strategy",
+    description: "We analyze your business needs and create a comprehensive app development strategy"
   },
   {
-    step: &quot;02&quot;, 
-    title: &quot;Design & Prototyping&quot;,
-    description: &quot;Create user-friendly designs and interactive prototypes for your app&quot;
+    step: "02", 
+    title: "Design & Prototyping",
+    description: "Create user-friendly designs and interactive prototypes for your app"
   },
   {
-    step: &quot;03&quot;,
-    title: &quot;Development & Testing&quot;,
-    description: &quot;Build your app with rigorous testing to ensure quality and performance&quot;
+    step: "03",
+    title: "Development & Testing",
+    description: "Build your app with rigorous testing to ensure quality and performance"
   },
   {
-    step: &quot;04&quot;,
-    title: &quot;Deployment & Support&quot;,
-    description: &quot;Launch your app and provide ongoing maintenance and feature updates&quot;
+    step: "04",
+    title: "Deployment & Support",
+    description: "Launch your app and provide ongoing maintenance and feature updates"
   }
 ];
 
 const jsonLd = {
-  &quot;@context&quot;: &quot;https://schema.org&quot;,
-  &quot;@type&quot;: &quot;Service&quot;,
-  &quot;name&quot;: &quot;Custom Business App Development Services&quot;,
-  &quot;description&quot;: &quot;Get custom business applications for your company including mobile apps, web applications, API integration, and AI-powered features.&quot;,
-  &quot;provider&quot;: {
-    &quot;@type&quot;: &quot;Organization&quot;,
-    &quot;name&quot;: &quot;Automations and More&quot;,
-    &quot;url&quot;: &quot;https://automationsandmore.com&quot;
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Custom Business App Development Services",
+  "description": "Get custom business applications for your company including mobile apps, web applications, API integration, and AI-powered features.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Automations and More",
+    "url": "https://automationsandmore.com"
   },
-  &quot;serviceType&quot;: &quot;App Development&quot;,
-  &quot;areaServed&quot;: &quot;United States&quot;,
-  &quot;audience&quot;: {
-    &quot;@type&quot;: &quot;BusinessAudience&quot;,
-    &quot;audienceType&quot;: &quot;Small and Medium Businesses&quot;
+  "serviceType": "App Development",
+  "areaServed": "United States",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Small and Medium Businesses"
   },
-  &quot;offers&quot;: {
-    &quot;@type&quot;: &quot;Offer&quot;,
-    &quot;description&quot;: &quot;Custom business app development services&quot;,
-    &quot;category&quot;: &quot;App Development Services&quot;
+  "offers": {
+    "@type": "Offer",
+    "description": "Custom business app development services",
+    "category": "App Development Services"
   }
 };
 
 export default function AppsPage() {
   return (
-    <div className=&quot;min-h-screen bg-background&quot;>
+    <div className="min-h-screen bg-background">
       <script
-        type=&quot;application/ld+json&quot;
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Navigation />
       
       {/* Hero Section */}
-      <section className=&quot;relative py-20 lg:py-32&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;max-w-4xl mx-auto text-center&quot;>
-            <Badge variant=&quot;secondary&quot; className=&quot;mb-6&quot;>
+      <section className="relative py-20 lg:py-32">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <Badge variant="secondary" className="mb-6">
               Custom Business App Development
             </Badge>
-            <h1 className=&quot;text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6&quot;>
-              Get Custom{&quot; &quot;}
-              <span className=&quot;bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent&quot;>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
+              Get Custom{" "}
+              <span className="bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
                 Business Applications
-              </span>{&quot; &quot;}
+              </span>{" "}
               Built for Your Needs
             </h1>
-            <p className=&quot;text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto&quot;>
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               Mobile apps, web applications, and API integrations that streamline your business 
               operations and enhance customer experiences.
             </p>
-            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
-              <Button size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
-                <Link href=&quot;/contact&quot;>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" asChild className="text-lg px-8 py-6">
+                <Link href="/contact">
                   Get Your Custom App
-                  <ArrowRight className=&quot;ml-2 h-5 w-5&quot; />
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button variant=&quot;outline&quot; size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
-                <Link href=&quot;#services&quot;>
+              <Button variant="outline" size="lg" asChild className="text-lg px-8 py-6">
+                <Link href="#services">
                   View Our Services
                 </Link>
               </Button>
@@ -243,28 +243,28 @@ export default function AppsPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className=&quot;py-20 bg-muted/30&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;text-center mb-16&quot;>
-            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Why Choose Our App Development Services
             </h2>
-            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Our custom business applications are designed to solve real business problems 
               and drive growth through technology.
             </p>
           </div>
-          <div className=&quot;grid md:grid-cols-3 gap-8&quot;>
+          <div className="grid md:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
-              <Card key={index} className=&quot;text-center&quot;>
+              <Card key={index} className="text-center">
                 <CardHeader>
-                  <div className=&quot;mx-auto mb-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center&quot;>
-                    <benefit.icon className=&quot;h-6 w-6 text-primary&quot; />
+                  <div className="mx-auto mb-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <benefit.icon className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle>{benefit.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className=&quot;text-base&quot;>
+                  <CardDescription className="text-base">
                     {benefit.description}
                   </CardDescription>
                 </CardContent>
@@ -275,34 +275,34 @@ export default function AppsPage() {
       </section>
 
       {/* Services Section */}
-      <section id=&quot;services&quot; className=&quot;py-20&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;text-center mb-16&quot;>
-            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
+      <section id="services" className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Our App Development Services
             </h2>
-            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Comprehensive app development services designed to meet your specific 
               business needs and goals.
             </p>
           </div>
-          <div className=&quot;grid md:grid-cols-2 gap-8&quot;>
+          <div className="grid md:grid-cols-2 gap-8">
             {appServices.map((service, index) => (
-              <Card key={index} className=&quot;group hover:shadow-lg transition-shadow&quot;>
+              <Card key={index} className="group hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <div className=&quot;mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors&quot;>
-                    <service.icon className=&quot;h-6 w-6 text-primary&quot; />
+                  <div className="mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <service.icon className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle className=&quot;text-xl&quot;>{service.title}</CardTitle>
-                  <CardDescription className=&quot;text-base&quot;>
+                  <CardTitle className="text-xl">{service.title}</CardTitle>
+                  <CardDescription className="text-base">
                     {service.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ul className=&quot;space-y-2&quot;>
+                  <ul className="space-y-2">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className=&quot;flex items-center text-sm&quot;>
-                        <CheckCircle className=&quot;h-4 w-4 text-green-500 mr-2 flex-shrink-0&quot; />
+                      <li key={featureIndex} className="flex items-center text-sm">
+                        <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
                         {feature}
                       </li>
                     ))}
@@ -315,26 +315,26 @@ export default function AppsPage() {
       </section>
 
       {/* App Types Section */}
-      <section className=&quot;py-20 bg-muted/30&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;text-center mb-16&quot;>
-            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Business Apps for Every Industry
             </h2>
-            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               We create custom business applications tailored to your specific industry 
               and business requirements.
             </p>
           </div>
-          <div className=&quot;grid md:grid-cols-3 gap-6&quot;>
+          <div className="grid md:grid-cols-3 gap-6">
             {appTypes.map((type, index) => (
-              <Card key={index} className=&quot;text-center&quot;>
-                <CardContent className=&quot;p-6&quot;>
-                  <div className=&quot;mx-auto mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center&quot;>
-                    <type.icon className=&quot;h-6 w-6 text-primary&quot; />
+              <Card key={index} className="text-center">
+                <CardContent className="p-6">
+                  <div className="mx-auto mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <type.icon className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className=&quot;font-semibold text-lg mb-2&quot;>{type.name}</h3>
-                  <p className=&quot;text-sm text-muted-foreground&quot;>{type.description}</p>
+                  <h3 className="font-semibold text-lg mb-2">{type.name}</h3>
+                  <p className="text-sm text-muted-foreground">{type.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -343,28 +343,28 @@ export default function AppsPage() {
       </section>
 
       {/* Process Section */}
-      <section className=&quot;py-20&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;text-center mb-16&quot;>
-            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Our App Development Process
             </h2>
-            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               We follow a proven development process to ensure your app meets your business 
               goals and delivers exceptional user experiences.
             </p>
           </div>
-          <div className=&quot;grid md:grid-cols-4 gap-8&quot;>
+          <div className="grid md:grid-cols-4 gap-8">
             {processSteps.map((step, index) => (
-              <Card key={index} className=&quot;text-center&quot;>
+              <Card key={index} className="text-center">
                 <CardHeader>
-                  <div className=&quot;mx-auto mb-4 h-16 w-16 rounded-full bg-primary flex items-center justify-center&quot;>
-                    <span className=&quot;text-2xl font-bold text-primary-foreground&quot;>{step.step}</span>
+                  <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-primary flex items-center justify-center">
+                    <span className="text-2xl font-bold text-primary-foreground">{step.step}</span>
                   </div>
-                  <CardTitle className=&quot;text-lg&quot;>{step.title}</CardTitle>
+                  <CardTitle className="text-lg">{step.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className=&quot;text-base&quot;>
+                  <CardDescription className="text-base">
                     {step.description}
                   </CardDescription>
                 </CardContent>
@@ -375,24 +375,24 @@ export default function AppsPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className=&quot;py-20 bg-muted/30&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;max-w-3xl mx-auto&quot;>
-            <div className=&quot;text-center mb-16&quot;>
-              <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 App Development FAQ
               </h2>
-              <p className=&quot;text-xl text-muted-foreground&quot;>
+              <p className="text-xl text-muted-foreground">
                 Common questions about our app development services.
               </p>
             </div>
-            <div className=&quot;space-y-6&quot;>
+            <div className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle className=&quot;text-lg&quot;>How long does it take to develop a custom app?</CardTitle>
+                  <CardTitle className="text-lg">How long does it take to develop a custom app?</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className=&quot;text-muted-foreground&quot;>
+                  <p className="text-muted-foreground">
                     Development timelines vary based on complexity, but most business apps are completed within 8-16 weeks. 
                     We provide detailed timelines during the planning phase.
                   </p>
@@ -400,10 +400,10 @@ export default function AppsPage() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle className=&quot;text-lg&quot;>Do you develop both mobile and web apps?</CardTitle>
+                  <CardTitle className="text-lg">Do you develop both mobile and web apps?</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className=&quot;text-muted-foreground&quot;>
+                  <p className="text-muted-foreground">
                     Yes, we develop both mobile apps (iOS and Android) and web applications. 
                     We can also create cross-platform solutions that work across multiple devices.
                   </p>
@@ -411,10 +411,10 @@ export default function AppsPage() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle className=&quot;text-lg&quot;>Can you integrate my app with existing business systems?</CardTitle>
+                  <CardTitle className="text-lg">Can you integrate my app with existing business systems?</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className=&quot;text-muted-foreground&quot;>
+                  <p className="text-muted-foreground">
                     Absolutely! We specialize in API integration and can connect your app with existing 
                     CRM systems, databases, payment processors, and other business tools.
                   </p>
@@ -426,25 +426,25 @@ export default function AppsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className=&quot;py-20&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;max-w-4xl mx-auto text-center&quot;>
-            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-6&quot;>
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Ready to Build Your Custom Business App?
             </h2>
-            <p className=&quot;text-xl text-muted-foreground mb-8&quot;>
+            <p className="text-xl text-muted-foreground mb-8">
               Join businesses that have already transformed their operations with our 
-              custom app development services. Let&apos;s discuss your project.
+              custom app development services. Let's discuss your project.
             </p>
-            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
-              <Button size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
-                <Link href=&quot;/contact&quot;>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" asChild className="text-lg px-8 py-6">
+                <Link href="/contact">
                   Start Your App Project
-                  <ArrowRight className=&quot;ml-2 h-5 w-5&quot; />
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button variant=&quot;outline&quot; size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
-                <Link href=&quot;/services/websites&quot;>
+              <Button variant="outline" size="lg" asChild className="text-lg px-8 py-6">
+                <Link href="/services/websites">
                   View Our Other Services
                 </Link>
               </Button>
@@ -454,39 +454,39 @@ export default function AppsPage() {
       </section>
 
       {/* Footer */}
-      <footer className=&quot;border-t py-12 bg-muted/30&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;grid md:grid-cols-4 gap-8&quot;>
-            <div className=&quot;md:col-span-2&quot;>
-              <div className=&quot;flex items-center space-x-2 mb-4&quot;>
-                <div className=&quot;h-8 w-8 rounded bg-primary flex items-center justify-center&quot;>
-                  <Zap className=&quot;h-5 w-5 text-primary-foreground&quot; />
+      <footer className="border-t py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="md:col-span-2">
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="h-8 w-8 rounded bg-primary flex items-center justify-center">
+                  <Zap className="h-5 w-5 text-primary-foreground" />
                 </div>
-                <span className=&quot;font-bold text-xl&quot;>Automations & More</span>
+                <span className="font-bold text-xl">Automations & More</span>
               </div>
-              <p className=&quot;text-muted-foreground mb-4 max-w-md&quot;>
+              <p className="text-muted-foreground mb-4 max-w-md">
                 Creating custom business applications that streamline operations, enhance customer experiences, 
                 and drive growth through innovative mobile and web solutions.
               </p>
             </div>
             <div>
-              <h3 className=&quot;font-semibold mb-4&quot;>Services</h3>
-              <ul className=&quot;space-y-2 text-sm text-muted-foreground&quot;>
-                <li><Link href=&quot;/services/ai-automation&quot; className=&quot;hover:text-foreground&quot;>AI Automation</Link></li>
-                <li><Link href=&quot;/services/websites&quot; className=&quot;hover:text-foreground&quot;>Custom Websites</Link></li>
-                <li><Link href=&quot;/services/apps&quot; className=&quot;hover:text-foreground&quot;>Business Apps</Link></li>
+              <h3 className="font-semibold mb-4">Services</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link href="/services/ai-automation" className="hover:text-foreground">AI Automation</Link></li>
+                <li><Link href="/services/websites" className="hover:text-foreground">Custom Websites</Link></li>
+                <li><Link href="/services/apps" className="hover:text-foreground">Business Apps</Link></li>
               </ul>
             </div>
             <div>
-              <h3 className=&quot;font-semibold mb-4&quot;>Company</h3>
-              <ul className=&quot;space-y-2 text-sm text-muted-foreground&quot;>
-                <li><Link href=&quot;/about&quot; className=&quot;hover:text-foreground&quot;>About</Link></li>
-                <li><Link href=&quot;/contact&quot; className=&quot;hover:text-foreground&quot;>Contact</Link></li>
-                <li><Link href=&quot;/industries&quot; className=&quot;hover:text-foreground&quot;>Industries</Link></li>
+              <h3 className="font-semibold mb-4">Company</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link href="/about" className="hover:text-foreground">About</Link></li>
+                <li><Link href="/contact" className="hover:text-foreground">Contact</Link></li>
+                <li><Link href="/industries" className="hover:text-foreground">Industries</Link></li>
               </ul>
             </div>
           </div>
-          <div className=&quot;border-t mt-8 pt-8 text-center text-sm text-muted-foreground&quot;>
+          <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
             <p>&copy; 2024 Automations and More. All rights reserved.</p>
           </div>
         </div>

@@ -1,9 +1,9 @@
-import { Metadata } from &quot;next&quot;;
-import Link from &quot;next/link&quot;;
-import { Button } from &quot;@/components/ui/button&quot;;
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from &quot;@/components/ui/card&quot;;
-import { Badge } from &quot;@/components/ui/badge&quot;;
-import { Navigation } from &quot;@/components/navigation&quot;;
+import { Metadata } from "next";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Navigation } from "@/components/navigation";
 import { 
   Globe, 
   Smartphone, 
@@ -26,76 +26,76 @@ import {
   Heart,
   Home,
   Briefcase
-} from &quot;lucide-react&quot;;
+} from "lucide-react";
 
 export const metadata: Metadata = {
-  title: &quot;Custom Website Development Services - AI-Powered Business Websites&quot;,
-  description: &quot;Get a custom, AI-powered website for your business. Modern design, SEO optimization, mobile responsive, and AI integration services for small and medium businesses.&quot;,
+  title: "Custom Website Development Services - AI-Powered Business Websites",
+  description: "Get a custom, AI-powered website for your business. Modern design, SEO optimization, mobile responsive, and AI integration services for small and medium businesses.",
   keywords: [
-    &quot;custom website development&quot;,
-    &quot;AI-powered websites&quot;,
-    &quot;business website design&quot;,
-    &quot;SEO optimized websites&quot;,
-    &quot;responsive web design&quot;,
-    &quot;website development services&quot;,
-    &quot;AI website integration&quot;,
-    &quot;modern website design&quot;,
-    &quot;business website builder&quot;,
-    &quot;professional website development&quot;
+    "custom website development",
+    "AI-powered websites",
+    "business website design",
+    "SEO optimized websites",
+    "responsive web design",
+    "website development services",
+    "AI website integration",
+    "modern website design",
+    "business website builder",
+    "professional website development"
   ],
   openGraph: {
-    title: &quot;Custom Website Development Services - AI-Powered Business Websites&quot;,
-    description: &quot;Get a custom, AI-powered website for your business. Modern design, SEO optimization, and AI integration services.&quot;,
-    url: &quot;https://automationsandmore.com/services/websites&quot;,
+    title: "Custom Website Development Services - AI-Powered Business Websites",
+    description: "Get a custom, AI-powered website for your business. Modern design, SEO optimization, and AI integration services.",
+    url: "https://automationsandmore.com/services/websites",
   },
   alternates: {
-    canonical: &quot;/services/websites&quot;,
+    canonical: "/services/websites",
   },
 };
 
 const websiteServices = [
   {
-    title: &quot;Custom Website Design&quot;,
-    description: &quot;Beautiful, modern websites tailored to your brand and business needs&quot;,
+    title: "Custom Website Design",
+    description: "Beautiful, modern websites tailored to your brand and business needs",
     icon: Palette,
     features: [
-      &quot;Custom design and branding&quot;,
-      &quot;Mobile-responsive layouts&quot;,
-      &quot;User experience optimization&quot;,
-      &quot;Modern, professional aesthetics&quot;
+      "Custom design and branding",
+      "Mobile-responsive layouts",
+      "User experience optimization",
+      "Modern, professional aesthetics"
     ]
   },
   {
-    title: &quot;SEO Optimization&quot;,
-    description: &quot;Search engine optimized websites that rank higher and attract more customers&quot;,
+    title: "SEO Optimization",
+    description: "Search engine optimized websites that rank higher and attract more customers",
     icon: Search,
     features: [
-      &quot;Technical SEO implementation&quot;,
-      &quot;Content optimization&quot;,
-      &quot;Local SEO for businesses&quot;,
-      &quot;Performance optimization&quot;
+      "Technical SEO implementation",
+      "Content optimization",
+      "Local SEO for businesses",
+      "Performance optimization"
     ]
   },
   {
-    title: &quot;AI Integration&quot;,
-    description: &quot;Intelligent features that enhance user experience and business operations&quot;,
+    title: "AI Integration",
+    description: "Intelligent features that enhance user experience and business operations",
     icon: Zap,
     features: [
-      &quot;AI chatbots and virtual assistants&quot;,
-      &quot;Personalized content delivery&quot;,
-      &quot;Automated customer interactions&quot;,
-      &quot;Intelligent search and recommendations&quot;
+      "AI chatbots and virtual assistants",
+      "Personalized content delivery",
+      "Automated customer interactions",
+      "Intelligent search and recommendations"
     ]
   },
   {
-    title: &quot;E-commerce Solutions&quot;,
-    description: &quot;Complete online store solutions with payment processing and inventory management&quot;,
+    title: "E-commerce Solutions",
+    description: "Complete online store solutions with payment processing and inventory management",
     icon: ShoppingCart,
     features: [
-      &quot;Online store setup and design&quot;,
-      &quot;Payment gateway integration&quot;,
-      &quot;Inventory management systems&quot;,
-      &quot;Order processing automation&quot;
+      "Online store setup and design",
+      "Payment gateway integration",
+      "Inventory management systems",
+      "Order processing automation"
     ]
   }
 ];
@@ -103,136 +103,136 @@ const websiteServices = [
 const benefits = [
   {
     icon: TrendingUp,
-    title: &quot;Increase Online Visibility&quot;,
-    description: &quot;SEO-optimized websites help you rank higher in search results and attract more customers&quot;
+    title: "Increase Online Visibility",
+    description: "SEO-optimized websites help you rank higher in search results and attract more customers"
   },
   {
     icon: Clock,
-    title: &quot;24/7 Business Presence&quot;,
-    description: &quot;Your website works around the clock to attract and convert customers&quot;
+    title: "24/7 Business Presence",
+    description: "Your website works around the clock to attract and convert customers"
   },
   {
     icon: DollarSign,
-    title: &quot;Boost Sales & Revenue&quot;,
-    description: &quot;Professional websites with AI features increase conversion rates and customer engagement&quot;
+    title: "Boost Sales & Revenue",
+    description: "Professional websites with AI features increase conversion rates and customer engagement"
   }
 ];
 
 const websiteTypes = [
   {
-    name: &quot;Business Websites&quot;,
+    name: "Business Websites",
     icon: Building2,
-    description: &quot;Professional websites for service-based businesses and companies&quot;
+    description: "Professional websites for service-based businesses and companies"
   },
   {
-    name: &quot;E-commerce Stores&quot;,
+    name: "E-commerce Stores",
     icon: ShoppingCart,
-    description: &quot;Complete online stores with shopping cart and payment processing&quot;
+    description: "Complete online stores with shopping cart and payment processing"
   },
   {
-    name: &quot;Restaurant Websites&quot;,
+    name: "Restaurant Websites",
     icon: Utensils,
-    description: &quot;Online menus, reservations, and food ordering systems&quot;
+    description: "Online menus, reservations, and food ordering systems"
   },
   {
-    name: &quot;Healthcare Websites&quot;,
+    name: "Healthcare Websites",
     icon: Heart,
-    description: &quot;Patient portals, appointment booking, and HIPAA-compliant designs&quot;
+    description: "Patient portals, appointment booking, and HIPAA-compliant designs"
   },
   {
-    name: &quot;Real Estate Websites&quot;,
+    name: "Real Estate Websites",
     icon: Home,
-    description: &quot;Property listings, virtual tours, and lead generation systems&quot;
+    description: "Property listings, virtual tours, and lead generation systems"
   },
   {
-    name: &quot;Professional Services&quot;,
+    name: "Professional Services",
     icon: Briefcase,
-    description: &quot;Portfolio showcases, client portals, and service booking systems&quot;
+    description: "Portfolio showcases, client portals, and service booking systems"
   }
 ];
 
 const processSteps = [
   {
-    step: &quot;01&quot;,
-    title: &quot;Discovery & Planning&quot;,
-    description: &quot;We understand your business goals and create a comprehensive website strategy&quot;
+    step: "01",
+    title: "Discovery & Planning",
+    description: "We understand your business goals and create a comprehensive website strategy"
   },
   {
-    step: &quot;02&quot;, 
-    title: &quot;Design & Development&quot;,
-    description: &quot;Create beautiful, functional websites with modern design and AI integration&quot;
+    step: "02", 
+    title: "Design & Development",
+    description: "Create beautiful, functional websites with modern design and AI integration"
   },
   {
-    step: &quot;03&quot;,
-    title: &quot;Testing & Optimization&quot;,
-    description: &quot;Thorough testing and SEO optimization to ensure peak performance&quot;
+    step: "03",
+    title: "Testing & Optimization",
+    description: "Thorough testing and SEO optimization to ensure peak performance"
   },
   {
-    step: &quot;04&quot;,
-    title: &quot;Launch & Support&quot;,
-    description: &quot;Deploy your website and provide ongoing maintenance and support&quot;
+    step: "04",
+    title: "Launch & Support",
+    description: "Deploy your website and provide ongoing maintenance and support"
   }
 ];
 
 const jsonLd = {
-  &quot;@context&quot;: &quot;https://schema.org&quot;,
-  &quot;@type&quot;: &quot;Service&quot;,
-  &quot;name&quot;: &quot;Custom Website Development Services&quot;,
-  &quot;description&quot;: &quot;Get a custom, AI-powered website for your business with modern design, SEO optimization, and AI integration services.&quot;,
-  &quot;provider&quot;: {
-    &quot;@type&quot;: &quot;Organization&quot;,
-    &quot;name&quot;: &quot;Automations and More&quot;,
-    &quot;url&quot;: &quot;https://automationsandmore.com&quot;
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Custom Website Development Services",
+  "description": "Get a custom, AI-powered website for your business with modern design, SEO optimization, and AI integration services.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Automations and More",
+    "url": "https://automationsandmore.com"
   },
-  &quot;serviceType&quot;: &quot;Website Development&quot;,
-  &quot;areaServed&quot;: &quot;United States&quot;,
-  &quot;audience&quot;: {
-    &quot;@type&quot;: &quot;BusinessAudience&quot;,
-    &quot;audienceType&quot;: &quot;Small and Medium Businesses&quot;
+  "serviceType": "Website Development",
+  "areaServed": "United States",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Small and Medium Businesses"
   },
-  &quot;offers&quot;: {
-    &quot;@type&quot;: &quot;Offer&quot;,
-    &quot;description&quot;: &quot;Custom website development services for businesses&quot;,
-    &quot;category&quot;: &quot;Website Development Services&quot;
+  "offers": {
+    "@type": "Offer",
+    "description": "Custom website development services for businesses",
+    "category": "Website Development Services"
   }
 };
 
 export default function WebsitesPage() {
   return (
-    <div className=&quot;min-h-screen bg-background&quot;>
+    <div className="min-h-screen bg-background">
       <script
-        type=&quot;application/ld+json&quot;
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Navigation />
       
       {/* Hero Section */}
-      <section className=&quot;relative py-20 lg:py-32&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;max-w-4xl mx-auto text-center&quot;>
-            <Badge variant=&quot;secondary&quot; className=&quot;mb-6&quot;>
+      <section className="relative py-20 lg:py-32">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <Badge variant="secondary" className="mb-6">
               Custom Website Development Services
             </Badge>
-            <h1 className=&quot;text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6&quot;>
-              Get a{&quot; &quot;}
-              <span className=&quot;bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent&quot;>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
+              Get a{" "}
+              <span className="bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
                 Custom AI-Powered Website
-              </span>{&quot; &quot;}
+              </span>{" "}
               for Your Business
             </h1>
-            <p className=&quot;text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto&quot;>
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               Modern, SEO-optimized websites with AI integration that help your business 
               attract more customers and grow online.
             </p>
-            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
-              <Button size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
-                <Link href=&quot;/contact&quot;>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" asChild className="text-lg px-8 py-6">
+                <Link href="/contact">
                   Get Your Custom Website
-                  <ArrowRight className=&quot;ml-2 h-5 w-5&quot; />
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button variant=&quot;outline&quot; size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
-                <Link href=&quot;#services&quot;>
+              <Button variant="outline" size="lg" asChild className="text-lg px-8 py-6">
+                <Link href="#services">
                   View Our Services
                 </Link>
               </Button>
@@ -242,28 +242,28 @@ export default function WebsitesPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className=&quot;py-20 bg-muted/30&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;text-center mb-16&quot;>
-            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Why Choose Our Website Development Services
             </h2>
-            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Our custom websites are designed to help your business succeed online with 
               modern design, AI integration, and SEO optimization.
             </p>
           </div>
-          <div className=&quot;grid md:grid-cols-3 gap-8&quot;>
+          <div className="grid md:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
-              <Card key={index} className=&quot;text-center&quot;>
+              <Card key={index} className="text-center">
                 <CardHeader>
-                  <div className=&quot;mx-auto mb-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center&quot;>
-                    <benefit.icon className=&quot;h-6 w-6 text-primary&quot; />
+                  <div className="mx-auto mb-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <benefit.icon className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle>{benefit.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className=&quot;text-base&quot;>
+                  <CardDescription className="text-base">
                     {benefit.description}
                   </CardDescription>
                 </CardContent>
@@ -274,34 +274,34 @@ export default function WebsitesPage() {
       </section>
 
       {/* Services Section */}
-      <section id=&quot;services&quot; className=&quot;py-20&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;text-center mb-16&quot;>
-            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
+      <section id="services" className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Our Website Development Services
             </h2>
-            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Comprehensive website development services designed to help your business 
               succeed online.
             </p>
           </div>
-          <div className=&quot;grid md:grid-cols-2 gap-8&quot;>
+          <div className="grid md:grid-cols-2 gap-8">
             {websiteServices.map((service, index) => (
-              <Card key={index} className=&quot;group hover:shadow-lg transition-shadow&quot;>
+              <Card key={index} className="group hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <div className=&quot;mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors&quot;>
-                    <service.icon className=&quot;h-6 w-6 text-primary&quot; />
+                  <div className="mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <service.icon className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle className=&quot;text-xl&quot;>{service.title}</CardTitle>
-                  <CardDescription className=&quot;text-base&quot;>
+                  <CardTitle className="text-xl">{service.title}</CardTitle>
+                  <CardDescription className="text-base">
                     {service.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ul className=&quot;space-y-2&quot;>
+                  <ul className="space-y-2">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className=&quot;flex items-center text-sm&quot;>
-                        <CheckCircle className=&quot;h-4 w-4 text-green-500 mr-2 flex-shrink-0&quot; />
+                      <li key={featureIndex} className="flex items-center text-sm">
+                        <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
                         {feature}
                       </li>
                     ))}
@@ -314,25 +314,25 @@ export default function WebsitesPage() {
       </section>
 
       {/* Website Types Section */}
-      <section className=&quot;py-20 bg-muted/30&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;text-center mb-16&quot;>
-            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Websites for Every Business Type
             </h2>
-            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               We create custom websites tailored to your specific industry and business needs.
             </p>
           </div>
-          <div className=&quot;grid md:grid-cols-3 gap-6&quot;>
+          <div className="grid md:grid-cols-3 gap-6">
             {websiteTypes.map((type, index) => (
-              <Card key={index} className=&quot;text-center&quot;>
-                <CardContent className=&quot;p-6&quot;>
-                  <div className=&quot;mx-auto mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center&quot;>
-                    <type.icon className=&quot;h-6 w-6 text-primary&quot; />
+              <Card key={index} className="text-center">
+                <CardContent className="p-6">
+                  <div className="mx-auto mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <type.icon className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className=&quot;font-semibold text-lg mb-2&quot;>{type.name}</h3>
-                  <p className=&quot;text-sm text-muted-foreground&quot;>{type.description}</p>
+                  <h3 className="font-semibold text-lg mb-2">{type.name}</h3>
+                  <p className="text-sm text-muted-foreground">{type.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -341,28 +341,28 @@ export default function WebsitesPage() {
       </section>
 
       {/* Process Section */}
-      <section className=&quot;py-20&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;text-center mb-16&quot;>
-            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Our Website Development Process
             </h2>
-            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               We follow a proven process to ensure your website meets your business goals 
               and exceeds your expectations.
             </p>
           </div>
-          <div className=&quot;grid md:grid-cols-4 gap-8&quot;>
+          <div className="grid md:grid-cols-4 gap-8">
             {processSteps.map((step, index) => (
-              <Card key={index} className=&quot;text-center&quot;>
+              <Card key={index} className="text-center">
                 <CardHeader>
-                  <div className=&quot;mx-auto mb-4 h-16 w-16 rounded-full bg-primary flex items-center justify-center&quot;>
-                    <span className=&quot;text-2xl font-bold text-primary-foreground&quot;>{step.step}</span>
+                  <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-primary flex items-center justify-center">
+                    <span className="text-2xl font-bold text-primary-foreground">{step.step}</span>
                   </div>
-                  <CardTitle className=&quot;text-lg&quot;>{step.title}</CardTitle>
+                  <CardTitle className="text-lg">{step.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className=&quot;text-base&quot;>
+                  <CardDescription className="text-base">
                     {step.description}
                   </CardDescription>
                 </CardContent>
@@ -373,24 +373,24 @@ export default function WebsitesPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className=&quot;py-20 bg-muted/30&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;max-w-3xl mx-auto&quot;>
-            <div className=&quot;text-center mb-16&quot;>
-              <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Website Development FAQ
               </h2>
-              <p className=&quot;text-xl text-muted-foreground&quot;>
+              <p className="text-xl text-muted-foreground">
                 Common questions about our website development services.
               </p>
             </div>
-            <div className=&quot;space-y-6&quot;>
+            <div className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle className=&quot;text-lg&quot;>How long does it take to build a custom website?</CardTitle>
+                  <CardTitle className="text-lg">How long does it take to build a custom website?</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className=&quot;text-muted-foreground&quot;>
+                  <p className="text-muted-foreground">
                     Most custom websites are completed within 4-8 weeks, depending on complexity and features. 
                     We work closely with you throughout the process to ensure timely delivery.
                   </p>
@@ -398,10 +398,10 @@ export default function WebsitesPage() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle className=&quot;text-lg&quot;>Do you provide ongoing website maintenance?</CardTitle>
+                  <CardTitle className="text-lg">Do you provide ongoing website maintenance?</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className=&quot;text-muted-foreground&quot;>
+                  <p className="text-muted-foreground">
                     Yes, we offer comprehensive website maintenance and support services including updates, 
                     security monitoring, backups, and performance optimization.
                   </p>
@@ -409,10 +409,10 @@ export default function WebsitesPage() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle className=&quot;text-lg&quot;>Will my website be mobile-responsive?</CardTitle>
+                  <CardTitle className="text-lg">Will my website be mobile-responsive?</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className=&quot;text-muted-foreground&quot;>
+                  <p className="text-muted-foreground">
                     Absolutely! All our websites are built mobile-first and fully responsive, 
                     ensuring optimal performance across all devices and screen sizes.
                   </p>
@@ -424,25 +424,25 @@ export default function WebsitesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className=&quot;py-20&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;max-w-4xl mx-auto text-center&quot;>
-            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-6&quot;>
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Ready to Get Your Custom Website?
             </h2>
-            <p className=&quot;text-xl text-muted-foreground mb-8&quot;>
+            <p className="text-xl text-muted-foreground mb-8">
               Join businesses that have already transformed their online presence with our 
-              custom website development services. Let&apos;s discuss your project.
+              custom website development services. Let's discuss your project.
             </p>
-            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
-              <Button size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
-                <Link href=&quot;/contact&quot;>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" asChild className="text-lg px-8 py-6">
+                <Link href="/contact">
                   Start Your Website Project
-                  <ArrowRight className=&quot;ml-2 h-5 w-5&quot; />
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button variant=&quot;outline&quot; size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
-                <Link href=&quot;/services/ai-automation&quot;>
+              <Button variant="outline" size="lg" asChild className="text-lg px-8 py-6">
+                <Link href="/services/ai-automation">
                   View Our Other Services
                 </Link>
               </Button>
@@ -452,39 +452,39 @@ export default function WebsitesPage() {
       </section>
 
       {/* Footer */}
-      <footer className=&quot;border-t py-12 bg-muted/30&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;grid md:grid-cols-4 gap-8&quot;>
-            <div className=&quot;md:col-span-2&quot;>
-              <div className=&quot;flex items-center space-x-2 mb-4&quot;>
-                <div className=&quot;h-8 w-8 rounded bg-primary flex items-center justify-center&quot;>
-                  <Zap className=&quot;h-5 w-5 text-primary-foreground&quot; />
+      <footer className="border-t py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="md:col-span-2">
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="h-8 w-8 rounded bg-primary flex items-center justify-center">
+                  <Zap className="h-5 w-5 text-primary-foreground" />
                 </div>
-                <span className=&quot;font-bold text-xl&quot;>Automations & More</span>
+                <span className="font-bold text-xl">Automations & More</span>
               </div>
-              <p className=&quot;text-muted-foreground mb-4 max-w-md&quot;>
+              <p className="text-muted-foreground mb-4 max-w-md">
                 Creating custom, AI-powered websites that help businesses attract more customers 
                 and grow their online presence with modern design and intelligent features.
               </p>
             </div>
             <div>
-              <h3 className=&quot;font-semibold mb-4&quot;>Services</h3>
-              <ul className=&quot;space-y-2 text-sm text-muted-foreground&quot;>
-                <li><Link href=&quot;/services/ai-automation&quot; className=&quot;hover:text-foreground&quot;>AI Automation</Link></li>
-                <li><Link href=&quot;/services/websites&quot; className=&quot;hover:text-foreground&quot;>Custom Websites</Link></li>
-                <li><Link href=&quot;/services/apps&quot; className=&quot;hover:text-foreground&quot;>Business Apps</Link></li>
+              <h3 className="font-semibold mb-4">Services</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link href="/services/ai-automation" className="hover:text-foreground">AI Automation</Link></li>
+                <li><Link href="/services/websites" className="hover:text-foreground">Custom Websites</Link></li>
+                <li><Link href="/services/apps" className="hover:text-foreground">Business Apps</Link></li>
               </ul>
             </div>
             <div>
-              <h3 className=&quot;font-semibold mb-4&quot;>Company</h3>
-              <ul className=&quot;space-y-2 text-sm text-muted-foreground&quot;>
-                <li><Link href=&quot;/about&quot; className=&quot;hover:text-foreground&quot;>About</Link></li>
-                <li><Link href=&quot;/contact&quot; className=&quot;hover:text-foreground&quot;>Contact</Link></li>
-                <li><Link href=&quot;/industries&quot; className=&quot;hover:text-foreground&quot;>Industries</Link></li>
+              <h3 className="font-semibold mb-4">Company</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link href="/about" className="hover:text-foreground">About</Link></li>
+                <li><Link href="/contact" className="hover:text-foreground">Contact</Link></li>
+                <li><Link href="/industries" className="hover:text-foreground">Industries</Link></li>
               </ul>
             </div>
           </div>
-          <div className=&quot;border-t mt-8 pt-8 text-center text-sm text-muted-foreground&quot;>
+          <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
             <p>&copy; 2024 Automations and More. All rights reserved.</p>
           </div>
         </div>

@@ -1,9 +1,9 @@
-import { Metadata } from &quot;next&quot;;
-import Link from &quot;next/link&quot;;
-import { Button } from &quot;@/components/ui/button&quot;;
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from &quot;@/components/ui/card&quot;;
-import { Badge } from &quot;@/components/ui/badge&quot;;
-import { Navigation } from &quot;@/components/navigation&quot;;
+import { Metadata } from "next";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Navigation } from "@/components/navigation";
 import { 
   Zap, 
   Bot, 
@@ -20,76 +20,76 @@ import {
   Activity,
   Users,
   FileText
-} from &quot;lucide-react&quot;;
+} from "lucide-react";
 
 export const metadata: Metadata = {
-  title: &quot;AI Business Automation Services - Streamline Your Operations&quot;,
-  description: &quot;Transform your business with AI automation services. Process automation, workflow optimization, data integration, and intelligent business solutions for small and medium businesses.&quot;,
+  title: "AI Business Automation Services - Streamline Your Operations",
+  description: "Transform your business with AI automation services. Process automation, workflow optimization, data integration, and intelligent business solutions for small and medium businesses.",
   keywords: [
-    &quot;AI business automation services&quot;,
-    &quot;business process automation&quot;,
-    &quot;workflow automation AI&quot;,
-    &quot;AI automation consulting&quot;,
-    &quot;business automation solutions&quot;,
-    &quot;AI process optimization&quot;,
-    &quot;automated business workflows&quot;,
-    &quot;AI integration services&quot;,
-    &quot;business intelligence automation&quot;,
-    &quot;AI automation implementation&quot;
+    "AI business automation services",
+    "business process automation",
+    "workflow automation AI",
+    "AI automation consulting",
+    "business automation solutions",
+    "AI process optimization",
+    "automated business workflows",
+    "AI integration services",
+    "business intelligence automation",
+    "AI automation implementation"
   ],
   openGraph: {
-    title: &quot;AI Business Automation Services - Streamline Your Operations&quot;,
-    description: &quot;Transform your business with AI automation services. Process automation, workflow optimization, and intelligent business solutions.&quot;,
-    url: &quot;https://automationsandmore.com/services/ai-automation&quot;,
+    title: "AI Business Automation Services - Streamline Your Operations",
+    description: "Transform your business with AI automation services. Process automation, workflow optimization, and intelligent business solutions.",
+    url: "https://automationsandmore.com/services/ai-automation",
   },
   alternates: {
-    canonical: &quot;/services/ai-automation&quot;,
+    canonical: "/services/ai-automation",
   },
 };
 
 const automationServices = [
   {
-    title: &quot;Process Automation&quot;,
-    description: &quot;Automate repetitive business processes to save time and reduce errors&quot;,
+    title: "Process Automation",
+    description: "Automate repetitive business processes to save time and reduce errors",
     icon: Workflow,
     features: [
-      &quot;Document processing automation&quot;,
-      &quot;Email and communication automation&quot;,
-      &quot;Data entry and validation&quot;,
-      &quot;Approval workflow automation&quot;
+      "Document processing automation",
+      "Email and communication automation",
+      "Data entry and validation",
+      "Approval workflow automation"
     ]
   },
   {
-    title: &quot;Data Integration & Analytics&quot;,
-    description: &quot;Connect your systems and gain insights from your business data&quot;,
+    title: "Data Integration & Analytics",
+    description: "Connect your systems and gain insights from your business data",
     icon: Database,
     features: [
-      &quot;System integration and API connections&quot;,
-      &quot;Real-time data synchronization&quot;,
-      &quot;Business intelligence dashboards&quot;,
-      &quot;Predictive analytics and reporting&quot;
+      "System integration and API connections",
+      "Real-time data synchronization",
+      "Business intelligence dashboards",
+      "Predictive analytics and reporting"
     ]
   },
   {
-    title: &quot;Customer Service Automation&quot;,
-    description: &quot;Enhance customer experience with intelligent automation&quot;,
+    title: "Customer Service Automation",
+    description: "Enhance customer experience with intelligent automation",
     icon: Users,
     features: [
-      &quot;AI-powered chatbots and virtual assistants&quot;,
-      &quot;Automated customer support workflows&quot;,
-      &quot;Customer communication automation&quot;,
-      &quot;Service ticket management&quot;
+      "AI-powered chatbots and virtual assistants",
+      "Automated customer support workflows",
+      "Customer communication automation",
+      "Service ticket management"
     ]
   },
   {
-    title: &quot;Business Intelligence&quot;,
-    description: &quot;Make data-driven decisions with AI-powered insights&quot;,
+    title: "Business Intelligence",
+    description: "Make data-driven decisions with AI-powered insights",
     icon: Activity,
     features: [
-      &quot;Automated reporting and analytics&quot;,
-      &quot;Performance monitoring and alerts&quot;,
-      &quot;Trend analysis and forecasting&quot;,
-      &quot;Custom dashboard creation&quot;
+      "Automated reporting and analytics",
+      "Performance monitoring and alerts",
+      "Trend analysis and forecasting",
+      "Custom dashboard creation"
     ]
   }
 ];
@@ -97,142 +97,142 @@ const automationServices = [
 const benefits = [
   {
     icon: Clock,
-    title: &quot;Save 20-40 Hours Weekly&quot;,
-    description: &quot;Automate repetitive tasks and focus on high-value business activities&quot;
+    title: "Save 20-40 Hours Weekly",
+    description: "Automate repetitive tasks and focus on high-value business activities"
   },
   {
     icon: DollarSign,
-    title: &quot;Reduce Costs by 30-50%&quot;,
-    description: &quot;Eliminate manual processes and reduce operational expenses&quot;
+    title: "Reduce Costs by 30-50%",
+    description: "Eliminate manual processes and reduce operational expenses"
   },
   {
     icon: Target,
-    title: &quot;Improve Accuracy by 95%&quot;,
-    description: &quot;AI automation reduces human errors and ensures consistent results&quot;
+    title: "Improve Accuracy by 95%",
+    description: "AI automation reduces human errors and ensures consistent results"
   }
 ];
 
 const industries = [
   {
-    name: &quot;Retail & E-commerce&quot;,
+    name: "Retail & E-commerce",
     icon: Building2,
-    href: &quot;/industries/retail&quot;,
-    description: &quot;Inventory management, customer service, and sales optimization&quot;
+    href: "/industries/retail",
+    description: "Inventory management, customer service, and sales optimization"
   },
   {
-    name: &quot;Healthcare&quot;,
+    name: "Healthcare",
     icon: Building2,
-    href: &quot;/industries/healthcare&quot;,
-    description: &quot;Patient management, appointment scheduling, and record automation&quot;
+    href: "/industries/healthcare",
+    description: "Patient management, appointment scheduling, and record automation"
   },
   {
-    name: &quot;Restaurants&quot;,
+    name: "Restaurants",
     icon: Building2,
-    href: &quot;/industries/restaurants&quot;,
-    description: &quot;Order management, inventory tracking, and customer engagement&quot;
+    href: "/industries/restaurants",
+    description: "Order management, inventory tracking, and customer engagement"
   },
   {
-    name: &quot;Professional Services&quot;,
+    name: "Professional Services",
     icon: Building2,
-    href: &quot;/industries/professional-services&quot;,
-    description: &quot;Client management, document automation, and workflow optimization&quot;
+    href: "/industries/professional-services",
+    description: "Client management, document automation, and workflow optimization"
   },
   {
-    name: &quot;Real Estate&quot;,
+    name: "Real Estate",
     icon: Building2,
-    href: &quot;/industries/real-estate&quot;,
-    description: &quot;Lead management, property listings, and client communication&quot;
+    href: "/industries/real-estate",
+    description: "Lead management, property listings, and client communication"
   },
   {
-    name: &quot;Manufacturing&quot;,
+    name: "Manufacturing",
     icon: Building2,
-    href: &quot;/industries/manufacturing&quot;,
-    description: &quot;Production optimization, quality control, and supply chain management&quot;
+    href: "/industries/manufacturing",
+    description: "Production optimization, quality control, and supply chain management"
   }
 ];
 
 const processSteps = [
   {
-    step: &quot;01&quot;,
-    title: &quot;Discovery & Analysis&quot;,
-    description: &quot;We analyze your current processes and identify automation opportunities&quot;
+    step: "01",
+    title: "Discovery & Analysis",
+    description: "We analyze your current processes and identify automation opportunities"
   },
   {
-    step: &quot;02&quot;, 
-    title: &quot;Strategy & Planning&quot;,
-    description: &quot;Develop a comprehensive automation strategy tailored to your business&quot;
+    step: "02", 
+    title: "Strategy & Planning",
+    description: "Develop a comprehensive automation strategy tailored to your business"
   },
   {
-    step: &quot;03&quot;,
-    title: &quot;Implementation&quot;,
-    description: &quot;Build and deploy AI automation solutions with minimal disruption&quot;
+    step: "03",
+    title: "Implementation",
+    description: "Build and deploy AI automation solutions with minimal disruption"
   },
   {
-    step: &quot;04&quot;,
-    title: &quot;Optimization & Support&quot;,
-    description: &quot;Monitor performance and continuously optimize your automation systems&quot;
+    step: "04",
+    title: "Optimization & Support",
+    description: "Monitor performance and continuously optimize your automation systems"
   }
 ];
 
 const jsonLd = {
-  &quot;@context&quot;: &quot;https://schema.org&quot;,
-  &quot;@type&quot;: &quot;Service&quot;,
-  &quot;name&quot;: &quot;AI Business Automation Services&quot;,
-  &quot;description&quot;: &quot;Transform your business with AI automation services including process automation, workflow optimization, data integration, and intelligent business solutions.&quot;,
-  &quot;provider&quot;: {
-    &quot;@type&quot;: &quot;Organization&quot;,
-    &quot;name&quot;: &quot;Automations and More&quot;,
-    &quot;url&quot;: &quot;https://automationsandmore.com&quot;
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "AI Business Automation Services",
+  "description": "Transform your business with AI automation services including process automation, workflow optimization, data integration, and intelligent business solutions.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Automations and More",
+    "url": "https://automationsandmore.com"
   },
-  &quot;serviceType&quot;: &quot;AI Business Automation&quot;,
-  &quot;areaServed&quot;: &quot;United States&quot;,
-  &quot;audience&quot;: {
-    &quot;@type&quot;: &quot;BusinessAudience&quot;,
-    &quot;audienceType&quot;: &quot;Small and Medium Businesses&quot;
+  "serviceType": "AI Business Automation",
+  "areaServed": "United States",
+  "audience": {
+    "@type": "BusinessAudience",
+    "audienceType": "Small and Medium Businesses"
   },
-  &quot;offers&quot;: {
-    &quot;@type&quot;: &quot;Offer&quot;,
-    &quot;description&quot;: &quot;AI automation services for businesses&quot;,
-    &quot;category&quot;: &quot;Business Automation Services&quot;
+  "offers": {
+    "@type": "Offer",
+    "description": "AI automation services for businesses",
+    "category": "Business Automation Services"
   }
 };
 
 export default function AIAutomationPage() {
   return (
-    <div className=&quot;min-h-screen bg-background&quot;>
+    <div className="min-h-screen bg-background">
       <script
-        type=&quot;application/ld+json&quot;
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Navigation />
       
       {/* Hero Section */}
-      <section className=&quot;relative py-20 lg:py-32&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;max-w-4xl mx-auto text-center&quot;>
-            <Badge variant=&quot;secondary&quot; className=&quot;mb-6&quot;>
+      <section className="relative py-20 lg:py-32">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <Badge variant="secondary" className="mb-6">
               AI Business Automation Services
             </Badge>
-            <h1 className=&quot;text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6&quot;>
-              Transform Your{&quot; &quot;}
-              <span className=&quot;bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent&quot;>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
+              Transform Your{" "}
+              <span className="bg-gradient-to-r from-foreground to-muted-foreground bg-clip-text text-transparent">
                 Business Operations
-              </span>{&quot; &quot;}
+              </span>{" "}
               with AI
             </h1>
-            <p className=&quot;text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto&quot;>
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
               Streamline your business processes, reduce costs, and improve efficiency with 
               our comprehensive AI automation services designed for small and medium businesses.
             </p>
-            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
-              <Button size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
-                <Link href=&quot;/contact&quot;>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" asChild className="text-lg px-8 py-6">
+                <Link href="/contact">
                   Get Your AI Automation Solution
-                  <ArrowRight className=&quot;ml-2 h-5 w-5&quot; />
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button variant=&quot;outline&quot; size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
-                <Link href=&quot;#services&quot;>
+              <Button variant="outline" size="lg" asChild className="text-lg px-8 py-6">
+                <Link href="#services">
                   View Our Services
                 </Link>
               </Button>
@@ -242,28 +242,28 @@ export default function AIAutomationPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className=&quot;py-20 bg-muted/30&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;text-center mb-16&quot;>
-            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Why Choose Our AI Automation Services
             </h2>
-            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Our AI automation services help businesses increase efficiency, reduce costs, 
               and focus on what matters most - growing their business.
             </p>
           </div>
-          <div className=&quot;grid md:grid-cols-3 gap-8&quot;>
+          <div className="grid md:grid-cols-3 gap-8">
             {benefits.map((benefit, index) => (
-              <Card key={index} className=&quot;text-center&quot;>
+              <Card key={index} className="text-center">
                 <CardHeader>
-                  <div className=&quot;mx-auto mb-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center&quot;>
-                    <benefit.icon className=&quot;h-6 w-6 text-primary&quot; />
+                  <div className="mx-auto mb-4 h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center">
+                    <benefit.icon className="h-6 w-6 text-primary" />
                   </div>
                   <CardTitle>{benefit.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className=&quot;text-base&quot;>
+                  <CardDescription className="text-base">
                     {benefit.description}
                   </CardDescription>
                 </CardContent>
@@ -274,34 +274,34 @@ export default function AIAutomationPage() {
       </section>
 
       {/* Services Section */}
-      <section id=&quot;services&quot; className=&quot;py-20&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;text-center mb-16&quot;>
-            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
+      <section id="services" className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Our AI Automation Services
             </h2>
-            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Comprehensive AI automation solutions designed to streamline your business 
               operations and drive growth.
             </p>
           </div>
-          <div className=&quot;grid md:grid-cols-2 gap-8&quot;>
+          <div className="grid md:grid-cols-2 gap-8">
             {automationServices.map((service, index) => (
-              <Card key={index} className=&quot;group hover:shadow-lg transition-shadow&quot;>
+              <Card key={index} className="group hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <div className=&quot;mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors&quot;>
-                    <service.icon className=&quot;h-6 w-6 text-primary&quot; />
+                  <div className="mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <service.icon className="h-6 w-6 text-primary" />
                   </div>
-                  <CardTitle className=&quot;text-xl&quot;>{service.title}</CardTitle>
-                  <CardDescription className=&quot;text-base&quot;>
+                  <CardTitle className="text-xl">{service.title}</CardTitle>
+                  <CardDescription className="text-base">
                     {service.description}
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ul className=&quot;space-y-2&quot;>
+                  <ul className="space-y-2">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className=&quot;flex items-center text-sm&quot;>
-                        <CheckCircle className=&quot;h-4 w-4 text-green-500 mr-2 flex-shrink-0&quot; />
+                      <li key={featureIndex} className="flex items-center text-sm">
+                        <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
                         {feature}
                       </li>
                     ))}
@@ -314,28 +314,28 @@ export default function AIAutomationPage() {
       </section>
 
       {/* Process Section */}
-      <section className=&quot;py-20 bg-muted/30&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;text-center mb-16&quot;>
-            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Our AI Automation Process
             </h2>
-            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               We follow a proven process to ensure successful AI automation implementation 
               for your business.
             </p>
           </div>
-          <div className=&quot;grid md:grid-cols-4 gap-8&quot;>
+          <div className="grid md:grid-cols-4 gap-8">
             {processSteps.map((step, index) => (
-              <Card key={index} className=&quot;text-center&quot;>
+              <Card key={index} className="text-center">
                 <CardHeader>
-                  <div className=&quot;mx-auto mb-4 h-16 w-16 rounded-full bg-primary flex items-center justify-center&quot;>
-                    <span className=&quot;text-2xl font-bold text-primary-foreground&quot;>{step.step}</span>
+                  <div className="mx-auto mb-4 h-16 w-16 rounded-full bg-primary flex items-center justify-center">
+                    <span className="text-2xl font-bold text-primary-foreground">{step.step}</span>
                   </div>
-                  <CardTitle className=&quot;text-lg&quot;>{step.title}</CardTitle>
+                  <CardTitle className="text-lg">{step.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className=&quot;text-base&quot;>
+                  <CardDescription className="text-base">
                     {step.description}
                   </CardDescription>
                 </CardContent>
@@ -346,26 +346,26 @@ export default function AIAutomationPage() {
       </section>
 
       {/* Industries Section */}
-      <section className=&quot;py-20&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;text-center mb-16&quot;>
-            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
               AI Automation for Every Industry
             </h2>
-            <p className=&quot;text-xl text-muted-foreground max-w-2xl mx-auto&quot;>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               We provide AI automation solutions tailored to specific industries and business needs.
             </p>
           </div>
-          <div className=&quot;grid md:grid-cols-3 gap-6&quot;>
+          <div className="grid md:grid-cols-3 gap-6">
             {industries.map((industry, index) => (
               <Link key={index} href={industry.href}>
-                <Card className=&quot;group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer&quot;>
-                  <CardContent className=&quot;p-6 text-center&quot;>
-                    <div className=&quot;mx-auto mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors&quot;>
-                      <industry.icon className=&quot;h-6 w-6 text-primary&quot; />
+                <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer">
+                  <CardContent className="p-6 text-center">
+                    <div className="mx-auto mb-4 h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                      <industry.icon className="h-6 w-6 text-primary" />
                     </div>
-                    <h3 className=&quot;font-semibold text-lg mb-2&quot;>{industry.name}</h3>
-                    <p className=&quot;text-sm text-muted-foreground&quot;>{industry.description}</p>
+                    <h3 className="font-semibold text-lg mb-2">{industry.name}</h3>
+                    <p className="text-sm text-muted-foreground">{industry.description}</p>
                   </CardContent>
                 </Card>
               </Link>
@@ -375,24 +375,24 @@ export default function AIAutomationPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className=&quot;py-20 bg-muted/30&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;max-w-3xl mx-auto&quot;>
-            <div className=&quot;text-center mb-16&quot;>
-              <h2 className=&quot;text-3xl md:text-4xl font-bold mb-4&quot;>
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 AI Automation FAQ
               </h2>
-              <p className=&quot;text-xl text-muted-foreground&quot;>
+              <p className="text-xl text-muted-foreground">
                 Common questions about our AI automation services.
               </p>
             </div>
-            <div className=&quot;space-y-6&quot;>
+            <div className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle className=&quot;text-lg&quot;>How long does it take to implement AI automation?</CardTitle>
+                  <CardTitle className="text-lg">How long does it take to implement AI automation?</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className=&quot;text-muted-foreground&quot;>
+                  <p className="text-muted-foreground">
                     Implementation timelines vary based on complexity, but most projects are completed within 4-12 weeks. 
                     We work closely with you to ensure minimal disruption to your daily operations.
                   </p>
@@ -400,10 +400,10 @@ export default function AIAutomationPage() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle className=&quot;text-lg&quot;>What types of processes can be automated?</CardTitle>
+                  <CardTitle className="text-lg">What types of processes can be automated?</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className=&quot;text-muted-foreground&quot;>
+                  <p className="text-muted-foreground">
                     We can automate a wide range of business processes including data entry, document processing, 
                     customer communications, inventory management, reporting, and workflow approvals.
                   </p>
@@ -411,10 +411,10 @@ export default function AIAutomationPage() {
               </Card>
               <Card>
                 <CardHeader>
-                  <CardTitle className=&quot;text-lg&quot;>Do I need technical knowledge to use AI automation?</CardTitle>
+                  <CardTitle className="text-lg">Do I need technical knowledge to use AI automation?</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className=&quot;text-muted-foreground&quot;>
+                  <p className="text-muted-foreground">
                     No technical knowledge required! Our AI automation solutions are designed to be user-friendly. 
                     We provide comprehensive training and ongoing support to ensure you can easily manage your automation.
                   </p>
@@ -426,25 +426,25 @@ export default function AIAutomationPage() {
       </section>
 
       {/* CTA Section */}
-      <section className=&quot;py-20&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;max-w-4xl mx-auto text-center&quot;>
-            <h2 className=&quot;text-3xl md:text-4xl font-bold mb-6&quot;>
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Ready to Automate Your Business?
             </h2>
-            <p className=&quot;text-xl text-muted-foreground mb-8&quot;>
+            <p className="text-xl text-muted-foreground mb-8">
               Join businesses that have already transformed their operations with AI automation. 
-              Let&apos;s discuss how we can help streamline your business processes.
+              Let's discuss how we can help streamline your business processes.
             </p>
-            <div className=&quot;flex flex-col sm:flex-row gap-4 justify-center&quot;>
-              <Button size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
-                <Link href=&quot;/contact&quot;>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" asChild className="text-lg px-8 py-6">
+                <Link href="/contact">
                   Start Your Automation Journey
-                  <ArrowRight className=&quot;ml-2 h-5 w-5&quot; />
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button variant=&quot;outline&quot; size=&quot;lg&quot; asChild className=&quot;text-lg px-8 py-6&quot;>
-                <Link href=&quot;/services/websites&quot;>
+              <Button variant="outline" size="lg" asChild className="text-lg px-8 py-6">
+                <Link href="/services/websites">
                   View Our Other Services
                 </Link>
               </Button>
@@ -454,39 +454,39 @@ export default function AIAutomationPage() {
       </section>
 
       {/* Footer */}
-      <footer className=&quot;border-t py-12 bg-muted/30&quot;>
-        <div className=&quot;container mx-auto px-4&quot;>
-          <div className=&quot;grid md:grid-cols-4 gap-8&quot;>
-            <div className=&quot;md:col-span-2&quot;>
-              <div className=&quot;flex items-center space-x-2 mb-4&quot;>
-                <div className=&quot;h-8 w-8 rounded bg-primary flex items-center justify-center&quot;>
-                  <Zap className=&quot;h-5 w-5 text-primary-foreground&quot; />
+      <footer className="border-t py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="md:col-span-2">
+              <div className="flex items-center space-x-2 mb-4">
+                <div className="h-8 w-8 rounded bg-primary flex items-center justify-center">
+                  <Zap className="h-5 w-5 text-primary-foreground" />
                 </div>
-                <span className=&quot;font-bold text-xl&quot;>Automations & More</span>
+                <span className="font-bold text-xl">Automations & More</span>
               </div>
-              <p className=&quot;text-muted-foreground mb-4 max-w-md&quot;>
+              <p className="text-muted-foreground mb-4 max-w-md">
                 Helping businesses leverage AI for process automation, workflow optimization, 
                 and intelligent business solutions that drive growth and efficiency.
               </p>
             </div>
             <div>
-              <h3 className=&quot;font-semibold mb-4&quot;>Services</h3>
-              <ul className=&quot;space-y-2 text-sm text-muted-foreground&quot;>
-                <li><Link href=&quot;/services/ai-automation&quot; className=&quot;hover:text-foreground&quot;>AI Automation</Link></li>
-                <li><Link href=&quot;/services/websites&quot; className=&quot;hover:text-foreground&quot;>Custom Websites</Link></li>
-                <li><Link href=&quot;/services/apps&quot; className=&quot;hover:text-foreground&quot;>Business Apps</Link></li>
+              <h3 className="font-semibold mb-4">Services</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link href="/services/ai-automation" className="hover:text-foreground">AI Automation</Link></li>
+                <li><Link href="/services/websites" className="hover:text-foreground">Custom Websites</Link></li>
+                <li><Link href="/services/apps" className="hover:text-foreground">Business Apps</Link></li>
               </ul>
             </div>
             <div>
-              <h3 className=&quot;font-semibold mb-4&quot;>Company</h3>
-              <ul className=&quot;space-y-2 text-sm text-muted-foreground&quot;>
-                <li><Link href=&quot;/about&quot; className=&quot;hover:text-foreground&quot;>About</Link></li>
-                <li><Link href=&quot;/contact&quot; className=&quot;hover:text-foreground&quot;>Contact</Link></li>
-                <li><Link href=&quot;/industries&quot; className=&quot;hover:text-foreground&quot;>Industries</Link></li>
+              <h3 className="font-semibold mb-4">Company</h3>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link href="/about" className="hover:text-foreground">About</Link></li>
+                <li><Link href="/contact" className="hover:text-foreground">Contact</Link></li>
+                <li><Link href="/industries" className="hover:text-foreground">Industries</Link></li>
               </ul>
             </div>
           </div>
-          <div className=&quot;border-t mt-8 pt-8 text-center text-sm text-muted-foreground&quot;>
+          <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
             <p>&copy; 2024 Automations and More. All rights reserved.</p>
           </div>
         </div>

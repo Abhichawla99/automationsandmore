@@ -1,60 +1,60 @@
-import type { Metadata } from &quot;next&quot;;
-import { Geist, Geist_Mono } from &quot;next/font/google&quot;;
-import &quot;./globals.css&quot;;
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
 
 const geistSans = Geist({
-  variable: &quot;--font-geist-sans&quot;,
-  subsets: [&quot;latin&quot;],
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
 });
 
 const geistMono = Geist_Mono({
-  variable: &quot;--font-geist-mono&quot;,
-  subsets: [&quot;latin&quot;],
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   title: {
-    default: &quot;Automations and More - AI-Powered Business Solutions&quot;,
-    template: &quot;%s | Automations and More&quot;
+    default: "Automations and More - AI-Powered Business Solutions",
+    template: "%s | Automations and More"
   },
-  description: &quot;Transform your mainstreet business with AI automation, custom websites, and intelligent apps. We help small businesses leverage artificial intelligence for growth and efficiency.&quot;,
+  description: "Transform your mainstreet business with AI automation, custom websites, and intelligent apps. We help small businesses leverage artificial intelligence for growth and efficiency.",
   keywords: [
-    &quot;AI automation&quot;,
-    &quot;business automation&quot;,
-    &quot;small business AI&quot;,
-    &quot;custom websites&quot;,
-    &quot;business apps&quot;,
-    &quot;AI integration&quot;,
-    &quot;mainstreet business&quot;,
-    &quot;artificial intelligence&quot;,
-    &quot;business process automation&quot;,
-    &quot;AI consulting&quot;
+    "AI automation",
+    "business automation",
+    "small business AI",
+    "custom websites",
+    "business apps",
+    "AI integration",
+    "mainstreet business",
+    "artificial intelligence",
+    "business process automation",
+    "AI consulting"
   ],
-  authors: [{ name: &quot;Automations and More&quot; }],
-  creator: &quot;Automations and More&quot;,
-  publisher: &quot;Automations and More&quot;,
+  authors: [{ name: "Automations and More" }],
+  creator: "Automations and More",
+  publisher: "Automations and More",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL(&quot;https://automationsandmore.com&quot;),
+  metadataBase: new URL("https://automationsandmore.com"),
   alternates: {
-    canonical: &quot;/&quot;,
+    canonical: "/",
   },
   openGraph: {
-    type: &quot;website&quot;,
-    locale: &quot;en_US&quot;,
-    url: &quot;https://automationsandmore.com&quot;,
-    title: &quot;Automations and More - AI-Powered Business Solutions&quot;,
-    description: &quot;Transform your mainstreet business with AI automation, custom websites, and intelligent apps.&quot;,
-    siteName: &quot;Automations and More&quot;,
+    type: "website",
+    locale: "en_US",
+    url: "https://automationsandmore.com",
+    title: "Automations and More - AI-Powered Business Solutions",
+    description: "Transform your mainstreet business with AI automation, custom websites, and intelligent apps.",
+    siteName: "Automations and More",
   },
   twitter: {
-    card: &quot;summary_large_image&quot;,
-    title: &quot;Automations and More - AI-Powered Business Solutions&quot;,
-    description: &quot;Transform your mainstreet business with AI automation, custom websites, and intelligent apps.&quot;,
-    creator: &quot;@automationsandmore&quot;,
+    card: "summary_large_image",
+    title: "Automations and More - AI-Powered Business Solutions",
+    description: "Transform your mainstreet business with AI automation, custom websites, and intelligent apps.",
+    creator: "@automationsandmore",
   },
   robots: {
     index: true,
@@ -62,54 +62,54 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      &quot;max-video-preview&quot;: -1,
-      &quot;max-image-preview&quot;: &quot;large&quot;,
-      &quot;max-snippet&quot;: -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
   verification: {
-    google: &quot;your-google-verification-code&quot;,
+    google: "your-google-verification-code",
   },
 };
 
 const jsonLd = {
-  &quot;@context&quot;: &quot;https://schema.org&quot;,
-  &quot;@type&quot;: &quot;Organization&quot;,
-  &quot;name&quot;: &quot;Automations and More&quot;,
-  &quot;url&quot;: &quot;https://automationsandmore.com&quot;,
-  &quot;logo&quot;: &quot;https://automationsandmore.com/logo.png&quot;,
-  &quot;description&quot;: &quot;AI-powered business solutions for mainstreet businesses including automation, custom websites, and intelligent apps.&quot;,
-  &quot;foundingDate&quot;: &quot;2024&quot;,
-      &quot;address&quot;: {
-        &quot;@type&quot;: &quot;PostalAddress&quot;,
-        &quot;addressLocality&quot;: &quot;Calgary&quot;,
-        &quot;addressRegion&quot;: &quot;AB&quot;,
-        &quot;addressCountry&quot;: &quot;CA&quot;
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Automations and More",
+  "url": "https://automationsandmore.com",
+  "logo": "https://automationsandmore.com/logo.png",
+  "description": "AI-powered business solutions for mainstreet businesses including automation, custom websites, and intelligent apps.",
+  "foundingDate": "2024",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Calgary",
+        "addressRegion": "AB",
+        "addressCountry": "CA"
       },
-  &quot;contactPoint&quot;: {
-    &quot;@type&quot;: &quot;ContactPoint&quot;,
-    &quot;contactType&quot;: &quot;customer service&quot;,
-    &quot;availableLanguage&quot;: &quot;English&quot;
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "availableLanguage": "English"
   },
-  &quot;sameAs&quot;: [
-    &quot;https://twitter.com/automationsandmore&quot;,
-    &quot;https://linkedin.com/company/automationsandmore&quot;
+  "sameAs": [
+    "https://twitter.com/automationsandmore",
+    "https://linkedin.com/company/automationsandmore"
   ],
-  &quot;service&quot;: [
+  "service": [
     {
-      &quot;@type&quot;: &quot;Service&quot;,
-      &quot;name&quot;: &quot;AI Business Automation&quot;,
-      &quot;description&quot;: &quot;Custom AI automation solutions for small businesses&quot;
+      "@type": "Service",
+      "name": "AI Business Automation",
+      "description": "Custom AI automation solutions for small businesses"
     },
     {
-      &quot;@type&quot;: &quot;Service&quot;, 
-      &quot;name&quot;: &quot;Custom Website Development&quot;,
-      &quot;description&quot;: &quot;AI-powered website development and optimization&quot;
+      "@type": "Service", 
+      "name": "Custom Website Development",
+      "description": "AI-powered website development and optimization"
     },
     {
-      &quot;@type&quot;: &quot;Service&quot;,
-      &quot;name&quot;: &quot;Business App Development&quot;, 
-      &quot;description&quot;: &quot;Custom business applications with AI integration&quot;
+      "@type": "Service",
+      "name": "Business App Development", 
+      "description": "Custom business applications with AI integration"
     }
   ]
 };
@@ -120,14 +120,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-        <html lang=&quot;en&quot;>
+        <html lang="en">
           <head>
             <script
-              type=&quot;application/ld+json&quot;
+              type="application/ld+json"
               dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
             <script
-              src=&quot;https://asset-tidycal.b-cdn.net/js/embed.js&quot;
+              src="https://asset-tidycal.b-cdn.net/js/embed.js"
               async
             />
           </head>

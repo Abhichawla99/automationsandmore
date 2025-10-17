@@ -1,22 +1,22 @@
-&quot;use client&quot;;
+"use client";
 
-import { useEffect, useRef } from &quot;react&quot;;
+import { useEffect, useRef } from "react";
 
 interface TidyCalSimpleProps {
   path: string;
   className?: string;
 }
 
-export function TidyCalSimple({ path, className = &quot;&quot; }: TidyCalSimpleProps) {
+export function TidyCalSimple({ path, className = "" }: TidyCalSimpleProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // Load TidyCal script if not already loaded
-    const existingScript = document.querySelector(&apos;script[src=&quot;https://asset-tidycal.b-cdn.net/js/embed.js&quot;]&apos;);
+    const existingScript = document.querySelector('script[src="https://asset-tidycal.b-cdn.net/js/embed.js"]');
     
     if (!existingScript) {
-      const script = document.createElement(&apos;script&apos;);
-      script.src = &apos;https://asset-tidycal.b-cdn.net/js/embed.js&apos;;
+      const script = document.createElement('script');
+      script.src = 'https://asset-tidycal.b-cdn.net/js/embed.js';
       script.async = true;
       document.head.appendChild(script);
     }
@@ -25,12 +25,12 @@ export function TidyCalSimple({ path, className = &quot;&quot; }: TidyCalSimpleP
     const initializeTidyCal = () => {
       if (window.TidyCal && containerRef.current) {
         // Clear any existing content
-        containerRef.current.innerHTML = &apos;&apos;;
+        containerRef.current.innerHTML = '';
         
         // Create the embed element
-        const embedElement = document.createElement(&apos;div&apos;);
-        embedElement.className = &apos;tidycal-embed&apos;;
-        embedElement.setAttribute(&apos;data-path&apos;, path);
+        const embedElement = document.createElement('div');
+        embedElement.className = 'tidycal-embed';
+        embedElement.setAttribute('data-path', path);
         
         // Add to container
         containerRef.current.appendChild(embedElement);
@@ -61,12 +61,12 @@ export function TidyCalSimple({ path, className = &quot;&quot; }: TidyCalSimpleP
     <div 
       ref={containerRef} 
       className={`tidycal-container ${className}`}
-      style={{ minHeight: &apos;400px&apos; }}
+      style={{ minHeight: '400px' }}
     >
-      <div className=&quot;flex items-center justify-center p-8&quot;>
-        <div className=&quot;text-center&quot;>
-          <div className=&quot;animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto mb-4&quot;></div>
-          <p className=&quot;text-muted-foreground&quot;>Loading booking calendar...</p>
+      <div className="flex items-center justify-center p-8">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-muted-foreground">Loading booking calendar...</p>
         </div>
       </div>
     </div>

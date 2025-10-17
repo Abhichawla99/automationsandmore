@@ -1,25 +1,25 @@
-&quot;use client&quot;;
+"use client";
 
-import { useState } from &quot;react&quot;;
-import { Button } from &quot;@/components/ui/button&quot;;
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from &quot;@/components/ui/dialog&quot;;
-import { TidyCalIframe } from &quot;./tidycal-iframe&quot;;
-import { Calendar } from &quot;lucide-react&quot;;
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { TidyCalIframe } from "./tidycal-iframe";
+import { Calendar } from "lucide-react";
 
 interface TidyCalPopupProps {
   path: string;
   triggerText?: string;
-  triggerVariant?: &quot;default&quot; | &quot;outline&quot; | &quot;secondary&quot; | &quot;ghost&quot; | &quot;link&quot; | &quot;destructive&quot;;
-  triggerSize?: &quot;default&quot; | &quot;sm&quot; | &quot;lg&quot; | &quot;icon&quot;;
+  triggerVariant?: "default" | "outline" | "secondary" | "ghost" | "link" | "destructive";
+  triggerSize?: "default" | "sm" | "lg" | "icon";
   className?: string;
 }
 
 export function TidyCalPopup({ 
   path, 
-  triggerText = &quot;Get Free Consultation&quot;,
-  triggerVariant = &quot;default&quot;,
-  triggerSize = &quot;default&quot;,
-  className = &quot;&quot;
+  triggerText = "Get Free Consultation",
+  triggerVariant = "default",
+  triggerSize = "default",
+  className = ""
 }: TidyCalPopupProps) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -31,15 +31,15 @@ export function TidyCalPopup({
           size={triggerSize}
           className={className}
         >
-          <Calendar className=&quot;mr-2 h-4 w-4&quot; />
+          <Calendar className="mr-2 h-4 w-4" />
           {triggerText}
         </Button>
       </DialogTrigger>
-      <DialogContent className=&quot;max-w-4xl max-h-[90vh] overflow-y-auto&quot;>
+      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
           <DialogTitle>Schedule Your Free AI Automation Consultation</DialogTitle>
         </DialogHeader>
-        <div className=&quot;mt-4&quot;>
+        <div className="mt-4">
           <TidyCalIframe path={path} />
         </div>
       </DialogContent>
