@@ -71,6 +71,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/small-business-automation', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/social-media-automation', priority: 0.7, changeFrequency: 'monthly' },
     { path: '/workflow-automation', priority: 0.7, changeFrequency: 'monthly' },
+    
+    // New SEO-optimized pages
+    { path: '/automation-consulting', priority: 0.8, changeFrequency: 'weekly' },
+    { path: '/digital-transformation', priority: 0.8, changeFrequency: 'weekly' },
+    { path: '/ai-chatbot-development', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/data-automation', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/marketing-automation', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/ai-integration', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/process-optimization', priority: 0.7, changeFrequency: 'monthly' },
+    { path: '/ai-training', priority: 0.6, changeFrequency: 'monthly' },
+    { path: '/ai-maintenance', priority: 0.6, changeFrequency: 'monthly' },
   ]
   
   return routes.map(route => ({
